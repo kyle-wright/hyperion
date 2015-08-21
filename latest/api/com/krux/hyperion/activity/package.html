@@ -1,0 +1,1254 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>activity - com.krux.hyperion.activity</title>
+          <meta name="description" content="activity - com.krux.hyperion.activity" />
+          <meta name="keywords" content="activity com.krux.hyperion.activity" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.krux.hyperion.activity.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a></p>
+        <h1>activity</h1><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activity</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.activity.CopyActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CopyActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="CopyActivity:CopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CopyActivity.html"><span class="name">CopyActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@CopyActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The activity that copies data from one data node to the other.</p><div class="fullcomment"><div class="comment cmt"><p>The activity that copies data from one data node to the other.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>it seems that both input and output format needs to be in CsvDataFormat for this copy to
+work properly and it needs to be a specific variance of the CSV, for more information check the
+web page:
+http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-copyactivity.html
+From our experience it's really hard to export using TsvDataFormat, in both import and export
+especially for tasks involving RedshiftCopyActivity. A general rule of thumb is always use
+default CsvDataFormat for tasks involving both exporting to S3 and copy to redshift.</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.DeleteS3PathActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeleteS3PathActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="DeleteS3PathActivity:DeleteS3PathActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DeleteS3PathActivity.html"><span class="name">DeleteS3PathActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@DeleteS3PathActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Activity to recursively delete files in an S3 path.</p>
+    </li><li name="com.krux.hyperion.activity.EmrActivity" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EmrActivityextendsPipelineActivity"></a>
+      <a id="EmrActivity:EmrActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EmrActivity.html"><span class="name">EmrActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@EmrActivityextendsPipelineActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The base trait for activities that run on an Amazon EMR cluster
+</p>
+    </li><li name="com.krux.hyperion.activity.FailureAndRerunMode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FailureAndRerunModeextendsAnyRef"></a>
+      <a id="FailureAndRerunMode:FailureAndRerunMode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FailureAndRerunMode.html"><span class="name">FailureAndRerunMode</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@FailureAndRerunModeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.GoogleStorageActivity" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GoogleStorageActivityextendsPipelineActivity"></a>
+      <a id="GoogleStorageActivity:GoogleStorageActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="GoogleStorageActivity.html"><span class="name">GoogleStorageActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageActivityextendsPipelineActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.GoogleStorageDownloadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GoogleStorageDownloadActivityextendsGoogleStorageActivitywithProductwithSerializable"></a>
+      <a id="GoogleStorageDownloadActivity:GoogleStorageDownloadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GoogleStorageDownloadActivity.html"><span class="name">GoogleStorageDownloadActivity</span></a><span class="result"> extends <a href="GoogleStorageActivity.html" class="extype" name="com.krux.hyperion.activity.GoogleStorageActivity">GoogleStorageActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageDownloadActivityextendsGoogleStorageActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Google Storage Download activity
+</p>
+    </li><li name="com.krux.hyperion.activity.GoogleStorageUploadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GoogleStorageUploadActivityextendsGoogleStorageActivitywithProductwithSerializable"></a>
+      <a id="GoogleStorageUploadActivity:GoogleStorageUploadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GoogleStorageUploadActivity.html"><span class="name">GoogleStorageUploadActivity</span></a><span class="result"> extends <a href="GoogleStorageActivity.html" class="extype" name="com.krux.hyperion.activity.GoogleStorageActivity">GoogleStorageActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageUploadActivityextendsGoogleStorageActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Google Storage Upload activity
+</p>
+    </li><li name="com.krux.hyperion.activity.HadoopActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HadoopActivityextendsEmrActivitywithProductwithSerializable"></a>
+      <a id="HadoopActivity:HadoopActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HadoopActivity.html"><span class="name">HadoopActivity</span></a><span class="result"> extends <a href="EmrActivity.html" class="extype" name="com.krux.hyperion.activity.EmrActivity">EmrActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@HadoopActivityextendsEmrActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs a MapReduce job on a cluster.</p><div class="fullcomment"><div class="comment cmt"><p>Runs a MapReduce job on a cluster. The cluster can be an EMR cluster managed by AWS Data Pipeline
+or another resource if you use TaskRunner. Use HadoopActivity when you want to run work in parallel.
+This allows you to use the scheduling resources of the YARN framework or the MapReduce resource
+negotiator in Hadoop 1. If you would like to run work sequentially using the Amazon EMR Step action,
+you can still use EmrActivity.
+</p></div></div>
+    </li><li name="com.krux.hyperion.activity.HiveActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HiveActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="HiveActivity:HiveActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HiveActivity.html"><span class="name">HiveActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@HiveActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs a Hive query on an Amazon EMR cluster.</p><div class="fullcomment"><div class="comment cmt"><p>Runs a Hive query on an Amazon EMR cluster. HiveActivity makes it easier to set up an Amzon EMR
+activity and automatically creates Hive tables based on input data coming in from either Amazon
+S3 or Amazon RDS. All you need to specify is the HiveQL to run on the source data. AWS Data
+Pipeline automatically creates Hive tables with ${input1}, ${input2}, etc. based on the input
+fields in the Hive Activity object. For S3 inputs, the dataFormat field is used to create the
+Hive column names. For MySQL (RDS) inputs, the column names for the SQL query are used to create
+the Hive column names.
+</p></div></div>
+    </li><li name="com.krux.hyperion.activity.HiveCopyActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HiveCopyActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="HiveCopyActivity:HiveCopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HiveCopyActivity.html"><span class="name">HiveCopyActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@HiveCopyActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs a Hive query on an Amazon EMR cluster.</p><div class="fullcomment"><div class="comment cmt"><p>Runs a Hive query on an Amazon EMR cluster. HiveCopyActivity makes it easier to copy data between
+Amazon S3 and DynamoDB. HiveCopyActivity accepts a HiveQL statement to filter input data from
+Amazon S3 or DynomoDB at the column and row level.
+</p></div></div>
+    </li><li name="com.krux.hyperion.activity.JarActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JarActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="JarActivity:JarActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="JarActivity.html"><span class="name">JarActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@JarActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Shell command activity that runs a given Jar
+</p>
+    </li><li name="com.krux.hyperion.activity.MainClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MainClassextendsAnyRef"></a>
+      <a id="MainClass:MainClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MainClass.html"><span class="name">MainClass</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@MainClassextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.MapReduceActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapReduceActivityextendsEmrActivitywithProductwithSerializable"></a>
+      <a id="MapReduceActivity:MapReduceActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MapReduceActivity.html"><span class="name">MapReduceActivity</span></a><span class="result"> extends <a href="EmrActivity.html" class="extype" name="com.krux.hyperion.activity.EmrActivity">EmrActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@MapReduceActivityextendsEmrActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs map reduce steps on an Amazon EMR cluster
+</p>
+    </li><li name="com.krux.hyperion.activity.MapReduceStep" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapReduceStepextendsProductwithSerializable"></a>
+      <a id="MapReduceStep:MapReduceStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MapReduceStep.html"><span class="name">MapReduceStep</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@MapReduceStepextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A MapReduce step that runs on MapReduce Cluster
+</p>
+    </li><li name="com.krux.hyperion.activity.PigActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PigActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="PigActivity:PigActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PigActivity.html"><span class="name">PigActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@PigActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">PigActivity provides native support for Pig scripts in AWS Data Pipeline without the requirement
+to use ShellCommandActivity or EmrActivity.</p><div class="fullcomment"><div class="comment cmt"><p>PigActivity provides native support for Pig scripts in AWS Data Pipeline without the requirement
+to use ShellCommandActivity or EmrActivity. In addition, PigActivity supports data staging. When
+the stage field is set to true, AWS Data Pipeline stages the input data as a schema in Pig
+without additional code from the user.
+</p></div></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PipelineActivityextendsPipelineObject"></a>
+      <a id="PipelineActivity:PipelineActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PipelineActivity.html"><span class="name">PipelineActivity</span></a><span class="result"> extends <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@PipelineActivityextendsPipelineObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The activity trait.</p><div class="fullcomment"><div class="comment cmt"><p>The activity trait. All activities should mixin this trait.
+</p></div></div>
+    </li><li name="com.krux.hyperion.activity.PythonActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PythonActivityextendsPipelineActivity"></a>
+      <a id="PythonActivity:PythonActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PythonActivity.html"><span class="name">PythonActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@PythonActivityextendsPipelineActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Shell command activity that runs a given python script
+</p>
+    </li><li name="com.krux.hyperion.activity.RedshiftCopyActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RedshiftCopyActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="RedshiftCopyActivity:RedshiftCopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftCopyActivity.html"><span class="name">RedshiftCopyActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftCopyActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Copies data directly from DynamoDB or Amazon S3 to Amazon Redshift.</p><div class="fullcomment"><div class="comment cmt"><p>Copies data directly from DynamoDB or Amazon S3 to Amazon Redshift. You can load data into a new
+table, or easily merge data into an existing table.
+</p></div></div>
+    </li><li name="com.krux.hyperion.activity.RedshiftCopyOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RedshiftCopyOptionextendsAnyRef"></a>
+      <a id="RedshiftCopyOption:RedshiftCopyOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftCopyOption.html"><span class="name">RedshiftCopyOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftCopyOptionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.RedshiftUnloadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftUnloadActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="RedshiftUnloadActivity:RedshiftUnloadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftUnloadActivity.html"><span class="name">RedshiftUnloadActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftUnloadActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Unload result of the given sql script from redshift to given s3Path.</p>
+    </li><li name="com.krux.hyperion.activity.RedshiftUnloadOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RedshiftUnloadOptionextendsAnyRef"></a>
+      <a id="RedshiftUnloadOption:RedshiftUnloadOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftUnloadOption.html"><span class="name">RedshiftUnloadOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftUnloadOptionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.RunnableObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RunnableObjectextendsAnyRef"></a>
+      <a id="RunnableObject:RunnableObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RunnableObject.html"><span class="name">RunnableObject</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RunnableObjectextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Run time references of runnable objects
+</p>
+    </li><li name="com.krux.hyperion.activity.S3DistCpActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3DistCpActivityextendsEmrActivity"></a>
+      <a id="S3DistCpActivity:S3DistCpActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="S3DistCpActivity.html"><span class="name">S3DistCpActivity</span></a><span class="result"> extends <a href="EmrActivity.html" class="extype" name="com.krux.hyperion.activity.EmrActivity">EmrActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@S3DistCpActivityextendsEmrActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.Script" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ScriptextendsAnyRef"></a>
+      <a id="Script:Script"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Script.html"><span class="name">Script</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ScriptextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.ScriptContent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScriptContentextendsScriptwithProductwithSerializable"></a>
+      <a id="ScriptContent:ScriptContent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScriptContent.html"><span class="name">ScriptContent</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="Script.html" class="extype" name="com.krux.hyperion.activity.Script">Script</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ScriptContentextendsScriptwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.ScriptUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScriptUriextendsScriptwithProductwithSerializable"></a>
+      <a id="ScriptUri:ScriptUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScriptUri.html"><span class="name">ScriptUri</span></a><span class="params">(<span name="uri">uri: <span class="extype" name="scala.Option">Option</span>[<a href="../common/S3Uri.html" class="extype" name="com.krux.hyperion.common.S3Uri">S3Uri</a>]</span>)</span><span class="result"> extends <a href="Script.html" class="extype" name="com.krux.hyperion.activity.Script">Script</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ScriptUriextendsScriptwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SendEmailActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SendEmailActivityextendsPipelineActivity"></a>
+      <a id="SendEmailActivity:SendEmailActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SendEmailActivity.html"><span class="name">SendEmailActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SendEmailActivityextendsPipelineActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SftpActivity" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SftpActivityextendsPipelineActivity"></a>
+      <a id="SftpActivity:SftpActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SftpActivity.html"><span class="name">SftpActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SftpActivityextendsPipelineActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SftpDownloadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SftpDownloadActivityextendsSftpActivity"></a>
+      <a id="SftpDownloadActivity:SftpDownloadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SftpDownloadActivity.html"><span class="name">SftpDownloadActivity</span></a><span class="result"> extends <a href="SftpActivity.html" class="extype" name="com.krux.hyperion.activity.SftpActivity">SftpActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SftpDownloadActivityextendsSftpActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Shell command activity that runs a given Jar
+</p>
+    </li><li name="com.krux.hyperion.activity.SftpUploadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SftpUploadActivityextendsSftpActivity"></a>
+      <a id="SftpUploadActivity:SftpUploadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SftpUploadActivity.html"><span class="name">SftpUploadActivity</span></a><span class="result"> extends <a href="SftpActivity.html" class="extype" name="com.krux.hyperion.activity.SftpActivity">SftpActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SftpUploadActivityextendsSftpActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Shell command activity that runs a given Jar
+</p>
+    </li><li name="com.krux.hyperion.activity.ShellCommandActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShellCommandActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="ShellCommandActivity:ShellCommandActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShellCommandActivity.html"><span class="name">ShellCommandActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ShellCommandActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs a command or script
+</p>
+    </li><li name="com.krux.hyperion.activity.ShellScriptConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShellScriptConfigextendsPipelineObjectwithProductwithSerializable"></a>
+      <a id="ShellScriptConfig:ShellScriptConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShellScriptConfig.html"><span class="name">ShellScriptConfig</span></a><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>, <span name="scriptUri">scriptUri: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../common/S3Uri.html" class="extype" name="com.krux.hyperion.common.S3Uri">S3Uri</a>]</span>, <span name="scriptArguments">scriptArguments: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ShellScriptConfigextendsPipelineObjectwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SparkActivityextendsEmrActivitywithProductwithSerializable"></a>
+      <a id="SparkActivity:SparkActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SparkActivity.html"><span class="name">SparkActivity</span></a><span class="result"> extends <a href="EmrActivity.html" class="extype" name="com.krux.hyperion.activity.EmrActivity">EmrActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SparkActivityextendsEmrActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs spark steps on given spark cluster with Amazon EMR
+</p>
+    </li><li name="com.krux.hyperion.activity.SparkStep" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SparkStepextendsProductwithSerializable"></a>
+      <a id="SparkStep:SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SparkStep.html"><span class="name">SparkStep</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SparkStepextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A spark step that runs on Spark Cluster
+</p>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SplitMergeFilesActivityextendsPipelineActivity"></a>
+      <a id="SplitMergeFilesActivity:SplitMergeFilesActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SplitMergeFilesActivity.html"><span class="name">SplitMergeFilesActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SplitMergeFilesActivityextendsPipelineActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SqlActivity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SqlActivityextendsPipelineActivitywithProductwithSerializable"></a>
+      <a id="SqlActivity:SqlActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SqlActivity.html"><span class="name">SqlActivity</span></a><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SqlActivityextendsPipelineActivitywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs an SQL query on a RedShift cluster.</p><div class="fullcomment"><div class="comment cmt"><p>Runs an SQL query on a RedShift cluster. If the query writes out to a table that does not exist,
+a new table with that name is created.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.krux.hyperion.activity.CopyActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CopyActivity"></a>
+      <a id="CopyActivity:CopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CopyActivity$.html"><span class="name">CopyActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@CopyActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.DeleteS3PathActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeleteS3PathActivity"></a>
+      <a id="DeleteS3PathActivity:DeleteS3PathActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DeleteS3PathActivity$.html"><span class="name">DeleteS3PathActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@DeleteS3PathActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.FailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FailureAndRerunMode"></a>
+      <a id="FailureAndRerunMode:FailureAndRerunMode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FailureAndRerunMode$.html"><span class="name">FailureAndRerunMode</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@FailureAndRerunMode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.GoogleStorageDownloadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GoogleStorageDownloadActivity"></a>
+      <a id="GoogleStorageDownloadActivity:GoogleStorageDownloadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GoogleStorageDownloadActivity$.html"><span class="name">GoogleStorageDownloadActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageDownloadActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.GoogleStorageUploadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GoogleStorageUploadActivity"></a>
+      <a id="GoogleStorageUploadActivity:GoogleStorageUploadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GoogleStorageUploadActivity$.html"><span class="name">GoogleStorageUploadActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageUploadActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.HadoopActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HadoopActivity"></a>
+      <a id="HadoopActivity:HadoopActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HadoopActivity$.html"><span class="name">HadoopActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@HadoopActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.HiveActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HiveActivity"></a>
+      <a id="HiveActivity:HiveActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HiveActivity$.html"><span class="name">HiveActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@HiveActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.HiveCopyActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HiveCopyActivity"></a>
+      <a id="HiveCopyActivity:HiveCopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HiveCopyActivity$.html"><span class="name">HiveCopyActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@HiveCopyActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.JarActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JarActivity"></a>
+      <a id="JarActivity:JarActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JarActivity$.html"><span class="name">JarActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@JarActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.MainClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MainClass"></a>
+      <a id="MainClass:MainClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MainClass$.html"><span class="name">MainClass</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@MainClass" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.MapReduceActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapReduceActivity"></a>
+      <a id="MapReduceActivity:MapReduceActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MapReduceActivity$.html"><span class="name">MapReduceActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@MapReduceActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.MapReduceStep" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapReduceStep"></a>
+      <a id="MapReduceStep:MapReduceStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MapReduceStep$.html"><span class="name">MapReduceStep</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@MapReduceStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.PigActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PigActivity"></a>
+      <a id="PigActivity:PigActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PigActivity$.html"><span class="name">PigActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@PigActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.PythonActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PythonActivity"></a>
+      <a id="PythonActivity:PythonActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PythonActivity$.html"><span class="name">PythonActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@PythonActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.RedshiftCopyActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftCopyActivity"></a>
+      <a id="RedshiftCopyActivity:RedshiftCopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftCopyActivity$.html"><span class="name">RedshiftCopyActivity</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span> with <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftCopyActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.RedshiftCopyOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftCopyOption"></a>
+      <a id="RedshiftCopyOption:RedshiftCopyOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftCopyOption$.html"><span class="name">RedshiftCopyOption</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftCopyOption" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.RedshiftUnloadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftUnloadActivity"></a>
+      <a id="RedshiftUnloadActivity:RedshiftUnloadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftUnloadActivity$.html"><span class="name">RedshiftUnloadActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftUnloadActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.RedshiftUnloadOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftUnloadOption"></a>
+      <a id="RedshiftUnloadOption:RedshiftUnloadOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftUnloadOption$.html"><span class="name">RedshiftUnloadOption</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@RedshiftUnloadOption" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.S3DistCpActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3DistCpActivity"></a>
+      <a id="S3DistCpActivity:S3DistCpActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="S3DistCpActivity$.html"><span class="name">S3DistCpActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@S3DistCpActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.Script" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Script"></a>
+      <a id="Script:Script"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Script$.html"><span class="name">Script</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@Script" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SendEmailActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SendEmailActivity"></a>
+      <a id="SendEmailActivity:SendEmailActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SendEmailActivity$.html"><span class="name">SendEmailActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SendEmailActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SftpDownloadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SftpDownloadActivity"></a>
+      <a id="SftpDownloadActivity:SftpDownloadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SftpDownloadActivity$.html"><span class="name">SftpDownloadActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SftpDownloadActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SftpUploadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SftpUploadActivity"></a>
+      <a id="SftpUploadActivity:SftpUploadActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SftpUploadActivity$.html"><span class="name">SftpUploadActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SftpUploadActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.ShellCommandActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShellCommandActivity"></a>
+      <a id="ShellCommandActivity:ShellCommandActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShellCommandActivity$.html"><span class="name">ShellCommandActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ShellCommandActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.ShellScriptConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShellScriptConfig"></a>
+      <a id="ShellScriptConfig:ShellScriptConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShellScriptConfig$.html"><span class="name">ShellScriptConfig</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@ShellScriptConfig" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SparkActivity"></a>
+      <a id="SparkActivity:SparkActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SparkActivity$.html"><span class="name">SparkActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SparkActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SparkStep"></a>
+      <a id="SparkStep:SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SparkStep$.html"><span class="name">SparkStep</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SplitMergeFilesActivity"></a>
+      <a id="SplitMergeFilesActivity:SplitMergeFilesActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SplitMergeFilesActivity$.html"><span class="name">SplitMergeFilesActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SplitMergeFilesActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SqlActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SqlActivity"></a>
+      <a id="SqlActivity:SqlActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SqlActivity$.html"><span class="name">SqlActivity</span></a><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SqlActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

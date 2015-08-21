@@ -1,0 +1,601 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>hyperion - com.krux.hyperion</title>
+          <meta name="description" content="hyperion - com.krux.hyperion" />
+          <meta name="keywords" content="hyperion com.krux.hyperion" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'com.krux.hyperion.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.krux">krux</a></p>
+        <h1>hyperion</h1><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hyperion</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.DataPipelineDef" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DataPipelineDefextendsHyperionCliwithS3UriHelper"></a>
+      <a id="DataPipelineDef:DataPipelineDef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DataPipelineDef.html"><span class="name">DataPipelineDef</span></a><span class="result"> extends <a href="HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a> with <a href="common/S3UriHelper.html" class="extype" name="com.krux.hyperion.common.S3UriHelper">S3UriHelper</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@DataPipelineDefextendsHyperionCliwithS3UriHelper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base trait of all data pipeline definitions.</p><div class="fullcomment"><div class="comment cmt"><p>Base trait of all data pipeline definitions. All data pipelines needs to implement this trait
+</p></div></div>
+    </li><li name="com.krux.hyperion.HyperionAwsClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HyperionAwsClientextendsAnyRef"></a>
+      <a id="HyperionAwsClient:HyperionAwsClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HyperionAwsClient.html"><span class="name">HyperionAwsClient</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@HyperionAwsClientextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionCli" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HyperionCliextendsAnyRef"></a>
+      <a id="HyperionCli:HyperionCli"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HyperionCli.html"><span class="name">HyperionCli</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@HyperionCliextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HyperionContextextendsAnyRef"></a>
+      <a id="HyperionContext:HyperionContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HyperionContext.html"><span class="name">HyperionContext</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@HyperionContextextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Basic configurations
+</p>
+    </li><li name="com.krux.hyperion.Schedule" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ScheduleextendsPipelineObjectwithProductwithSerializable"></a>
+      <a id="Schedule:Schedule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Schedule.html"><span class="name">Schedule</span></a><span class="result"> extends <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@ScheduleextendsPipelineObjectwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Schedule that runs at defined period.</p><div class="fullcomment"><div class="comment cmt"><p>Schedule that runs at defined period.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>If start time given is a past time, data pipeline will perform back fill from the start.</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.ScheduleType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ScheduleTypeextendsAnyRef"></a>
+      <a id="ScheduleType:ScheduleType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ScheduleType.html"><span class="name">ScheduleType</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@ScheduleTypeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.WorkflowActivityExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowActivityExpressionextendsWorkflowExpressionwithProductwithSerializable"></a>
+      <a id="WorkflowActivityExpression:WorkflowActivityExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowActivityExpression.html"><span class="name">WorkflowActivityExpression</span></a><span class="params">(<span name="activity">activity: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@WorkflowActivityExpressionextendsWorkflowExpressionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.WorkflowArrowExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowArrowExpressionextendsWorkflowExpressionwithProductwithSerializable"></a>
+      <a id="WorkflowArrowExpression:WorkflowArrowExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowArrowExpression.html"><span class="name">WorkflowArrowExpression</span></a><span class="params">(<span name="left">left: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>, <span name="right">right: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@WorkflowArrowExpressionextendsWorkflowExpressionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.WorkflowExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WorkflowExpressionextendsAnyRef"></a>
+      <a id="WorkflowExpression:WorkflowExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowExpression.html"><span class="name">WorkflowExpression</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@WorkflowExpressionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.WorkflowPlusExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowPlusExpressionextendsWorkflowExpressionwithProductwithSerializable"></a>
+      <a id="WorkflowPlusExpression:WorkflowPlusExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowPlusExpression.html"><span class="name">WorkflowPlusExpression</span></a><span class="params">(<span name="left">left: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>, <span name="right">right: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@WorkflowPlusExpressionextendsWorkflowExpressionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.krux.hyperion.Cron" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Cron"></a>
+      <a id="Cron:Cron"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Cron$.html"><span class="name">Cron</span></a><span class="result"> extends <a href="ScheduleType.html" class="extype" name="com.krux.hyperion.ScheduleType">ScheduleType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@Cron" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.DataPipelineDef" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DataPipelineDef"></a>
+      <a id="DataPipelineDef:DataPipelineDef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DataPipelineDef$.html"><span class="name">DataPipelineDef</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@DataPipelineDef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.Implicits" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Implicits"></a>
+      <a id="Implicits:Implicits"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Implicits$.html"><span class="name">Implicits</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@Implicits" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The implicit conversions used in DataPipeline
+</p>
+    </li><li name="com.krux.hyperion.Schedule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Schedule"></a>
+      <a id="Schedule:Schedule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Schedule$.html"><span class="name">Schedule</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@Schedule" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.TimeSeries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimeSeries"></a>
+      <a id="TimeSeries:TimeSeries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TimeSeries$.html"><span class="name">TimeSeries</span></a><span class="result"> extends <a href="ScheduleType.html" class="extype" name="com.krux.hyperion.ScheduleType">ScheduleType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@TimeSeries" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.WorkflowExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowExpression"></a>
+      <a id="WorkflowExpression:WorkflowExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowExpression$.html"><span class="name">WorkflowExpression</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@WorkflowExpression" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.action" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="action"></a>
+      <a id="action:action"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="action/package.html"><span class="name">action</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@action" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="activity"></a>
+      <a id="activity:activity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="activity/package.html"><span class="name">activity</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@activity" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.aws" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="aws"></a>
+      <a id="aws:aws"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="aws/package.html"><span class="name">aws</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@aws" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="common"></a>
+      <a id="common:common"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="common/package.html"><span class="name">common</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@common" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.contrib" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="contrib"></a>
+      <a id="contrib:contrib"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="contrib/package.html"><span class="name">contrib</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@contrib" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="database"></a>
+      <a id="database:database"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="database/package.html"><span class="name">database</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@database" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.dataformat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dataformat"></a>
+      <a id="dataformat:dataformat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="dataformat/package.html"><span class="name">dataformat</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@dataformat" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="datanode"></a>
+      <a id="datanode:datanode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="datanode/package.html"><span class="name">datanode</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@datanode" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.examples" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="examples"></a>
+      <a id="examples:examples"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="examples/package.html"><span class="name">examples</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@examples" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.expression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="expression"></a>
+      <a id="expression:expression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="expression/package.html"><span class="name">expression</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@expression" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.parameter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="parameter"></a>
+      <a id="parameter:parameter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="parameter/package.html"><span class="name">parameter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@parameter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.precondition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="precondition"></a>
+      <a id="precondition:precondition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="precondition/package.html"><span class="name">precondition</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@precondition" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.resource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resource"></a>
+      <a id="resource:resource"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="resource/package.html"><span class="name">resource</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@resource" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
