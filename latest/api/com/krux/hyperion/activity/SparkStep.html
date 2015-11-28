@@ -51,7 +51,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A spark step that runs on Spark Cluster
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A Spark step that runs on Spark Cluster
 </p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/activity/SparkStep.scala" target="_blank">SparkStep.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -297,18 +297,18 @@
     </span>
       
     </li><li name="com.krux.hyperion.activity.SparkStep#jobRunner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="jobRunner:Option[String]"></a>
-      <a id="jobRunner:Option[String]"></a>
+      <a id="jobRunner:String"></a>
+      <a id="jobRunner:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">jobRunner</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">jobRunner</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@jobRunner:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@jobRunner:String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -382,18 +382,52 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SparkStep#scriptRunner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scriptRunner:Option[String]"></a>
-      <a id="scriptRunner:Option[String]"></a>
+      <a id="scriptRunner:String"></a>
+      <a id="scriptRunner:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">scriptRunner</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">scriptRunner</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@scriptRunner:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@scriptRunner:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#sparkConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sparkConfig:Map[String,String]"></a>
+      <a id="sparkConfig:Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sparkConfig</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@sparkConfig:Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#sparkOptions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sparkOptions:Seq[String]"></a>
+      <a id="sparkOptions:Seq[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sparkOptions</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@sparkOptions:Seq[String]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -518,6 +552,91 @@
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.activity.SparkStep#withDriverCores" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDriverCores(n:Int):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withDriverCores(Int):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDriverCores</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withDriverCores(n:Int):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withDriverMemory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withDriverMemory(memory:com.krux.hyperion.common.Memory):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withDriverMemory(Memory):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDriverMemory</span><span class="params">(<span name="memory">memory: <a href="../common/Memory.html" class="extype" name="com.krux.hyperion.common.Memory">Memory</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withDriverMemory(memory:com.krux.hyperion.common.Memory):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withExecutorCores" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withExecutorCores(n:Int):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withExecutorCores(Int):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withExecutorCores</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withExecutorCores(n:Int):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withExecutorMemory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withExecutorMemory(memory:com.krux.hyperion.common.Memory):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withExecutorMemory(Memory):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withExecutorMemory</span><span class="params">(<span name="memory">memory: <a href="../common/Memory.html" class="extype" name="com.krux.hyperion.common.Memory">Memory</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withExecutorMemory(memory:com.krux.hyperion.common.Memory):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withFiles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withFiles(files:String*):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withFiles(String*):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withFiles</span><span class="params">(<span name="files">files: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withFiles(files:String*):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.activity.SparkStep#withMainClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withMainClass(mainClass:com.krux.hyperion.activity.MainClass):com.krux.hyperion.activity.SparkStep"></a>
       <a id="withMainClass(MainClass):SparkStep"></a>
@@ -531,6 +650,91 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withMainClass(mainClass:com.krux.hyperion.activity.MainClass):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withMaster" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withMaster(master:String):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withMaster(String):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMaster</span><span class="params">(<span name="master">master: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withMaster(master:String):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withNumExecutors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withNumExecutors(n:Int):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withNumExecutors(Int):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withNumExecutors</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withNumExecutors(n:Int):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withSparkConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withSparkConfig(key:String,value:String):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withSparkConfig(String,String):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSparkConfig</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withSparkConfig(key:String,value:String):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withSparkOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withSparkOption(option:String*):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withSparkOption(String*):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSparkOption</span><span class="params">(<span name="option">option: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withSparkOption(option:String*):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.SparkStep#withTotalExecutorCores" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withTotalExecutorCores(n:Int):com.krux.hyperion.activity.SparkStep"></a>
+      <a id="withTotalExecutorCores(Int):SparkStep"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withTotalExecutorCores</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SparkStep">SparkStep</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkStep@withTotalExecutorCores(n:Int):com.krux.hyperion.activity.SparkStep" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

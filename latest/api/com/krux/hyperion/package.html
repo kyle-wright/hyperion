@@ -67,7 +67,7 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="com.krux.hyperion.DataPipelineDef" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="DataPipelineDefextendsHyperionCliwithS3UriHelper"></a>
+      <a id="DataPipelineDefextendsHyperionCliwithS3UriHelperwithWorkflowExpressionImplicits"></a>
       <a id="DataPipelineDef:DataPipelineDef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -75,28 +75,62 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DataPipelineDef.html"><span class="name">DataPipelineDef</span></a><span class="result"> extends <a href="HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a> with <a href="common/S3UriHelper.html" class="extype" name="com.krux.hyperion.common.S3UriHelper">S3UriHelper</a></span>
+        <a href="DataPipelineDef.html"><span class="name">DataPipelineDef</span></a><span class="result"> extends <a href="HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a> with <a href="common/S3UriHelper.html" class="extype" name="com.krux.hyperion.common.S3UriHelper">S3UriHelper</a> with <a href="workflow/WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.package@DataPipelineDefextendsHyperionCliwithS3UriHelper" title="Permalink" target="_top">
+      <a href="../../../index.html#com.krux.hyperion.package@DataPipelineDefextendsHyperionCliwithS3UriHelperwithWorkflowExpressionImplicits" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Base trait of all data pipeline definitions.</p><div class="fullcomment"><div class="comment cmt"><p>Base trait of all data pipeline definitions. All data pipelines needs to implement this trait
 </p></div></div>
-    </li><li name="com.krux.hyperion.HyperionAwsClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.HyperionAwsClient" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="HyperionAwsClientextendsAnyRef"></a>
       <a id="HyperionAwsClient:HyperionAwsClient"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
         <a href="HyperionAwsClient.html"><span class="name">HyperionAwsClient</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#com.krux.hyperion.package@HyperionAwsClientextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClientForPipelineDef" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HyperionAwsClientForPipelineDefextendsHyperionAwsClientwithProductwithSerializable"></a>
+      <a id="HyperionAwsClientForPipelineDef:HyperionAwsClientForPipelineDef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HyperionAwsClientForPipelineDef.html"><span class="name">HyperionAwsClientForPipelineDef</span></a><span class="params">(<span name="client">client: <span class="extype" name="com.amazonaws.services.datapipeline.DataPipelineClient">DataPipelineClient</span></span>, <span name="pipelineDef">pipelineDef: <a href="DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></span>)</span><span class="result"> extends <a href="HyperionAwsClient.html" class="extype" name="com.krux.hyperion.HyperionAwsClient">HyperionAwsClient</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@HyperionAwsClientForPipelineDefextendsHyperionAwsClientwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClientForPipelineId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HyperionAwsClientForPipelineIdextendsHyperionAwsClientwithProductwithSerializable"></a>
+      <a id="HyperionAwsClientForPipelineId:HyperionAwsClientForPipelineId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HyperionAwsClientForPipelineId.html"><span class="name">HyperionAwsClientForPipelineId</span></a><span class="params">(<span name="client">client: <span class="extype" name="com.amazonaws.services.datapipeline.DataPipelineClient">DataPipelineClient</span></span>, <span name="pipelineId">pipelineId: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="HyperionAwsClient.html" class="extype" name="com.krux.hyperion.HyperionAwsClient">HyperionAwsClient</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@HyperionAwsClientForPipelineIdextendsHyperionAwsClientwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -117,7 +151,8 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">HyperionCli is a base trait that brings in CLI functionality to
+DataPipelineDef's.</p>
     </li><li name="com.krux.hyperion.HyperionContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HyperionContextextendsAnyRef"></a>
       <a id="HyperionContext:HyperionContext"></a>
@@ -246,7 +281,24 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="com.krux.hyperion.Cron" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="com.krux.hyperion.BuildInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuildInfo"></a>
+      <a id="BuildInfo:BuildInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BuildInfo$.html"><span class="name">BuildInfo</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@BuildInfo" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This object was generated by sbt-buildinfo.</p>
+    </li><li name="com.krux.hyperion.Cron" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Cron"></a>
       <a id="Cron:Cron"></a>
       <h4 class="signature">
@@ -276,6 +328,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#com.krux.hyperion.package@DataPipelineDef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HyperionAwsClient"></a>
+      <a id="HyperionAwsClient:HyperionAwsClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HyperionAwsClient$.html"><span class="name">HyperionAwsClient</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@HyperionAwsClient" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -341,10 +410,27 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="WorkflowExpression$.html"><span class="name">WorkflowExpression</span></a>
+        <a href="WorkflowExpression$.html"><span class="name">WorkflowExpression</span></a><span class="result"> extends <a href="workflow/WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#com.krux.hyperion.package@WorkflowExpression" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.WorkflowNoActivityExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowNoActivityExpression"></a>
+      <a id="WorkflowNoActivityExpression:WorkflowNoActivityExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowNoActivityExpression$.html"><span class="name">WorkflowNoActivityExpression</span></a><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@WorkflowNoActivityExpression" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -396,6 +482,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#com.krux.hyperion.package@aws" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.cli" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cli"></a>
+      <a id="cli:cli"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="cli/package.html"><span class="name">cli</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@cli" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -566,6 +669,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#com.krux.hyperion.package@resource" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.workflow" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="workflow"></a>
+      <a id="workflow:workflow"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="workflow/package.html"><span class="name">workflow</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.package@workflow" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

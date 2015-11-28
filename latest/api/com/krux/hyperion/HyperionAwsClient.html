@@ -28,10 +28,12 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img alt="Class" src="../../../lib/class_big.png" />
+        <a href="HyperionAwsClient$.html" title="See companion object"><img alt="Trait/Object" src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.krux">krux</a>.<a href="package.html" class="extype" name="com.krux.hyperion">hyperion</a></p>
-        <h1>HyperionAwsClient</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="com.krux.hyperion">package hyperion</a>
+        <h1><a href="HyperionAwsClient$.html" title="See companion object">HyperionAwsClient</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="HyperionAwsClient$.html" title="See companion object">object HyperionAwsClient</a>
+            | <a href="package.html" class="extype" name="com.krux.hyperion">package hyperion</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
@@ -41,8 +43,8 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
         <span class="name">HyperionAwsClient</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
@@ -52,7 +54,10 @@
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/HyperionAwsClient.scala" target="_blank">HyperionAwsClient.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="HyperionAwsClientForPipelineDef.html" class="extype" name="com.krux.hyperion.HyperionAwsClientForPipelineDef">HyperionAwsClientForPipelineDef</a>, <a href="HyperionAwsClientForPipelineId.html" class="extype" name="com.krux.hyperion.HyperionAwsClientForPipelineId">HyperionAwsClientForPipelineId</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -86,71 +91,102 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="com.krux.hyperion.HyperionAwsClient#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(regionId:Option[String],roleArn:Option[String]):com.krux.hyperion.HyperionAwsClient"></a>
-      <a id="&lt;init&gt;:HyperionAwsClient"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">HyperionAwsClient</span><span class="params">(<span name="regionId">regionId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="roleArn">roleArn: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@&lt;init&gt;(regionId:Option[String],roleArn:Option[String]):com.krux.hyperion.HyperionAwsClient" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
-
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="com.krux.hyperion.HyperionAwsClient.ForPipelineDef" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ForPipelineDefextendsProductwithSerializable"></a>
-      <a id="ForPipelineDef:ForPipelineDef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="HyperionAwsClient$ForPipelineDef.html"><span class="name">ForPipelineDef</span></a><span class="params">(<span name="pipelineDef">pipelineDef: <a href="DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></span>, <span name="customName">customName: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@ForPipelineDefextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.HyperionAwsClient.ForPipelineId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ForPipelineIdextendsProductwithSerializable"></a>
-      <a id="ForPipelineId:ForPipelineId"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="HyperionAwsClient$ForPipelineId.html"><span class="name">ForPipelineId</span></a><span class="params">(<span name="pipelineId">pipelineId: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@ForPipelineIdextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
 
         
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Abstract Value Members</h3>
+              <ol><li name="com.krux.hyperion.HyperionAwsClient#activatePipeline" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="activatePipeline():Boolean"></a>
+      <a id="activatePipeline():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activatePipeline</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@activatePipeline():Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClient#createPipeline" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="createPipeline(force:Boolean,activate:Boolean):Boolean"></a>
+      <a id="createPipeline(Boolean,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createPipeline</span><span class="params">(<span name="force">force: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="activate">activate: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@createPipeline(force:Boolean,activate:Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClient#createPipeline" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="createPipeline(force:Boolean):Option[String]"></a>
+      <a id="createPipeline(Boolean):Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createPipeline</span><span class="params">(<span name="force">force: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@createPipeline(force:Boolean):Option[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClient#deletePipeline" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="deletePipeline():Boolean"></a>
+      <a id="deletePipeline():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deletePipeline</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@deletePipeline():Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.HyperionAwsClient#getPipelineId" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="getPipelineId:Option[String]"></a>
+      <a id="getPipelineId:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPipelineId</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@getPipelineId:Option[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -219,23 +255,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.HyperionAwsClient#client" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="client:com.amazonaws.services.datapipeline.DataPipelineClient"></a>
-      <a id="client:DataPipelineClient"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">lazy val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">client</span><span class="result">: <span class="extype" name="com.amazonaws.services.datapipeline.DataPipelineClient">DataPipelineClient</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@client:com.amazonaws.services.datapipeline.DataPipelineClient" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -259,23 +278,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.HyperionAwsClient#defaultProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="defaultProvider:com.amazonaws.auth.DefaultAWSCredentialsProviderChain"></a>
-      <a id="defaultProvider:DefaultAWSCredentialsProviderChain"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">lazy val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">defaultProvider</span><span class="result">: <span class="extype" name="com.amazonaws.auth.DefaultAWSCredentialsProviderChain">DefaultAWSCredentialsProviderChain</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@defaultProvider:com.amazonaws.auth.DefaultAWSCredentialsProviderChain" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -435,40 +437,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.HyperionAwsClient#region" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="region:com.amazonaws.regions.Region"></a>
-      <a id="region:Region"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">lazy val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">region</span><span class="result">: <span class="extype" name="com.amazonaws.regions.Region">Region</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@region:com.amazonaws.regions.Region" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.HyperionAwsClient#stsProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="stsProvider:Option[com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider]"></a>
-      <a id="stsProvider:Option[STSAssumeRoleSessionCredentialsProvider]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">lazy val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">stsProvider</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider">STSAssumeRoleSessionCredentialsProvider</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.HyperionAwsClient@stsProvider:Option[com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

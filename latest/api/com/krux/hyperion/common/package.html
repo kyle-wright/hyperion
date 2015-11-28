@@ -100,6 +100,41 @@
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.common.HttpProxy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HttpProxyextendsPipelineObjectwithProductwithSerializable"></a>
+      <a id="HttpProxy:HttpProxy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpProxy.html"><span class="name">HttpProxy</span></a><span class="result"> extends <a href="PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@HttpProxyextendsPipelineObjectwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.Memory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MemoryextendsProductwithSerializable"></a>
+      <a id="Memory:Memory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Memory.html"><span class="name">Memory</span></a><span class="params">(<span name="n">n: <span class="extype" name="scala.Long">Long</span></span>, <span name="unit">unit: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@MemoryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Memory is a memory specification including an amount and a unit.</p><div class="fullcomment"><div class="comment cmt"><p>Memory is a memory specification including an amount and a unit.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>The amount of memory</p></dd><dt class="param">unit</dt><dd class="cmt"><p>The unit.</p></dd></dl></div>
     </li><li name="com.krux.hyperion.common.NameGroupObjectId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NameGroupObjectIdextendsPipelineObjectIdwithProductwithSerializable"></a>
       <a id="NameGroupObjectId:NameGroupObjectId"></a>
@@ -109,7 +144,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="NameGroupObjectId.html"><span class="name">NameGroupObjectId</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="NameGroupObjectId.html"><span class="name">NameGroupObjectId</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rand">rand: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">UUID.randomUUID.toString</span></span>)</span><span class="result"> extends <a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.package@NameGroupObjectIdextendsPipelineObjectIdwithProductwithSerializable" title="Permalink" target="_top">
@@ -160,7 +195,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="RandomizedObjectId.html"><span class="name">RandomizedObjectId</span></a><span class="params">(<span name="seed">seed: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="RandomizedObjectId.html"><span class="name">RandomizedObjectId</span></a><span class="params">(<span name="seed">seed: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rand">rand: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">UUID.randomUUID.toString</span></span>)</span><span class="result"> extends <a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.package@RandomizedObjectIdextendsPipelineObjectIdwithProductwithSerializable" title="Permalink" target="_top">
@@ -242,6 +277,23 @@ or using a builder such as s3 / &quot;hyperion-bucket&quot; / &quot;some-path&qu
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.package@DefaultObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.HttpProxy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HttpProxy"></a>
+      <a id="HttpProxy:HttpProxy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpProxy$.html"><span class="name">HttpProxy</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@HttpProxy" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

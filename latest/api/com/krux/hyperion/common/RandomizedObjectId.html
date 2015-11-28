@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">RandomizedObjectId</span><span class="params">(<span name="seed">seed: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">RandomizedObjectId</span><span class="params">(<span name="seed">seed: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rand">rand: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">UUID.randomUUID.toString</span></span>)</span><span class="result"> extends <a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -89,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.krux.hyperion.common.RandomizedObjectId#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(seed:String):com.krux.hyperion.common.RandomizedObjectId"></a>
+      <a id="&lt;init&gt;(seed:String,rand:String):com.krux.hyperion.common.RandomizedObjectId"></a>
       <a id="&lt;init&gt;:RandomizedObjectId"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,10 +97,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">RandomizedObjectId</span><span class="params">(<span name="seed">seed: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+        <span class="name">RandomizedObjectId</span><span class="params">(<span name="seed">seed: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rand">rand: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">UUID.randomUUID.toString</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@&lt;init&gt;(seed:String):com.krux.hyperion.common.RandomizedObjectId" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@&lt;init&gt;(seed:String,rand:String):com.krux.hyperion.common.RandomizedObjectId" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -364,6 +364,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObjectId#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):com.krux.hyperion.common.NameGroupObjectId"></a>
+      <a id="groupedBy(String):NameGroupObjectId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="NameGroupObjectId.html" class="extype" name="com.krux.hyperion.common.NameGroupObjectId">NameGroupObjectId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@groupedBy(group:String):com.krux.hyperion.common.NameGroupObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -381,6 +398,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObjectId#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(name:String):com.krux.hyperion.common.NameGroupObjectId"></a>
+      <a id="named(String):NameGroupObjectId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="NameGroupObjectId.html" class="extype" name="com.krux.hyperion.common.NameGroupObjectId">NameGroupObjectId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@named(name:String):com.krux.hyperion.common.NameGroupObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -432,6 +466,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.RandomizedObjectId#rand" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rand:String"></a>
+      <a id="rand:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rand</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@rand:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.common.RandomizedObjectId#seed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="seed:String"></a>
       <a id="seed:String"></a>
@@ -492,7 +543,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@toString():String" title="Permalink" target="_top">
@@ -509,7 +560,7 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">uniqueId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">uniqueId</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.RandomizedObjectId@uniqueId:String" title="Permalink" target="_top">

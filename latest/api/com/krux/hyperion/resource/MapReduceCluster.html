@@ -285,18 +285,35 @@
     </span>
       
     </li><li name="com.krux.hyperion.resource.MapReduceCluster#amiVersion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="amiVersion:String"></a>
-      <a id="amiVersion:String"></a>
+      <a id="amiVersion:Option[String]"></a>
+      <a id="amiVersion:Option[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">amiVersion</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">amiVersion</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@amiVersion:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@amiVersion:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#applications" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="applications:Seq[String]"></a>
+      <a id="applications:Seq[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">applications</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@applications:Seq[String]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -409,19 +426,36 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#configuration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="configuration:Option[com.krux.hyperion.resource.EmrConfiguration]"></a>
+      <a id="configuration:Option[EmrConfiguration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">configuration</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="EmrConfiguration.html" class="extype" name="com.krux.hyperion.resource.EmrConfiguration">EmrConfiguration</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@configuration:Option[com.krux.hyperion.resource.EmrConfiguration]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.resource.MapReduceCluster#copy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="copy(id:com.krux.hyperion.common.PipelineObjectId,amiVersion:String,supportedProducts:Option[String],standardBootstrapAction:Seq[String],bootstrapAction:Seq[String],enableDebugging:Option[Boolean],hadoopSchedulerType:Option[com.krux.hyperion.resource.SchedulerType],keyPair:Option[String],masterInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],masterInstanceType:Option[String],coreInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],coreInstanceCount:com.krux.hyperion.parameter.Parameter[Int],coreInstanceType:Option[String],taskInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],taskInstanceCount:com.krux.hyperion.parameter.Parameter[Int],taskInstanceType:Option[String],region:Option[String],availabilityZone:Option[String],resourceRole:Option[String],role:Option[String],subnetId:Option[String],masterSecurityGroupId:Option[String],additionalMasterSecurityGroupIds:Seq[String],slaveSecurityGroupId:Option[String],additionalSlaveSecurityGroupIds:Seq[String],useOnDemandOnLastAttempt:Option[Boolean],visibleToAllUsers:Option[Boolean],initTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],terminateAfter:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],actionOnResourceFailure:Option[com.krux.hyperion.resource.ActionOnResourceFailure],actionOnTaskFailure:Option[com.krux.hyperion.resource.ActionOnTaskFailure]):com.krux.hyperion.resource.MapReduceCluster"></a>
-      <a id="copy(PipelineObjectId,String,Option[String],Seq[String],Seq[String],Option[Boolean],Option[SchedulerType],Option[String],Option[Parameter[Double]],Option[String],Option[Parameter[Double]],Parameter[Int],Option[String],Option[Parameter[Double]],Parameter[Int],Option[String],Option[String],Option[String],Option[String],Option[String],Option[String],Option[String],Seq[String],Option[String],Seq[String],Option[Boolean],Option[Boolean],Option[Parameter[Duration]],Option[Parameter[Duration]],Option[ActionOnResourceFailure],Option[ActionOnTaskFailure]):MapReduceCluster"></a>
+      <a id="copy(id:com.krux.hyperion.common.PipelineObjectId,amiVersion:Option[String],supportedProducts:Option[String],standardBootstrapAction:Seq[String],bootstrapAction:Seq[String],enableDebugging:Option[Boolean],hadoopSchedulerType:Option[com.krux.hyperion.resource.SchedulerType],keyPair:Option[String],masterInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],masterInstanceType:Option[String],coreInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],coreInstanceCount:com.krux.hyperion.parameter.Parameter[Int],coreInstanceType:Option[String],taskInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],taskInstanceCount:com.krux.hyperion.parameter.Parameter[Int],taskInstanceType:Option[String],region:Option[String],availabilityZone:Option[String],resourceRole:Option[String],role:Option[String],subnetId:Option[String],masterSecurityGroupId:Option[String],additionalMasterSecurityGroupIds:Seq[String],slaveSecurityGroupId:Option[String],additionalSlaveSecurityGroupIds:Seq[String],useOnDemandOnLastAttempt:Option[Boolean],visibleToAllUsers:Option[Boolean],initTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],terminateAfter:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],actionOnResourceFailure:Option[com.krux.hyperion.resource.ActionOnResourceFailure],actionOnTaskFailure:Option[com.krux.hyperion.resource.ActionOnTaskFailure],httpProxy:Option[com.krux.hyperion.common.HttpProxy],releaseLabel:Option[String],applications:Seq[String],configuration:Option[com.krux.hyperion.resource.EmrConfiguration]):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="copy(PipelineObjectId,Option[String],Option[String],Seq[String],Seq[String],Option[Boolean],Option[SchedulerType],Option[String],Option[Parameter[Double]],Option[String],Option[Parameter[Double]],Parameter[Int],Option[String],Option[Parameter[Double]],Parameter[Int],Option[String],Option[String],Option[String],Option[String],Option[String],Option[String],Option[String],Seq[String],Option[String],Seq[String],Option[Boolean],Option[Boolean],Option[Parameter[Duration]],Option[Parameter[Duration]],Option[ActionOnResourceFailure],Option[ActionOnTaskFailure],Option[HttpProxy],Option[String],Seq[String],Option[EmrConfiguration]):MapReduceCluster"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copy</span><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> = <span class="symbol">id</span></span>, <span name="amiVersion">amiVersion: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">amiVersion</span></span>, <span name="supportedProducts">supportedProducts: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">supportedProducts</span></span>, <span name="standardBootstrapAction">standardBootstrapAction: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">standardBootstrapAction</span></span>, <span name="bootstrapAction">bootstrapAction: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">bootstrapAction</span></span>, <span name="enableDebugging">enableDebugging: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">enableDebugging</span></span>, <span name="hadoopSchedulerType">hadoopSchedulerType: <span class="extype" name="scala.Option">Option</span>[<a href="SchedulerType.html" class="extype" name="com.krux.hyperion.resource.SchedulerType">SchedulerType</a>] = <span class="symbol">hadoopSchedulerType</span></span>, <span name="keyPair">keyPair: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">keyPair</span></span>, <span name="masterInstanceBidPrice">masterInstanceBidPrice: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]] = <span class="symbol">masterInstanceBidPrice</span></span>, <span name="masterInstanceType">masterInstanceType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">masterInstanceType</span></span>, <span name="coreInstanceBidPrice">coreInstanceBidPrice: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]] = <span class="symbol">coreInstanceBidPrice</span></span>, <span name="coreInstanceCount">coreInstanceCount: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">coreInstanceCount</span></span>, <span name="coreInstanceType">coreInstanceType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">coreInstanceType</span></span>, <span name="taskInstanceBidPrice">taskInstanceBidPrice: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]] = <span class="symbol">taskInstanceBidPrice</span></span>, <span name="taskInstanceCount">taskInstanceCount: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">taskInstanceCount</span></span>, <span name="taskInstanceType">taskInstanceType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">taskInstanceType</span></span>, <span name="region">region: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">region</span></span>, <span name="availabilityZone">availabilityZone: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">availabilityZone</span></span>, <span name="resourceRole">resourceRole: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">resourceRole</span></span>, <span name="role">role: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">role</span></span>, <span name="subnetId">subnetId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">subnetId</span></span>, <span name="masterSecurityGroupId">masterSecurityGroupId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">masterSecurityGroupId</span></span>, <span name="additionalMasterSecurityGroupIds">additionalMasterSecurityGroupIds: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">additionalMasterSecurityGroupIds</span></span>, <span name="slaveSecurityGroupId">slaveSecurityGroupId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">slaveSecurityGroupId</span></span>, <span name="additionalSlaveSecurityGroupIds">additionalSlaveSecurityGroupIds: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">additionalSlaveSecurityGroupIds</span></span>, <span name="useOnDemandOnLastAttempt">useOnDemandOnLastAttempt: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">useOnDemandOnLastAttempt</span></span>, <span name="visibleToAllUsers">visibleToAllUsers: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">visibleToAllUsers</span></span>, <span name="initTimeout">initTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">initTimeout</span></span>, <span name="terminateAfter">terminateAfter: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">terminateAfter</span></span>, <span name="actionOnResourceFailure">actionOnResourceFailure: <span class="extype" name="scala.Option">Option</span>[<a href="ActionOnResourceFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnResourceFailure">ActionOnResourceFailure</a>] = <span class="symbol">actionOnResourceFailure</span></span>, <span name="actionOnTaskFailure">actionOnTaskFailure: <span class="extype" name="scala.Option">Option</span>[<a href="ActionOnTaskFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnTaskFailure">ActionOnTaskFailure</a>] = <span class="symbol">actionOnTaskFailure</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+        <span class="name">copy</span><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> = <span class="symbol">id</span></span>, <span name="amiVersion">amiVersion: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">amiVersion</span></span>, <span name="supportedProducts">supportedProducts: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">supportedProducts</span></span>, <span name="standardBootstrapAction">standardBootstrapAction: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">standardBootstrapAction</span></span>, <span name="bootstrapAction">bootstrapAction: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">bootstrapAction</span></span>, <span name="enableDebugging">enableDebugging: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">enableDebugging</span></span>, <span name="hadoopSchedulerType">hadoopSchedulerType: <span class="extype" name="scala.Option">Option</span>[<a href="SchedulerType.html" class="extype" name="com.krux.hyperion.resource.SchedulerType">SchedulerType</a>] = <span class="symbol">hadoopSchedulerType</span></span>, <span name="keyPair">keyPair: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">keyPair</span></span>, <span name="masterInstanceBidPrice">masterInstanceBidPrice: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]] = <span class="symbol">masterInstanceBidPrice</span></span>, <span name="masterInstanceType">masterInstanceType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">masterInstanceType</span></span>, <span name="coreInstanceBidPrice">coreInstanceBidPrice: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]] = <span class="symbol">coreInstanceBidPrice</span></span>, <span name="coreInstanceCount">coreInstanceCount: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">coreInstanceCount</span></span>, <span name="coreInstanceType">coreInstanceType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">coreInstanceType</span></span>, <span name="taskInstanceBidPrice">taskInstanceBidPrice: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]] = <span class="symbol">taskInstanceBidPrice</span></span>, <span name="taskInstanceCount">taskInstanceCount: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>] = <span class="symbol">taskInstanceCount</span></span>, <span name="taskInstanceType">taskInstanceType: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">taskInstanceType</span></span>, <span name="region">region: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">region</span></span>, <span name="availabilityZone">availabilityZone: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">availabilityZone</span></span>, <span name="resourceRole">resourceRole: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">resourceRole</span></span>, <span name="role">role: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">role</span></span>, <span name="subnetId">subnetId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">subnetId</span></span>, <span name="masterSecurityGroupId">masterSecurityGroupId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">masterSecurityGroupId</span></span>, <span name="additionalMasterSecurityGroupIds">additionalMasterSecurityGroupIds: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">additionalMasterSecurityGroupIds</span></span>, <span name="slaveSecurityGroupId">slaveSecurityGroupId: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">slaveSecurityGroupId</span></span>, <span name="additionalSlaveSecurityGroupIds">additionalSlaveSecurityGroupIds: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">additionalSlaveSecurityGroupIds</span></span>, <span name="useOnDemandOnLastAttempt">useOnDemandOnLastAttempt: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">useOnDemandOnLastAttempt</span></span>, <span name="visibleToAllUsers">visibleToAllUsers: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">visibleToAllUsers</span></span>, <span name="initTimeout">initTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">initTimeout</span></span>, <span name="terminateAfter">terminateAfter: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">terminateAfter</span></span>, <span name="actionOnResourceFailure">actionOnResourceFailure: <span class="extype" name="scala.Option">Option</span>[<a href="ActionOnResourceFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnResourceFailure">ActionOnResourceFailure</a>] = <span class="symbol">actionOnResourceFailure</span></span>, <span name="actionOnTaskFailure">actionOnTaskFailure: <span class="extype" name="scala.Option">Option</span>[<a href="ActionOnTaskFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnTaskFailure">ActionOnTaskFailure</a>] = <span class="symbol">actionOnTaskFailure</span></span>, <span name="httpProxy">httpProxy: <span class="extype" name="scala.Option">Option</span>[<a href="../common/HttpProxy.html" class="extype" name="com.krux.hyperion.common.HttpProxy">HttpProxy</a>] = <span class="symbol">httpProxy</span></span>, <span name="releaseLabel">releaseLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">releaseLabel</span></span>, <span name="applications">applications: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">applications</span></span>, <span name="configuration">configuration: <span class="extype" name="scala.Option">Option</span>[<a href="EmrConfiguration.html" class="extype" name="com.krux.hyperion.resource.EmrConfiguration">EmrConfiguration</a>] = <span class="symbol">configuration</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@copy(id:com.krux.hyperion.common.PipelineObjectId,amiVersion:String,supportedProducts:Option[String],standardBootstrapAction:Seq[String],bootstrapAction:Seq[String],enableDebugging:Option[Boolean],hadoopSchedulerType:Option[com.krux.hyperion.resource.SchedulerType],keyPair:Option[String],masterInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],masterInstanceType:Option[String],coreInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],coreInstanceCount:com.krux.hyperion.parameter.Parameter[Int],coreInstanceType:Option[String],taskInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],taskInstanceCount:com.krux.hyperion.parameter.Parameter[Int],taskInstanceType:Option[String],region:Option[String],availabilityZone:Option[String],resourceRole:Option[String],role:Option[String],subnetId:Option[String],masterSecurityGroupId:Option[String],additionalMasterSecurityGroupIds:Seq[String],slaveSecurityGroupId:Option[String],additionalSlaveSecurityGroupIds:Seq[String],useOnDemandOnLastAttempt:Option[Boolean],visibleToAllUsers:Option[Boolean],initTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],terminateAfter:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],actionOnResourceFailure:Option[com.krux.hyperion.resource.ActionOnResourceFailure],actionOnTaskFailure:Option[com.krux.hyperion.resource.ActionOnTaskFailure]):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@copy(id:com.krux.hyperion.common.PipelineObjectId,amiVersion:Option[String],supportedProducts:Option[String],standardBootstrapAction:Seq[String],bootstrapAction:Seq[String],enableDebugging:Option[Boolean],hadoopSchedulerType:Option[com.krux.hyperion.resource.SchedulerType],keyPair:Option[String],masterInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],masterInstanceType:Option[String],coreInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],coreInstanceCount:com.krux.hyperion.parameter.Parameter[Int],coreInstanceType:Option[String],taskInstanceBidPrice:Option[com.krux.hyperion.parameter.Parameter[Double]],taskInstanceCount:com.krux.hyperion.parameter.Parameter[Int],taskInstanceType:Option[String],region:Option[String],availabilityZone:Option[String],resourceRole:Option[String],role:Option[String],subnetId:Option[String],masterSecurityGroupId:Option[String],additionalMasterSecurityGroupIds:Seq[String],slaveSecurityGroupId:Option[String],additionalSlaveSecurityGroupIds:Seq[String],useOnDemandOnLastAttempt:Option[Boolean],visibleToAllUsers:Option[Boolean],initTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],terminateAfter:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],actionOnResourceFailure:Option[com.krux.hyperion.resource.ActionOnResourceFailure],actionOnTaskFailure:Option[com.krux.hyperion.resource.ActionOnTaskFailure],httpProxy:Option[com.krux.hyperion.common.HttpProxy],releaseLabel:Option[String],applications:Seq[String],configuration:Option[com.krux.hyperion.resource.EmrConfiguration]):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -619,6 +653,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#httpProxy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="httpProxy:Option[com.krux.hyperion.common.HttpProxy]"></a>
+      <a id="httpProxy:Option[HttpProxy]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">httpProxy</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../common/HttpProxy.html" class="extype" name="com.krux.hyperion.common.HttpProxy">HttpProxy</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@httpProxy:Option[com.krux.hyperion.common.HttpProxy]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.resource.MapReduceCluster#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
       <a id="id:PipelineObjectId"></a>
@@ -823,7 +874,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.resource.ResourceObject#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
       <a id="objects:Iterable[PipelineObject]"></a>
       <h4 class="signature">
@@ -839,7 +890,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.resource.EmrCluster#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpEmrCluster]"></a>
       <a id="ref:AdpRef[AdpEmrCluster]"></a>
@@ -870,6 +921,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@region:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#releaseLabel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="releaseLabel:Option[String]"></a>
+      <a id="releaseLabel:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">releaseLabel</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@releaseLabel:Option[String]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1351,6 +1419,23 @@
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#withApplication" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withApplication(application:String*):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="withApplication(String*):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withApplication</span><span class="params">(<span name="application">application: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withApplication(application:String*):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.resource.MapReduceCluster#withAvailabilityZone" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withAvailabilityZone(availabilityZone:String):com.krux.hyperion.resource.MapReduceCluster"></a>
       <a id="withAvailabilityZone(String):MapReduceCluster"></a>
@@ -1381,6 +1466,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withBootstrapAction(action:String*):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#withConfiguration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withConfiguration(configuration:com.krux.hyperion.resource.EmrConfiguration):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="withConfiguration(EmrConfiguration):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withConfiguration</span><span class="params">(<span name="configuration">configuration: <a href="EmrConfiguration.html" class="extype" name="com.krux.hyperion.resource.EmrConfiguration">EmrConfiguration</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withConfiguration(configuration:com.krux.hyperion.resource.EmrConfiguration):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1466,6 +1568,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withHadoopSchedulerType(hadoopSchedulerType:com.krux.hyperion.resource.SchedulerType):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#withHttpProxy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withHttpProxy(proxy:com.krux.hyperion.common.HttpProxy):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="withHttpProxy(HttpProxy):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withHttpProxy</span><span class="params">(<span name="proxy">proxy: <a href="../common/HttpProxy.html" class="extype" name="com.krux.hyperion.common.HttpProxy">HttpProxy</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withHttpProxy(proxy:com.krux.hyperion.common.HttpProxy):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1568,6 +1687,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withRegion(region:String):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#withReleaseLabel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withReleaseLabel(releaseLabel:String):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="withReleaseLabel(String):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withReleaseLabel</span><span class="params">(<span name="releaseLabel">releaseLabel: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withReleaseLabel(releaseLabel:String):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
