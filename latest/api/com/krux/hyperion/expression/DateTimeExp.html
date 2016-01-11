@@ -28,12 +28,10 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="DateTimeExp$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
+        <img alt="Trait" src="../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.expression">expression</a></p>
-        <h1><a href="DateTimeExp$.html" title="See companion object">DateTimeExp</a></h1><h3><span class="morelinks"><div>
-            Related Docs:
-            <a href="DateTimeExp$.html" title="See companion object">object DateTimeExp</a>
-            | <a href="package.html" class="extype" name="com.krux.hyperion.expression">package expression</a>
+        <h1>DateTimeExp</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.krux.hyperion.expression">package expression</a>
           </div></span></h3><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
@@ -44,18 +42,20 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">case class</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">DateTimeExp</span><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">DateTimeExp</span><span class="result"> extends <a href="TypedExpression.html" class="extype" name="com.krux.hyperion.expression.TypedExpression">TypedExpression</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>For expressions that returns DateTimes.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/expression/Expression.scala" target="_blank">Expression.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/expression/Expression.scala" target="_blank">Expression.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+          <div class="superTypes hiddenContent"><a href="TypedExpression.html" class="extype" name="com.krux.hyperion.expression.TypedExpression">TypedExpression</a>, <a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="RunnableObject$ActualEndTime$.html" class="extype" name="com.krux.hyperion.expression.RunnableObject.ActualEndTime">ActualEndTime</a>, <a href="RunnableObject$ActualStartTime$.html" class="extype" name="com.krux.hyperion.expression.RunnableObject.ActualStartTime">ActualStartTime</a>, <a href="DateTimeConstantExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeConstantExp">DateTimeConstantExp</a>, <a href="FirstOfMonth.html" class="extype" name="com.krux.hyperion.expression.FirstOfMonth">FirstOfMonth</a>, <a href="RunnableObject$Hostname$.html" class="extype" name="com.krux.hyperion.expression.RunnableObject.Hostname">Hostname</a>, <a href="InTimeZone.html" class="extype" name="com.krux.hyperion.expression.InTimeZone">InTimeZone</a>, <a href="MakeDate.html" class="extype" name="com.krux.hyperion.expression.MakeDate">MakeDate</a>, <a href="MakeDateTime.html" class="extype" name="com.krux.hyperion.expression.MakeDateTime">MakeDateTime</a>, <a href="Midnight.html" class="extype" name="com.krux.hyperion.expression.Midnight">Midnight</a>, <a href="MinusDays.html" class="extype" name="com.krux.hyperion.expression.MinusDays">MinusDays</a>, <a href="MinusHours.html" class="extype" name="com.krux.hyperion.expression.MinusHours">MinusHours</a>, <a href="MinusMinutes.html" class="extype" name="com.krux.hyperion.expression.MinusMinutes">MinusMinutes</a>, <a href="MinusMonths.html" class="extype" name="com.krux.hyperion.expression.MinusMonths">MinusMonths</a>, <a href="MinusWeeks.html" class="extype" name="com.krux.hyperion.expression.MinusWeeks">MinusWeeks</a>, <a href="MinusYears.html" class="extype" name="com.krux.hyperion.expression.MinusYears">MinusYears</a>, <a href="PlusDays.html" class="extype" name="com.krux.hyperion.expression.PlusDays">PlusDays</a>, <a href="PlusHours.html" class="extype" name="com.krux.hyperion.expression.PlusHours">PlusHours</a>, <a href="PlusMinutes.html" class="extype" name="com.krux.hyperion.expression.PlusMinutes">PlusMinutes</a>, <a href="PlusMonths.html" class="extype" name="com.krux.hyperion.expression.PlusMonths">PlusMonths</a>, <a href="PlusWeeks.html" class="extype" name="com.krux.hyperion.expression.PlusWeeks">PlusWeeks</a>, <a href="PlusYears.html" class="extype" name="com.krux.hyperion.expression.PlusYears">PlusYears</a>, <a href="RunnableObject$ReportProgressTime$.html" class="extype" name="com.krux.hyperion.expression.RunnableObject.ReportProgressTime">ReportProgressTime</a>, <a href="RunnableObject$ScheduledEndTime$.html" class="extype" name="com.krux.hyperion.expression.RunnableObject.ScheduledEndTime">ScheduledEndTime</a>, <a href="RunnableObject$ScheduledStartTime$.html" class="extype" name="com.krux.hyperion.expression.RunnableObject.ScheduledStartTime">ScheduledStartTime</a>, <a href="Sunday.html" class="extype" name="com.krux.hyperion.expression.Sunday">Sunday</a>, <a href="Yesterday.html" class="extype" name="com.krux.hyperion.expression.Yesterday">Yesterday</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -72,7 +72,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.expression.DateTimeExp"><span>DateTimeExp</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.expression.Expression"><span>Expression</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.expression.DateTimeExp"><span>DateTimeExp</span></li><li class="in" name="com.krux.hyperion.expression.TypedExpression"><span>TypedExpression</span></li><li class="in" name="com.krux.hyperion.expression.Expression"><span>Expression</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -89,34 +89,34 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="com.krux.hyperion.expression.DateTimeExp#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(content:String):com.krux.hyperion.expression.DateTimeExp"></a>
-      <a id="&lt;init&gt;:DateTimeExp"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">DateTimeExp</span><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@&lt;init&gt;(content:String):com.krux.hyperion.expression.DateTimeExp" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
-
         
 
         
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Abstract Value Members</h3>
+              <ol><li name="com.krux.hyperion.expression.Expression#content" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="content:String"></a>
+      <a id="content:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">content</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@content:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -242,53 +242,36 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.expression.DateTimeExp#content" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="content:String"></a>
-      <a id="content:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">content</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@content:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> → <a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a></dd></dl></div>
     </li><li name="com.krux.hyperion.expression.DateTimeExp#day" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="day:com.krux.hyperion.expression.NumericExp"></a>
-      <a id="day:NumericExp"></a>
+      <a id="day:com.krux.hyperion.expression.IntExp"></a>
+      <a id="day:IntExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">day</span><span class="result">: <a href="NumericExp.html" class="extype" name="com.krux.hyperion.expression.NumericExp">NumericExp</a></span>
+        <span class="name">day</span><span class="result">: <a href="IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@day:com.krux.hyperion.expression.NumericExp" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@day:com.krux.hyperion.expression.IntExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.expression.DateTimeExp#dayOfYear" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="dayOfYear:com.krux.hyperion.expression.NumericExp"></a>
-      <a id="dayOfYear:NumericExp"></a>
+      <a id="dayOfYear:com.krux.hyperion.expression.IntExp"></a>
+      <a id="dayOfYear:IntExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dayOfYear</span><span class="result">: <a href="NumericExp.html" class="extype" name="com.krux.hyperion.expression.NumericExp">NumericExp</a></span>
+        <span class="name">dayOfYear</span><span class="result">: <a href="IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@dayOfYear:com.krux.hyperion.expression.NumericExp" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@dayOfYear:com.krux.hyperion.expression.IntExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -310,6 +293,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -367,19 +367,36 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.expression.DateTimeExp#hour" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hour:com.krux.hyperion.expression.NumericExp"></a>
-      <a id="hour:NumericExp"></a>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hour</span><span class="result">: <a href="NumericExp.html" class="extype" name="com.krux.hyperion.expression.NumericExp">NumericExp</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@hour:com.krux.hyperion.expression.NumericExp" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.DateTimeExp#hour" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hour:com.krux.hyperion.expression.IntExp"></a>
+      <a id="hour:IntExp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hour</span><span class="result">: <a href="IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@hour:com.krux.hyperion.expression.IntExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -436,35 +453,35 @@
     </span>
       
     </li><li name="com.krux.hyperion.expression.DateTimeExp#minute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="minute:com.krux.hyperion.expression.NumericExp"></a>
-      <a id="minute:NumericExp"></a>
+      <a id="minute:com.krux.hyperion.expression.IntExp"></a>
+      <a id="minute:IntExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">minute</span><span class="result">: <a href="NumericExp.html" class="extype" name="com.krux.hyperion.expression.NumericExp">NumericExp</a></span>
+        <span class="name">minute</span><span class="result">: <a href="IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@minute:com.krux.hyperion.expression.NumericExp" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@minute:com.krux.hyperion.expression.IntExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.expression.DateTimeExp#month" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="month:com.krux.hyperion.expression.NumericExp"></a>
-      <a id="month:NumericExp"></a>
+      <a id="month:com.krux.hyperion.expression.IntExp"></a>
+      <a id="month:IntExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">month</span><span class="result">: <a href="NumericExp.html" class="extype" name="com.krux.hyperion.expression.NumericExp">NumericExp</a></span>
+        <span class="name">month</span><span class="result">: <a href="IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@month:com.krux.hyperion.expression.NumericExp" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@month:com.krux.hyperion.expression.IntExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -520,6 +537,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Expression#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serialize:String"></a>
+      <a id="serialize:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serialize</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@serialize:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a></dd></dl></div>
     </li><li name="com.krux.hyperion.expression.DateTimeExp#sunday" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sunday:com.krux.hyperion.expression.DateTimeExp"></a>
       <a id="sunday:DateTimeExp"></a>
@@ -641,18 +675,18 @@
               
         </dd></dl></div>
     </li><li name="com.krux.hyperion.expression.DateTimeExp#year" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="year:com.krux.hyperion.expression.NumericExp"></a>
-      <a id="year:NumericExp"></a>
+      <a id="year:com.krux.hyperion.expression.IntExp"></a>
+      <a id="year:IntExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">year</span><span class="result">: <a href="NumericExp.html" class="extype" name="com.krux.hyperion.expression.NumericExp">NumericExp</a></span>
+        <span class="name">year</span><span class="result">: <a href="IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@year:com.krux.hyperion.expression.NumericExp" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.DateTimeExp@year:com.krux.hyperion.expression.IntExp" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -683,14 +717,8 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.Serializable">
-              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
-            </div><div class="parent" name="java.io.Serializable">
-              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
-            </div><div class="parent" name="scala.Product">
-              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
-            </div><div class="parent" name="scala.Equals">
-              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+        <div class="parent" name="com.krux.hyperion.expression.TypedExpression">
+              <h3>Inherited from <a href="TypedExpression.html" class="extype" name="com.krux.hyperion.expression.TypedExpression">TypedExpression</a></h3>
             </div><div class="parent" name="com.krux.hyperion.expression.Expression">
               <h3>Inherited from <a href="Expression.html" class="extype" name="com.krux.hyperion.expression.Expression">Expression</a></h3>
             </div><div class="parent" name="scala.AnyRef">

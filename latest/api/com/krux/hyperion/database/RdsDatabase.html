@@ -28,10 +28,12 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img alt="Trait" src="../../../../lib/trait_big.png" />
+        <a href="RdsDatabase$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.database">database</a></p>
-        <h1>RdsDatabase</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="com.krux.hyperion.database">package database</a>
+        <h1><a href="RdsDatabase$.html" title="See companion object">RdsDatabase</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="RdsDatabase$.html" title="See companion object">object RdsDatabase</a>
+            | <a href="package.html" class="extype" name="com.krux.hyperion.database">package database</a>
           </div></span></h3><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
@@ -42,16 +44,16 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">RdsDatabase</span><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>
+        <span class="name">RdsDatabase</span><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/database/RdsDatabase.scala" target="_blank">RdsDatabase.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a>, <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -69,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.database.RdsDatabase"><span>RdsDatabase</span></li><li class="in" name="com.krux.hyperion.database.Database"><span>Database</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.database.RdsDatabase"><span>RdsDatabase</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.database.Database"><span>Database</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -88,100 +90,32 @@
         <div id="allMembers">
         
 
-        
-
-        <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="com.krux.hyperion.database.RdsDatabase#*password" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="*password:String"></a>
-      <a id="*password:String"></a>
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.database.RdsDatabase.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.database.RdsDatabase"></a>
+      <a id="Self:Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
+        <span class="modifier"></span>
+        <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $timespassword" class="name">*password</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@*password:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@Self=com.krux.hyperion.database.RdsDatabase" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.database.RdsDatabase#id" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
-      <a id="id:PipelineObjectId"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.database.RdsDatabase#rdsInstanceId" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="rdsInstanceId:String"></a>
-      <a id="rdsInstanceId:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">rdsInstanceId</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@rdsInstanceId:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.database.RdsDatabase#region" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="region:String"></a>
-      <a id="region:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">region</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@region:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.database.RdsDatabase#username" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="username:String"></a>
-      <a id="username:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">username</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@username:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a> → <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li></ol>
             </div>
 
+        
+
         <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -216,6 +150,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.database.Database#*password" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="*password:com.krux.hyperion.adt.HString"></a>
+      <a id="*password:HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $timespassword" class="name">*password</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@*password:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
     </li><li name="scala.math.Ordered#&lt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;(that:A):Boolean"></a>
       <a id="&lt;(PipelineObject):Boolean"></a>
@@ -318,6 +269,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -375,23 +343,40 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
-    </li><li name="com.krux.hyperion.database.RdsDatabase#databaseName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="databaseName:Option[String]"></a>
-      <a id="databaseName:Option[String]"></a>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#databaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="databaseFields:com.krux.hyperion.database.DatabaseFields"></a>
+      <a id="databaseFields:DatabaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">databaseFields</span><span class="result">: <a href="DatabaseFields.html" class="extype" name="com.krux.hyperion.database.DatabaseFields">DatabaseFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@databaseFields:com.krux.hyperion.database.DatabaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a> → <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.Database#databaseName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="databaseName:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="databaseName:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">databaseName</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">databaseName</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@databaseName:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@databaseName:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -409,23 +394,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -466,23 +434,40 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
+      <a id="id:PipelineObjectId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -501,39 +486,56 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="com.krux.hyperion.database.RdsDatabase#jdbcDriverJarUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="jdbcDriverJarUri:Option[String]"></a>
-      <a id="jdbcDriverJarUri:Option[String]"></a>
+      <a id="jdbcDriverJarUri:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="jdbcDriverJarUri:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">jdbcDriverJarUri</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">jdbcDriverJarUri</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@jdbcDriverJarUri:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@jdbcDriverJarUri:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.database.RdsDatabase#jdbcProperties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="jdbcProperties:Seq[String]"></a>
-      <a id="jdbcProperties:Seq[String]"></a>
+      <a id="jdbcProperties:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="jdbcProperties:Seq[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jdbcProperties</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@jdbcProperties:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jdbcProperties</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@jdbcProperties:Seq[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -602,6 +604,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#rdsInstanceId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rdsInstanceId:com.krux.hyperion.adt.HString"></a>
+      <a id="rdsInstanceId:HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rdsInstanceId</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@rdsInstanceId:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.database.Database#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpDatabase]"></a>
       <a id="ref:AdpRef[AdpDatabase]"></a>
@@ -619,6 +638,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#region" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="region:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="region:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">region</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@region:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
       <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
@@ -687,23 +723,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@toString():String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#uniquePipelineId2String" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String"></a>
       <a id="uniquePipelineId2String(PipelineObjectId):String"></a>
@@ -721,6 +740,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):RdsDatabase.this.Self"></a>
+      <a id="updateBaseFields(BaseFields):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):RdsDatabase.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#updateDatabaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateDatabaseFields(fields:com.krux.hyperion.database.DatabaseFields):RdsDatabase.this.Self"></a>
+      <a id="updateDatabaseFields(DatabaseFields):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateDatabaseFields</span><span class="params">(<span name="fields">fields: <a href="DatabaseFields.html" class="extype" name="com.krux.hyperion.database.DatabaseFields">DatabaseFields</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@updateDatabaseFields(fields:com.krux.hyperion.database.DatabaseFields):RdsDatabase.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.database.RdsDatabase">RdsDatabase</a> → <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.Database#username" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="username:com.krux.hyperion.adt.HString"></a>
+      <a id="username:HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">username</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@username:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -790,6 +860,108 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="com.krux.hyperion.database.Database#withDatabaseName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withDatabaseName(databaseName:com.krux.hyperion.adt.HString):Database.this.Self"></a>
+      <a id="withDatabaseName(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDatabaseName</span><span class="params">(<span name="databaseName">databaseName: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@withDatabaseName(databaseName:com.krux.hyperion.adt.HString):Database.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#withJdbcDriverJarUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withJdbcDriverJarUri(uri:com.krux.hyperion.adt.HString):RdsDatabase.this.Self"></a>
+      <a id="withJdbcDriverJarUri(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withJdbcDriverJarUri</span><span class="params">(<span name="uri">uri: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@withJdbcDriverJarUri(uri:com.krux.hyperion.adt.HString):RdsDatabase.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database.RdsDatabase#withJdbcProperties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withJdbcProperties(props:com.krux.hyperion.adt.HString*):RdsDatabase.this.Self"></a>
+      <a id="withJdbcProperties(HString*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withJdbcProperties</span><span class="params">(<span name="props">props: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@withJdbcProperties(props:com.krux.hyperion.adt.HString*):RdsDatabase.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database.Database#withPassword" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withPassword(password:com.krux.hyperion.adt.HString):Database.this.Self"></a>
+      <a id="withPassword(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPassword</span><span class="params">(<span name="password">password: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@withPassword(password:com.krux.hyperion.adt.HString):Database.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.database.RdsDatabase#withRegion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withRegion(r:com.krux.hyperion.adt.HString):RdsDatabase.this.Self"></a>
+      <a id="withRegion(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withRegion</span><span class="params">(<span name="r">r: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@withRegion(r:com.krux.hyperion.adt.HString):RdsDatabase.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database.Database#withUserName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withUserName(username:com.krux.hyperion.adt.HString):Database.this.Self"></a>
+      <a id="withUserName(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withUserName</span><span class="params">(<span name="username">username: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.database.RdsDatabase" class="extmbr" name="com.krux.hyperion.database.RdsDatabase.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.RdsDatabase@withUserName(username:com.krux.hyperion.adt.HString):Database.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -799,8 +971,18 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="com.krux.hyperion.database.Database">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.database.Database">
               <h3>Inherited from <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
             </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">

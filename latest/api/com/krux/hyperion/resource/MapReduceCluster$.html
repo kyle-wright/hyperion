@@ -47,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">MapReduceCluster</span>
+        <span class="name">MapReduceCluster</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/resource/MapReduceCluster.scala" target="_blank">MapReduceCluster.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.resource.MapReduceCluster"><span>MapReduceCluster</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.resource.MapReduceCluster"><span>MapReduceCluster</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -147,23 +147,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.resource.MapReduceCluster#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(configuration:com.krux.hyperion.resource.EmrConfiguration)(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.resource.MapReduceCluster"></a>
-      <a id="apply(EmrConfiguration)(HyperionContext):MapReduceCluster"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="configuration">configuration: <a href="EmrConfiguration.html" class="extype" name="com.krux.hyperion.resource.EmrConfiguration">EmrConfiguration</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="hc">hc: <a href="../HyperionContext.html" class="extype" name="com.krux.hyperion.HyperionContext">HyperionContext</a></span>)</span><span class="result">: <a href="MapReduceCluster.html" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster$@apply(configuration:com.krux.hyperion.resource.EmrConfiguration)(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="com.krux.hyperion.resource.MapReduceCluster#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply()(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.resource.MapReduceCluster"></a>
       <a id="apply()(HyperionContext):MapReduceCluster"></a>
@@ -492,7 +475,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

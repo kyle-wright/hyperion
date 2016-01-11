@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">WorkflowActivityExpression</span><span class="params">(<span name="activity">activity: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">WorkflowActivityExpression</span><span class="params">(<span name="activity">activity: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_ &lt;: <a href="resource/ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>]</span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -89,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.krux.hyperion.WorkflowActivityExpression#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(activity:com.krux.hyperion.activity.PipelineActivity):com.krux.hyperion.WorkflowActivityExpression"></a>
+      <a id="&lt;init&gt;(activity:com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]):com.krux.hyperion.WorkflowActivityExpression"></a>
       <a id="&lt;init&gt;:WorkflowActivityExpression"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,10 +97,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">WorkflowActivityExpression</span><span class="params">(<span name="activity">activity: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>)</span>
+        <span class="name">WorkflowActivityExpression</span><span class="params">(<span name="activity">activity: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_ &lt;: <a href="resource/ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.WorkflowActivityExpression@&lt;init&gt;(activity:com.krux.hyperion.activity.PipelineActivity):com.krux.hyperion.WorkflowActivityExpression" title="Permalink" target="_top">
+      <a href="../../../index.html#com.krux.hyperion.WorkflowActivityExpression@&lt;init&gt;(activity:com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]):com.krux.hyperion.WorkflowActivityExpression" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -183,18 +183,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.krux.hyperion.WorkflowActivityExpression#activity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="activity:com.krux.hyperion.activity.PipelineActivity"></a>
-      <a id="activity:PipelineActivity"></a>
+      <a id="activity:com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]"></a>
+      <a id="activity:PipelineActivity[_&lt;:ResourceObject]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">activity</span><span class="result">: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+        <span class="name">activity</span><span class="result">: <a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_ &lt;: <a href="resource/ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.WorkflowActivityExpression@activity:com.krux.hyperion.activity.PipelineActivity" title="Permalink" target="_top">
+      <a href="../../../index.html#com.krux.hyperion.WorkflowActivityExpression@activity:com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -416,18 +416,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.krux.hyperion.WorkflowExpression#toPipelineObjects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toPipelineObjects:Iterable[com.krux.hyperion.activity.PipelineActivity]"></a>
-      <a id="toPipelineObjects:Iterable[PipelineActivity]"></a>
+      <a id="toPipelineObjects:Iterable[com.krux.hyperion.activity.PipelineActivity[_]]"></a>
+      <a id="toPipelineObjects:Iterable[PipelineActivity[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toPipelineObjects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>]</span>
+        <span class="name">toPipelineObjects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.WorkflowActivityExpression@toPipelineObjects:Iterable[com.krux.hyperion.activity.PipelineActivity]" title="Permalink" target="_top">
+      <a href="../../../index.html#com.krux.hyperion.WorkflowActivityExpression@toPipelineObjects:Iterable[com.krux.hyperion.activity.PipelineActivity[_]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

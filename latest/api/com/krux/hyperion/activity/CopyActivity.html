@@ -47,7 +47,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">CopyActivity</span><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">CopyActivity</span><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -60,7 +60,7 @@ From our experience it's really hard to export using TsvDataFormat, in both impo
 especially for tasks involving RedshiftCopyActivity. A general rule of thumb is always use
 default CsvDataFormat for tasks involving both exporting to S3 and copy to redshift.</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>], <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -78,7 +78,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.activity.CopyActivity"><span>CopyActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.activity.PipelineActivity"><span>PipelineActivity</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.activity.CopyActivity"><span>CopyActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.activity.PipelineActivity"><span>PipelineActivity</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -97,7 +97,27 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.activity.CopyActivity.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.activity.CopyActivity"></a>
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@Self=com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         
 
@@ -222,6 +242,23 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.CopyActivity#activityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="activityFields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]"></a>
+      <a id="activityFields:ActivityFields[Ec2Resource]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activityFields</span><span class="result">: <a href="ActivityFields.html" class="extype" name="com.krux.hyperion.activity.ActivityFields">ActivityFields</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@activityFields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -239,23 +276,40 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#attemptTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="attemptTimeout:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#attemptTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="attemptTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="attemptTimeout:Option[HDuration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">attemptTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@attemptTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.CopyActivity#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">attemptTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -313,23 +367,23 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#dependsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity]"></a>
-      <a id="dependsOn:Seq[PipelineActivity]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#dependsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity[_]]"></a>
+      <a id="dependsOn:Seq[PipelineActivity[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dependsOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>]</span>
+        <span class="name">dependsOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity[_]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -347,13 +401,13 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#failureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#failureAndRerunMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="failureAndRerunMode:Option[com.krux.hyperion.activity.FailureAndRerunMode]"></a>
       <a id="failureAndRerunMode:Option[FailureAndRerunMode]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">failureAndRerunMode</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a>]</span>
@@ -363,7 +417,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -404,30 +458,30 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="groupedBy(group:String):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="groupedBy(String):CopyActivity"></a>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@groupedBy(group:String):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
       <a id="id:PipelineObjectId"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
@@ -437,7 +491,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.CopyActivity#input" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="input:com.krux.hyperion.datanode.Copyable"></a>
       <a id="input:Copyable"></a>
@@ -472,57 +526,57 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#lateAfterTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="lateAfterTimeout:Option[Parameter[Duration]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lateAfterTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#maximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]]"></a>
-      <a id="maximumRetries:Option[Parameter[Int]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="named(name:String):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="named(String):CopyActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#lateAfterTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lateAfterTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="lateAfterTimeout:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">lateAfterTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@named(name:String):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@lateAfterTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -574,7 +628,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
       <a id="objects:Iterable[PipelineObject]"></a>
       <h4 class="signature">
@@ -590,31 +644,31 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="onFail(SnsAlarm*):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onFail(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#onFailAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onFailAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onFailAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onFailAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -624,31 +678,31 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="onLateAction(SnsAlarm*):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onLateAction(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onLateAction</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">onLateAction</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#onLateActionAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onLateActionAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onLateActionAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onLateActionAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onLateActionAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -658,31 +712,31 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="onSuccess(SnsAlarm*):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onSuccess(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onSuccessAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onSuccessAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -692,7 +746,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.CopyActivity#output" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="output:com.krux.hyperion.datanode.Copyable"></a>
       <a id="output:Copyable"></a>
@@ -710,13 +764,13 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.CopyActivity#preconditions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#preconditions" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preconditions:Seq[com.krux.hyperion.precondition.Precondition]"></a>
       <a id="preconditions:Seq[Precondition]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">preconditions</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>]</span>
@@ -726,7 +780,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.PipelineActivity#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpActivity]"></a>
       <a id="ref:AdpRef[AdpActivity]"></a>
@@ -744,40 +798,40 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#retryDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="retryDelay:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#retryDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="retryDelay:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="retryDelay:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">retryDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">retryDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@retryDelay:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#runsOn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#runsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runsOn:com.krux.hyperion.resource.Resource[A]"></a>
       <a id="runsOn:Resource[Ec2Resource]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">runsOn</span><span class="result">: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@runsOn:com.krux.hyperion.resource.Resource[A]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
       <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
@@ -863,6 +917,40 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.CopyActivity#updateActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateActivityFields(fields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.CopyActivity"></a>
+      <a id="updateActivityFields(ActivityFields[Ec2Resource]):CopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateActivityFields</span><span class="params">(<span name="fields">fields: <a href="ActivityFields.html" class="extype" name="com.krux.hyperion.activity.ActivityFields">ActivityFields</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@updateActivityFields(fields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.CopyActivity#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.activity.CopyActivity"></a>
+      <a id="updateBaseFields(BaseFields):CopyActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -932,108 +1020,108 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#whenMet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="whenMet(Precondition*):CopyActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#whenMet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):PipelineActivity.this.Self"></a>
+      <a id="whenMet(Precondition*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.CopyActivity#withAttemptTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withAttemptTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="withAttemptTimeout(Parameter[Duration]):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withAttemptTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAttemptTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withAttemptTimeout(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withAttemptTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">withAttemptTimeout</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withAttemptTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withAttemptTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#withFailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="withFailureAndRerunMode(FailureAndRerunMode):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withFailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):PipelineActivity.this.Self"></a>
+      <a id="withFailureAndRerunMode(FailureAndRerunMode):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withFailureAndRerunMode</span><span class="params">(<span name="mode">mode: <a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">withFailureAndRerunMode</span><span class="params">(<span name="mode">mode: <a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#withLateAfterTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withLateAfterTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="withLateAfterTimeout(Parameter[Duration]):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withLateAfterTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withLateAfterTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withLateAfterTimeout(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withLateAfterTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">withLateAfterTimeout</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withLateAfterTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withLateAfterTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withMaximumRetries(retries:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="withMaximumRetries(Parameter[Int]):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMaximumRetries(retries:com.krux.hyperion.adt.HInt):PipelineActivity.this.Self"></a>
+      <a id="withMaximumRetries(HInt):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withMaximumRetries(retries:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withMaximumRetries(retries:com.krux.hyperion.adt.HInt):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.CopyActivity#withRetryDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withRetryDelay(delay:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.CopyActivity"></a>
-      <a id="withRetryDelay(Parameter[Duration]):CopyActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withRetryDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withRetryDelay(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withRetryDelay(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withRetryDelay</span><span class="params">(<span name="delay">delay: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.CopyActivity">CopyActivity</a></span>
+        <span class="name">withRetryDelay</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.CopyActivity" class="extmbr" name="com.krux.hyperion.activity.CopyActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withRetryDelay(delay:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.CopyActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.CopyActivity@withRetryDelay(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -1052,7 +1140,9 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
             </div><div class="parent" name="com.krux.hyperion.activity.PipelineActivity">
-              <h3>Inherited from <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></h3>
+              <h3>Inherited from <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
             </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">

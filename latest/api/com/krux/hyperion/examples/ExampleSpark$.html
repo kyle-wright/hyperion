@@ -45,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">ExampleSpark</span><span class="result"> extends <a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></span>
+        <span class="name">ExampleSpark</span><span class="result"> extends <a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a> with <a href="../HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//examples/src/main/scala/com/krux/hyperion/examples/ExampleSpark.scala" target="_blank">ExampleSpark.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a>, <a href="../workflow/WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a>, <a href="../common/S3UriHelper.html" class="extype" name="com.krux.hyperion.common.S3UriHelper">S3UriHelper</a>, <a href="../HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a>, <a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a>, <a href="../workflow/WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a>, <a href="../common/S3UriHelper.html" class="extype" name="com.krux.hyperion.common.S3UriHelper">S3UriHelper</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -69,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.examples.ExampleSpark"><span>ExampleSpark</span></li><li class="in" name="com.krux.hyperion.DataPipelineDef"><span>DataPipelineDef</span></li><li class="in" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits"><span>WorkflowExpressionImplicits</span></li><li class="in" name="com.krux.hyperion.common.S3UriHelper"><span>S3UriHelper</span></li><li class="in" name="com.krux.hyperion.HyperionCli"><span>HyperionCli</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.examples.ExampleSpark"><span>ExampleSpark</span></li><li class="in" name="com.krux.hyperion.HyperionCli"><span>HyperionCli</span></li><li class="in" name="com.krux.hyperion.DataPipelineDef"><span>DataPipelineDef</span></li><li class="in" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits"><span>WorkflowExpressionImplicits</span></li><li class="in" name="com.krux.hyperion.common.S3UriHelper"><span>S3UriHelper</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -166,35 +166,35 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.krux.hyperion.workflow.WorkflowExpressionImplicits#activity2WorkflowExpression" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="activity2WorkflowExpression(activity:com.krux.hyperion.activity.PipelineActivity):com.krux.hyperion.WorkflowExpression"></a>
-      <a id="activity2WorkflowExpression(PipelineActivity):WorkflowExpression"></a>
+      <a id="activity2WorkflowExpression(activity:com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]):com.krux.hyperion.WorkflowExpression"></a>
+      <a id="activity2WorkflowExpression(PipelineActivity[_&lt;:ResourceObject]):WorkflowExpression"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">activity2WorkflowExpression</span><span class="params">(<span name="activity">activity: <a href="../activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>)</span><span class="result">: <a href="../WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>
+        <span class="name">activity2WorkflowExpression</span><span class="params">(<span name="activity">activity: <a href="../activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_ &lt;: <a href="../resource/ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>]</span>)</span><span class="result">: <a href="../WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@activity2WorkflowExpression(activity:com.krux.hyperion.activity.PipelineActivity):com.krux.hyperion.WorkflowExpression" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@activity2WorkflowExpression(activity:com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]):com.krux.hyperion.WorkflowExpression" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../workflow/WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a></dd></dl></div>
     </li><li name="com.krux.hyperion.workflow.WorkflowExpressionImplicits#activityIterable2WorkflowExpression" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="activityIterable2WorkflowExpression(activities:Iterable[com.krux.hyperion.activity.PipelineActivity]):com.krux.hyperion.WorkflowExpression"></a>
-      <a id="activityIterable2WorkflowExpression(Iterable[PipelineActivity]):WorkflowExpression"></a>
+      <a id="activityIterable2WorkflowExpression(activities:Iterable[com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]]):com.krux.hyperion.WorkflowExpression"></a>
+      <a id="activityIterable2WorkflowExpression(Iterable[PipelineActivity[_&lt;:ResourceObject]]):WorkflowExpression"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">activityIterable2WorkflowExpression</span><span class="params">(<span name="activities">activities: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>]</span>)</span><span class="result">: <a href="../WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>
+        <span class="name">activityIterable2WorkflowExpression</span><span class="params">(<span name="activities">activities: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_ &lt;: <a href="../resource/ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>]]</span>)</span><span class="result">: <a href="../WorkflowExpression.html" class="extype" name="com.krux.hyperion.WorkflowExpression">WorkflowExpression</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@activityIterable2WorkflowExpression(activities:Iterable[com.krux.hyperion.activity.PipelineActivity]):com.krux.hyperion.WorkflowExpression" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@activityIterable2WorkflowExpression(activities:Iterable[com.krux.hyperion.activity.PipelineActivity[_&lt;:com.krux.hyperion.resource.ResourceObject]]):com.krux.hyperion.WorkflowExpression" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -308,18 +308,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.krux.hyperion.examples.ExampleSpark#filterActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="filterActivity:com.krux.hyperion.activity.SparkJobActivity"></a>
-      <a id="filterActivity:SparkJobActivity"></a>
+      <a id="filterActivity:com.krux.hyperion.activity.SparkTaskActivity"></a>
+      <a id="filterActivity:SparkTaskActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">filterActivity</span><span class="result">: <a href="../activity/SparkJobActivity.html" class="extype" name="com.krux.hyperion.activity.SparkJobActivity">SparkJobActivity</a></span>
+        <span class="name">filterActivity</span><span class="result">: <a href="../activity/SparkTaskActivity.html" class="extype" name="com.krux.hyperion.activity.SparkTaskActivity">SparkTaskActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@filterActivity:com.krux.hyperion.activity.SparkJobActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@filterActivity:com.krux.hyperion.activity.SparkTaskActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -399,52 +399,52 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.examples.ExampleSpark">ExampleSpark</a> → <a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></dd></dl></div>
     </li><li name="com.krux.hyperion.examples.ExampleSpark#instanceBid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instanceBid:com.krux.hyperion.parameter.DoubleParameter"></a>
-      <a id="instanceBid:DoubleParameter"></a>
+      <a id="instanceBid:com.krux.hyperion.expression.UnencryptedParameter[Double]"></a>
+      <a id="instanceBid:UnencryptedParameter[Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">instanceBid</span><span class="result">: <a href="../parameter/DoubleParameter.html" class="extype" name="com.krux.hyperion.parameter.DoubleParameter">DoubleParameter</a></span>
+        <span class="name">instanceBid</span><span class="result">: <a href="../expression/UnencryptedParameter.html" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@instanceBid:com.krux.hyperion.parameter.DoubleParameter" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@instanceBid:com.krux.hyperion.expression.UnencryptedParameter[Double]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.examples.ExampleSpark#instanceCount" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instanceCount:com.krux.hyperion.parameter.IntegerParameter"></a>
-      <a id="instanceCount:IntegerParameter"></a>
+      <a id="instanceCount:com.krux.hyperion.expression.UnencryptedParameter[Int]"></a>
+      <a id="instanceCount:UnencryptedParameter[Int]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">instanceCount</span><span class="result">: <a href="../parameter/IntegerParameter.html" class="extype" name="com.krux.hyperion.parameter.IntegerParameter">IntegerParameter</a></span>
+        <span class="name">instanceCount</span><span class="result">: <a href="../expression/UnencryptedParameter.html" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@instanceCount:com.krux.hyperion.parameter.IntegerParameter" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@instanceCount:com.krux.hyperion.expression.UnencryptedParameter[Int]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.examples.ExampleSpark#instanceType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instanceType:com.krux.hyperion.parameter.StringParameter"></a>
-      <a id="instanceType:StringParameter"></a>
+      <a id="instanceType:com.krux.hyperion.expression.UnencryptedParameter[String]"></a>
+      <a id="instanceType:UnencryptedParameter[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">instanceType</span><span class="result">: <a href="../parameter/StringParameter.html" class="extype" name="com.krux.hyperion.parameter.StringParameter">StringParameter</a></span>
+        <span class="name">instanceType</span><span class="result">: <a href="../expression/UnencryptedParameter.html" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@instanceType:com.krux.hyperion.parameter.StringParameter" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@instanceType:com.krux.hyperion.expression.UnencryptedParameter[String]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -484,18 +484,18 @@
     </span>
       
     </li><li name="com.krux.hyperion.examples.ExampleSpark#location" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="location:com.krux.hyperion.parameter.S3KeyParameter"></a>
-      <a id="location:S3KeyParameter"></a>
+      <a id="location:com.krux.hyperion.expression.UnencryptedParameter[com.krux.hyperion.common.S3Uri]"></a>
+      <a id="location:UnencryptedParameter[S3Uri]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">location</span><span class="result">: <a href="../parameter/S3KeyParameter.html" class="extype" name="com.krux.hyperion.parameter.S3KeyParameter">S3KeyParameter</a></span>
+        <span class="name">location</span><span class="result">: <a href="../expression/UnencryptedParameter.html" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<a href="../common/S3Uri.html" class="extype" name="com.krux.hyperion.common.S3Uri">S3Uri</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@location:com.krux.hyperion.parameter.S3KeyParameter" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@location:com.krux.hyperion.expression.UnencryptedParameter[com.krux.hyperion.common.S3Uri]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -603,7 +603,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></dd></dl></div>
     </li><li name="com.krux.hyperion.examples.ExampleSpark#parameters" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="parameters:Iterable[com.krux.hyperion.parameter.Parameter[_]]"></a>
+      <a id="parameters:Iterable[com.krux.hyperion.expression.Parameter[_]]"></a>
       <a id="parameters:Iterable[Parameter[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -611,10 +611,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parameters</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[_]]</span>
+        <span class="name">parameters</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../expression/Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a>[_]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@parameters:Iterable[com.krux.hyperion.parameter.Parameter[_]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@parameters:Iterable[com.krux.hyperion.expression.Parameter[_]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -632,6 +632,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@pipelineName:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.DataPipelineDef#pv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pv:com.krux.hyperion.expression.ParameterValues"></a>
+      <a id="pv:ParameterValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pv</span><span class="result">: <a href="../expression/ParameterValues.html" class="extype" name="com.krux.hyperion.expression.ParameterValues">ParameterValues</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@pv:com.krux.hyperion.expression.ParameterValues" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -738,6 +755,23 @@
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.DataPipelineDef#setParameterValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setParameterValue(id:String,value:String,ignoreNonExist:Boolean):Unit"></a>
+      <a id="setParameterValue(String,String,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setParameterValue</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ignoreNonExist">ignoreNonExist: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.examples.ExampleSpark$@setParameterValue(id:String,value:String,ignoreNonExist:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></dd></dl></div>
     </li><li name="com.krux.hyperion.examples.ExampleSpark#sparkCluster" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sparkCluster:com.krux.hyperion.resource.SparkCluster"></a>
       <a id="sparkCluster:SparkCluster"></a>
@@ -935,14 +969,14 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="com.krux.hyperion.DataPipelineDef">
+        <div class="parent" name="com.krux.hyperion.HyperionCli">
+              <h3>Inherited from <a href="../HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.DataPipelineDef">
               <h3>Inherited from <a href="../DataPipelineDef.html" class="extype" name="com.krux.hyperion.DataPipelineDef">DataPipelineDef</a></h3>
             </div><div class="parent" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">
               <h3>Inherited from <a href="../workflow/WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a></h3>
             </div><div class="parent" name="com.krux.hyperion.common.S3UriHelper">
               <h3>Inherited from <a href="../common/S3UriHelper.html" class="extype" name="com.krux.hyperion.common.S3UriHelper">S3UriHelper</a></h3>
-            </div><div class="parent" name="com.krux.hyperion.HyperionCli">
-              <h3>Inherited from <a href="../HyperionCli.html" class="extype" name="com.krux.hyperion.HyperionCli">HyperionCli</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

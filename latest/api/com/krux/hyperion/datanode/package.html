@@ -85,7 +85,7 @@
       <p class="shortcomment cmt">The data node that can be used as input and output in CopyActivity
 </p>
     </li><li name="com.krux.hyperion.datanode.DataNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DataNodeextendsPipelineObject"></a>
+      <a id="DataNodeextendsNamedPipelineObject"></a>
       <a id="DataNode:DataNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,16 +93,32 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DataNode.html"><span class="name">DataNode</span></a><span class="result"> extends <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>
+        <a href="DataNode.html"><span class="name">DataNode</span></a><span class="result"> extends <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.package@DataNodeextendsPipelineObject" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@DataNodeextendsNamedPipelineObject" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">The base trait of all data nodes
-</p>
-    </li><li name="com.krux.hyperion.datanode.InsertTableQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      
+    </li><li name="com.krux.hyperion.datanode.DataNodeFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DataNodeFieldsextendsProductwithSerializable"></a>
+      <a id="DataNodeFields:DataNodeFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DataNodeFields.html"><span class="name">DataNodeFields</span></a><span class="params">(<span name="preconditions">preconditions: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onFailAlarms">onFailAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onSuccessAlarms">onSuccessAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">Seq.empty</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@DataNodeFieldsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.InsertTableQuery" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="InsertTableQueryextendsTableQuerywithProductwithSerializable"></a>
       <a id="InsertTableQuery:InsertTableQuery"></a>
       <h4 class="signature">
@@ -118,8 +134,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>this is not tested or documented anywhere in AWS Data Pipeline Docs, we are assuming the
-insert syntax is 'insert into mytable (col1, col2, ...)' without 'values'.</p></span></dd></dl></div>
+      
     </li><li name="com.krux.hyperion.datanode.RedshiftDataNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RedshiftDataNodeextendsDataNodewithProductwithSerializable"></a>
       <a id="RedshiftDataNode:RedshiftDataNode"></a>
@@ -151,6 +166,23 @@ insert syntax is 'insert into mytable (col1, col2, ...)' without 'values'.</p></
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3DataNodeextendsCopyable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.S3DataNodeFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3DataNodeFieldsextendsProductwithSerializable"></a>
+      <a id="S3DataNodeFields:S3DataNodeFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="S3DataNodeFields.html"><span class="name">S3DataNodeFields</span></a><span class="params">(<span name="dataFormat">dataFormat: <span class="extype" name="scala.Option">Option</span>[<a href="../dataformat/DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a>] = <span class="symbol">None</span></span>, <span name="manifestFilePath">manifestFilePath: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HS3Uri.html" class="extype" name="com.krux.hyperion.adt.HS3Uri">HS3Uri</a>] = <span class="symbol">None</span></span>, <span name="isEncrypted">isEncrypted: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a> = <span class="symbol"><span class="name"><a href="../../../package.html">HBoolean.True</a></span></span></span>, <span name="isCompressed">isCompressed: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a> = <span class="symbol"><span class="name"><a href="../../../package.html">HBoolean.False</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3DataNodeFieldsextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -217,7 +249,7 @@ insert syntax is 'insert into mytable (col1, col2, ...)' without 'values'.</p></
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="SqlDataNode.html"><span class="name">SqlDataNode</span></a><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>, <span name="tableQuery">tableQuery: <a href="TableQuery.html" class="extype" name="com.krux.hyperion.datanode.TableQuery">TableQuery</a></span>, <span name="database">database: <a href="../database/Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>, <span name="preconditions">preconditions: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>]</span>, <span name="onSuccessAlarms">onSuccessAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>, <span name="onFailAlarms">onFailAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>)</span><span class="result"> extends <a href="Copyable.html" class="extype" name="com.krux.hyperion.datanode.Copyable">Copyable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="SqlDataNode.html"><span class="name">SqlDataNode</span></a><span class="params">(<span name="baseFields">baseFields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>, <span name="dataNodeFields">dataNodeFields: <a href="DataNodeFields.html" class="extype" name="com.krux.hyperion.datanode.DataNodeFields">DataNodeFields</a></span>, <span name="tableQuery">tableQuery: <a href="TableQuery.html" class="extype" name="com.krux.hyperion.datanode.TableQuery">TableQuery</a></span>, <span name="database">database: <a href="../database/Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>)</span><span class="result"> extends <a href="Copyable.html" class="extype" name="com.krux.hyperion.datanode.Copyable">Copyable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.datanode.package@SqlDataNodeextendsCopyablewithProductwithSerializable" title="Permalink" target="_top">

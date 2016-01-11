@@ -47,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">SqlActivity</span><span class="result"> extends <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">SqlActivity</span><span class="result"> extends <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/activity/SqlActivity.scala" target="_blank">SqlActivity.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.activity.SqlActivity"><span>SqlActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="com.krux.hyperion.activity.RunnableObject"><span>RunnableObject</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.activity.SqlActivity"><span>SqlActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="com.krux.hyperion.expression.RunnableObject"><span>RunnableObject</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -147,40 +147,220 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.RunnableObject#actualEndTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="actualEndTime:com.krux.hyperion.expression.DateTimeRuntimeSlot"></a>
-      <a id="actualEndTime:DateTimeRuntimeSlot"></a>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.ActualEndTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ActualEndTime"></a>
+      <a id="ActualEndTime:ActualEndTime"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">actualEndTime</span><span class="result">: <a href="../expression/DateTimeRuntimeSlot.html" class="extype" name="com.krux.hyperion.expression.DateTimeRuntimeSlot">DateTimeRuntimeSlot</a></span>
+        <a href="../expression/RunnableObject$ActualEndTime$.html"><span class="name">ActualEndTime</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/DateTimeExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SqlActivity$@actualEndTime:com.krux.hyperion.expression.DateTimeRuntimeSlot" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@ActualEndTime" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.RunnableObject#actualStartTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="actualStartTime:com.krux.hyperion.expression.DateTimeRuntimeSlot"></a>
-      <a id="actualStartTime:DateTimeRuntimeSlot"></a>
+      <p class="shortcomment cmt">The date and time that the scheduled run actually ended.</p><div class="fullcomment"><div class="comment cmt"><p>The date and time that the scheduled run actually ended.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.ActualStartTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ActualStartTime"></a>
+      <a id="ActualStartTime:ActualStartTime"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">actualStartTime</span><span class="result">: <a href="../expression/DateTimeRuntimeSlot.html" class="extype" name="com.krux.hyperion.expression.DateTimeRuntimeSlot">DateTimeRuntimeSlot</a></span>
+        <a href="../expression/RunnableObject$ActualStartTime$.html"><span class="name">ActualStartTime</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/DateTimeExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SqlActivity$@actualStartTime:com.krux.hyperion.expression.DateTimeRuntimeSlot" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@ActualStartTime" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></dd></dl></div>
+      <p class="shortcomment cmt">The date and time that the scheduled run actually started.</p><div class="fullcomment"><div class="comment cmt"><p>The date and time that the scheduled run actually started.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.FailureReason" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FailureReason"></a>
+      <a id="FailureReason:FailureReason"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$FailureReason$.html"><span class="name">FailureReason</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/StringExp.html" class="extype" name="com.krux.hyperion.expression.StringExp">StringExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@FailureReason" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The reason for the failure to create the resource.</p><div class="fullcomment"><div class="comment cmt"><p>The reason for the failure to create the resource.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.Hostname" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Hostname"></a>
+      <a id="Hostname:Hostname"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$Hostname$.html"><span class="name">Hostname</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/DateTimeExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@Hostname" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The host name of client that picked up the task attempt.</p><div class="fullcomment"><div class="comment cmt"><p>The host name of client that picked up the task attempt.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.Name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Name"></a>
+      <a id="Name:Name"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$Name$.html"><span class="name">Name</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/StringExp.html" class="extype" name="com.krux.hyperion.expression.StringExp">StringExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@Name" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.PipelineId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PipelineId"></a>
+      <a id="PipelineId:PipelineId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$PipelineId$.html"><span class="name">PipelineId</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/StringExp.html" class="extype" name="com.krux.hyperion.expression.StringExp">StringExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@PipelineId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.ReportProgressTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ReportProgressTime"></a>
+      <a id="ReportProgressTime:ReportProgressTime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$ReportProgressTime$.html"><span class="name">ReportProgressTime</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/DateTimeExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@ReportProgressTime" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The last time that Task Runner, or other code that is processing the tasks, called the ReportTaskProgress operation.</p><div class="fullcomment"><div class="comment cmt"><p>The last time that Task Runner, or other code that is processing the tasks, called the ReportTaskProgress operation.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.ScheduledEndTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ScheduledEndTime"></a>
+      <a id="ScheduledEndTime:ScheduledEndTime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$ScheduledEndTime$.html"><span class="name">ScheduledEndTime</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/DateTimeExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@ScheduledEndTime" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The date and time that the run was scheduled to end.</p><div class="fullcomment"><div class="comment cmt"><p>The date and time that the run was scheduled to end.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.ScheduledStartTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ScheduledStartTime"></a>
+      <a id="ScheduledStartTime:ScheduledStartTime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$ScheduledStartTime$.html"><span class="name">ScheduledStartTime</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/DateTimeExp.html" class="extype" name="com.krux.hyperion.expression.DateTimeExp">DateTimeExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@ScheduledStartTime" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The date and time that the run was scheduled to start.</p><div class="fullcomment"><div class="comment cmt"><p>The date and time that the run was scheduled to start.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.Status" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Status"></a>
+      <a id="Status:Status"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$Status$.html"><span class="name">Status</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/StringExp.html" class="extype" name="com.krux.hyperion.expression.StringExp">StringExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@Status" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The status of this object.</p><div class="fullcomment"><div class="comment cmt"><p>The status of this object. Possible values are: pending, waiting_on_dependencies, running, waiting_on_runner, successful, and failed.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.TriesLeft" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TriesLeft"></a>
+      <a id="TriesLeft:TriesLeft"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$TriesLeft$.html"><span class="name">TriesLeft</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/IntExp.html" class="extype" name="com.krux.hyperion.expression.IntExp">IntExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@TriesLeft" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The number of attempted runs remaining before setting the status of this object to failed.</p><div class="fullcomment"><div class="comment cmt"><p>The number of attempted runs remaining before setting the status of this object to failed.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.RunnableObject.WaitingOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="WaitingOn"></a>
+      <a id="WaitingOn:WaitingOn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="../expression/RunnableObject$WaitingOn$.html"><span class="name">WaitingOn</span></a><span class="result"> extends <a href="../expression/ReferenceExpression.html" class="extype" name="com.krux.hyperion.expression.ReferenceExpression">ReferenceExpression</a> with <a href="../expression/StringExp.html" class="extype" name="com.krux.hyperion.expression.StringExp">StringExp</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.RunnableObject@WaitingOn" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of all objects that this object is waiting on before it can enter the RUNNING state.</p><div class="fullcomment"><div class="comment cmt"><p>A list of all objects that this object is waiting on before it can enter the RUNNING state.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SqlActivity#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply(database:com.krux.hyperion.database.Database,script:com.krux.hyperion.activity.Script)(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.SqlActivity"></a>
       <a id="apply(Database,Script)(Resource[Ec2Resource]):SqlActivity"></a>
@@ -397,40 +577,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.RunnableObject#scheduledEndTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="scheduledEndTime:com.krux.hyperion.expression.DateTimeRuntimeSlot"></a>
-      <a id="scheduledEndTime:DateTimeRuntimeSlot"></a>
+    </li><li name="com.krux.hyperion.expression.RunnableObject#objectName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objectName:Option[String]"></a>
+      <a id="objectName:Option[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">scheduledEndTime</span><span class="result">: <a href="../expression/DateTimeRuntimeSlot.html" class="extype" name="com.krux.hyperion.expression.DateTimeRuntimeSlot">DateTimeRuntimeSlot</a></span>
+        <span class="name">objectName</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SqlActivity$@scheduledEndTime:com.krux.hyperion.expression.DateTimeRuntimeSlot" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SqlActivity$@objectName:Option[String]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.RunnableObject#scheduledStartTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="scheduledStartTime:com.krux.hyperion.expression.DateTimeRuntimeSlot"></a>
-      <a id="scheduledStartTime:DateTimeRuntimeSlot"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">scheduledStartTime</span><span class="result">: <a href="../expression/DateTimeRuntimeSlot.html" class="extype" name="com.krux.hyperion.expression.DateTimeRuntimeSlot">DateTimeRuntimeSlot</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SqlActivity$@scheduledStartTime:com.krux.hyperion.expression.DateTimeRuntimeSlot" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -547,8 +710,8 @@
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
-            </div><div class="parent" name="com.krux.hyperion.activity.RunnableObject">
-              <h3>Inherited from <a href="RunnableObject.html" class="extype" name="com.krux.hyperion.activity.RunnableObject">RunnableObject</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.expression.RunnableObject">
+              <h3>Inherited from <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

@@ -47,13 +47,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">SendSnsMessageActivity</span><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">SendSnsMessageActivity</span><span class="result"> extends <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//contrib/activity/definition/src/main/scala/com/krux/hyperion/activity/SendSnsMessageActivity.scala" target="_blank">SendSnsMessageActivity.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a>, <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>], <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.activity.SendSnsMessageActivity"><span>SendSnsMessageActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.activity.PipelineActivity"><span>PipelineActivity</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.activity.SendSnsMessageActivity"><span>SendSnsMessageActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.activity.BaseShellCommandActivity"><span>BaseShellCommandActivity</span></li><li class="in" name="com.krux.hyperion.activity.PipelineActivity"><span>PipelineActivity</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,7 +90,27 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.activity.SendSnsMessageActivity.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@Self=com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         
 
@@ -215,6 +235,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#activityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="activityFields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]"></a>
+      <a id="activityFields:ActivityFields[Ec2Resource]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activityFields</span><span class="result">: <a href="ActivityFields.html" class="extype" name="com.krux.hyperion.activity.ActivityFields">ActivityFields</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@activityFields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -232,40 +269,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#attemptTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="attemptTimeout:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#attemptTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="attemptTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="attemptTimeout:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">attemptTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">attemptTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@attemptTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#attributes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="attributes:Map[String,(String,String)]"></a>
-      <a id="attributes:Map[String,(String,String)]"></a>
+      <a id="attributes:Map[com.krux.hyperion.adt.HString,(com.krux.hyperion.adt.HString,com.krux.hyperion.adt.HString)]"></a>
+      <a id="attributes:Map[HString,(HString,HString)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">attributes</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+        <span class="name">attributes</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>, (<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>, <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@attributes:Map[String,(String,String)]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@attributes:Map[com.krux.hyperion.adt.HString,(com.krux.hyperion.adt.HString,com.krux.hyperion.adt.HString)]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -323,23 +377,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#dependsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity]"></a>
-      <a id="dependsOn:Seq[PipelineActivity]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#dependsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity[_]]"></a>
+      <a id="dependsOn:Seq[PipelineActivity[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dependsOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>]</span>
+        <span class="name">dependsOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity[_]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -357,13 +411,13 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#failureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#failureAndRerunMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="failureAndRerunMode:Option[com.krux.hyperion.activity.FailureAndRerunMode]"></a>
       <a id="failureAndRerunMode:Option[FailureAndRerunMode]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">failureAndRerunMode</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a>]</span>
@@ -373,7 +427,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -414,30 +468,30 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="groupedBy(group:String):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="groupedBy(String):SendSnsMessageActivity"></a>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@groupedBy(group:String):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
       <a id="id:PipelineObjectId"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
@@ -447,7 +501,24 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#input" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="input:Seq[com.krux.hyperion.datanode.S3DataNode]"></a>
+      <a id="input:Seq[S3DataNode]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">input</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@input:Seq[com.krux.hyperion.datanode.S3DataNode]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -466,107 +537,107 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#jarUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="jarUri:String"></a>
-      <a id="jarUri:String"></a>
+      <a id="jarUri:com.krux.hyperion.adt.HString"></a>
+      <a id="jarUri:HString"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">jarUri</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">jarUri</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@jarUri:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@jarUri:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#lateAfterTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="lateAfterTimeout:Option[Parameter[Duration]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lateAfterTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#mainClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="mainClass:String"></a>
-      <a id="mainClass:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">mainClass</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@mainClass:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#maximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]]"></a>
-      <a id="maximumRetries:Option[Parameter[Int]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#message" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="message:String"></a>
-      <a id="message:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">message</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@message:String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="named(name:String):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="named(String):SendSnsMessageActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#lateAfterTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lateAfterTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="lateAfterTimeout:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">lateAfterTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@named(name:String):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@lateAfterTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#mainClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mainClass:com.krux.hyperion.adt.HString"></a>
+      <a id="mainClass:HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mainClass</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@mainClass:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#message" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="message:com.krux.hyperion.adt.HString"></a>
+      <a id="message:HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">message</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@message:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -618,7 +689,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
       <a id="objects:Iterable[PipelineObject]"></a>
       <h4 class="signature">
@@ -634,31 +705,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="onFail(SnsAlarm*):SendSnsMessageActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onFail(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#onFailAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onFailAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onFailAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onFailAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -668,31 +739,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="onLateAction(SnsAlarm*):SendSnsMessageActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onLateAction(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onLateAction</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">onLateAction</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#onLateActionAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onLateActionAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onLateActionAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onLateActionAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onLateActionAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -702,31 +773,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="onSuccess(SnsAlarm*):SendSnsMessageActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onSuccess(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onSuccessAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onSuccessAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -736,14 +807,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#preconditions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#output" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="output:Seq[com.krux.hyperion.datanode.S3DataNode]"></a>
+      <a id="output:Seq[S3DataNode]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">output</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@output:Seq[com.krux.hyperion.datanode.S3DataNode]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#preconditions" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preconditions:Seq[com.krux.hyperion.precondition.Precondition]"></a>
       <a id="preconditions:Seq[Precondition]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">preconditions</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>]</span>
@@ -753,7 +841,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.PipelineActivity#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpActivity]"></a>
       <a id="ref:AdpRef[AdpActivity]"></a>
@@ -772,73 +860,90 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#region" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="region:Option[String]"></a>
-      <a id="region:Option[String]"></a>
+      <a id="region:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="region:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">region</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">region</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@region:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@region:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#retryDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="retryDelay:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#retryDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="retryDelay:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="retryDelay:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">retryDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">retryDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@retryDelay:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#runsOn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#runsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runsOn:com.krux.hyperion.resource.Resource[A]"></a>
       <a id="runsOn:Resource[Ec2Resource]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">runsOn</span><span class="result">: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@runsOn:com.krux.hyperion.resource.Resource[A]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#scriptUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scriptUri:Option[com.krux.hyperion.common.S3Uri]"></a>
-      <a id="scriptUri:Option[S3Uri]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#script" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="script:com.krux.hyperion.activity.Script"></a>
+      <a id="script:Script"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">scriptUri</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../common/S3Uri.html" class="extype" name="com.krux.hyperion.common.S3Uri">S3Uri</a>]</span>
+        <span class="name">script</span><span class="result">: <a href="Script.html" class="extype" name="com.krux.hyperion.activity.Script">Script</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@scriptUri:Option[com.krux.hyperion.common.S3Uri]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@script:com.krux.hyperion.activity.Script" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#scriptArguments" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scriptArguments:Seq[com.krux.hyperion.adt.HType]"></a>
+      <a id="scriptArguments:Seq[HType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scriptArguments</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HType.html" class="extype" name="com.krux.hyperion.adt.HType">HType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@scriptArguments:Seq[com.krux.hyperion.adt.HType]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
       <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
@@ -873,13 +978,13 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serialize:com.krux.hyperion.aws.AdpShellCommandActivity"></a>
       <a id="serialize:AdpShellCommandActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">lazy val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">serialize</span><span class="result">: <a href="../aws/AdpShellCommandActivity.html" class="extype" name="com.krux.hyperion.aws.AdpShellCommandActivity">AdpShellCommandActivity</a></span>
@@ -889,37 +994,105 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#structuredMessage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="structuredMessage:Boolean"></a>
-      <a id="structuredMessage:Boolean"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#shellCommandActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shellCommandActivityFields:com.krux.hyperion.activity.ShellCommandActivityFields"></a>
+      <a id="shellCommandActivityFields:ShellCommandActivityFields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">structuredMessage</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">shellCommandActivityFields</span><span class="result">: <a href="ShellCommandActivityFields.html" class="extype" name="com.krux.hyperion.activity.ShellCommandActivityFields">ShellCommandActivityFields</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@structuredMessage:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@shellCommandActivityFields:com.krux.hyperion.activity.ShellCommandActivityFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#stage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stage:Option[com.krux.hyperion.adt.HBoolean]"></a>
+      <a id="stage:Option[HBoolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stage</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@stage:Option[com.krux.hyperion.adt.HBoolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#stderr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stderr:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="stderr:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stderr</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@stderr:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#stdout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stdout:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="stdout:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stdout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@stdout:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#structuredMessage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="structuredMessage:com.krux.hyperion.adt.HBoolean"></a>
+      <a id="structuredMessage:HBoolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">structuredMessage</span><span class="result">: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@structuredMessage:com.krux.hyperion.adt.HBoolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#subject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="subject:Option[String]"></a>
-      <a id="subject:Option[String]"></a>
+      <a id="subject:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="subject:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">subject</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">subject</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@subject:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@subject:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -942,18 +1115,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#topicArn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="topicArn:String"></a>
-      <a id="topicArn:String"></a>
+      <a id="topicArn:com.krux.hyperion.adt.HString"></a>
+      <a id="topicArn:HString"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">topicArn</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">topicArn</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@topicArn:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@topicArn:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -975,6 +1148,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#updateActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateActivityFields(fields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="updateActivityFields(ActivityFields[Ec2Resource]):SendSnsMessageActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateActivityFields</span><span class="params">(<span name="fields">fields: <a href="ActivityFields.html" class="extype" name="com.krux.hyperion.activity.ActivityFields">ActivityFields</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@updateActivityFields(fields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="updateBaseFields(BaseFields):SendSnsMessageActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#updateShellCommandActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateShellCommandActivityFields(fields:com.krux.hyperion.activity.ShellCommandActivityFields):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="updateShellCommandActivityFields(ShellCommandActivityFields):SendSnsMessageActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateShellCommandActivityFields</span><span class="params">(<span name="fields">fields: <a href="ShellCommandActivityFields.html" class="extype" name="com.krux.hyperion.activity.ShellCommandActivityFields">ShellCommandActivityFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@updateShellCommandActivityFields(fields:com.krux.hyperion.activity.ShellCommandActivityFields):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -1044,142 +1268,193 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#whenMet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="whenMet(Precondition*):SendSnsMessageActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#whenMet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):PipelineActivity.this.Self"></a>
+      <a id="whenMet(Precondition*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withAttemptTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withAttemptTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withAttemptTimeout(Parameter[Duration]):SendSnsMessageActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#withArguments" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withArguments(args:com.krux.hyperion.adt.HString*):BaseShellCommandActivity.this.Self"></a>
+      <a id="withArguments(HString*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withAttemptTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withArguments</span><span class="params">(<span name="args">args: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withAttemptTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withArguments(args:com.krux.hyperion.adt.HString*):BaseShellCommandActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withAttemptTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAttemptTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withAttemptTimeout(HDuration):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAttemptTimeout</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withAttemptTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withAttribute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withAttribute(key:String,value:String,dataType:String):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withAttribute(String,String,String):SendSnsMessageActivity"></a>
+      <a id="withAttribute(key:com.krux.hyperion.adt.HString,value:com.krux.hyperion.adt.HString,dataType:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="withAttribute(HString,HString,HString):SendSnsMessageActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withAttribute</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dataType">dataType: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;String&quot;</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withAttribute</span><span class="params">(<span name="key">key: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="value">value: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="dataType">dataType: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a> = <span class="symbol"><span class="name"><a href="../adt/HType$.html">&quot;String&quot;</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withAttribute(key:String,value:String,dataType:String):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withAttribute(key:com.krux.hyperion.adt.HString,value:com.krux.hyperion.adt.HString,dataType:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withFailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withFailureAndRerunMode(FailureAndRerunMode):SendSnsMessageActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withFailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):PipelineActivity.this.Self"></a>
+      <a id="withFailureAndRerunMode(FailureAndRerunMode):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withFailureAndRerunMode</span><span class="params">(<span name="mode">mode: <a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withFailureAndRerunMode</span><span class="params">(<span name="mode">mode: <a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withLateAfterTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withLateAfterTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withLateAfterTimeout(Parameter[Duration]):SendSnsMessageActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withLateAfterTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withLateAfterTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withLateAfterTimeout(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withLateAfterTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withLateAfterTimeout</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withLateAfterTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withLateAfterTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withMaximumRetries(retries:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withMaximumRetries(Parameter[Int]):SendSnsMessageActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMaximumRetries(retries:com.krux.hyperion.adt.HInt):PipelineActivity.this.Self"></a>
+      <a id="withMaximumRetries(HInt):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withMaximumRetries(retries:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withMaximumRetries(retries:com.krux.hyperion.adt.HInt):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withRegion" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withRegion(region:String):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withRegion(String):SendSnsMessageActivity"></a>
+      <a id="withRegion(region:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="withRegion(HString):SendSnsMessageActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withRegion</span><span class="params">(<span name="region">region: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withRegion</span><span class="params">(<span name="region">region: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withRegion(region:String):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withRegion(region:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withRetryDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withRetryDelay(delay:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withRetryDelay(Parameter[Duration]):SendSnsMessageActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withRetryDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withRetryDelay(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withRetryDelay(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withRetryDelay</span><span class="params">(<span name="delay">delay: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withRetryDelay</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withRetryDelay(delay:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withRetryDelay(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#withStderrTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withStderrTo(err:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self"></a>
+      <a id="withStderrTo(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withStderrTo</span><span class="params">(<span name="err">err: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withStderrTo(err:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#withStdoutTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withStdoutTo(out:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self"></a>
+      <a id="withStdoutTo(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withStdoutTo</span><span class="params">(<span name="out">out: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SendSnsMessageActivity" class="extmbr" name="com.krux.hyperion.activity.SendSnsMessageActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withStdoutTo(out:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withStructuredMessage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withStructuredMessage:com.krux.hyperion.activity.SendSnsMessageActivity"></a>
       <a id="withStructuredMessage:SendSnsMessageActivity"></a>
@@ -1198,18 +1473,18 @@
     </span>
       
     </li><li name="com.krux.hyperion.activity.SendSnsMessageActivity#withSubject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withSubject(subject:String):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
-      <a id="withSubject(String):SendSnsMessageActivity"></a>
+      <a id="withSubject(subject:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SendSnsMessageActivity"></a>
+      <a id="withSubject(HString):SendSnsMessageActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withSubject</span><span class="params">(<span name="subject">subject: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
+        <span class="name">withSubject</span><span class="params">(<span name="subject">subject: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SendSnsMessageActivity">SendSnsMessageActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withSubject(subject:String):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SendSnsMessageActivity@withSubject(subject:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SendSnsMessageActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1231,8 +1506,12 @@
               <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.activity.BaseShellCommandActivity">
+              <h3>Inherited from <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></h3>
             </div><div class="parent" name="com.krux.hyperion.activity.PipelineActivity">
-              <h3>Inherited from <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></h3>
+              <h3>Inherited from <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
             </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">

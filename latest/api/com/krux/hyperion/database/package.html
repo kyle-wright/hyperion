@@ -67,7 +67,7 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="com.krux.hyperion.database.Database" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DatabaseextendsPipelineObject"></a>
+      <a id="DatabaseextendsNamedPipelineObject"></a>
       <a id="Database:Database"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -75,63 +75,80 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Database.html"><span class="name">Database</span></a><span class="result"> extends <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>
+        <a href="Database.html"><span class="name">Database</span></a><span class="result"> extends <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.package@DatabaseextendsPipelineObject" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@DatabaseextendsNamedPipelineObject" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">The base trait of all database objects
 </p>
-    </li><li name="com.krux.hyperion.database.JdbcDatabase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="JdbcDatabaseextendsDatabase"></a>
+    </li><li name="com.krux.hyperion.database.DatabaseFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DatabaseFieldsextendsProductwithSerializable"></a>
+      <a id="DatabaseFields:DatabaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DatabaseFields.html"><span class="name">DatabaseFields</span></a><span class="params">(<span name="username">username: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="*password">*password: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="databaseName">databaseName: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@DatabaseFieldsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database.JdbcDatabase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JdbcDatabaseextendsDatabasewithProductwithSerializable"></a>
       <a id="JdbcDatabase:JdbcDatabase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JdbcDatabase.html"><span class="name">JdbcDatabase</span></a><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>
+        <a href="JdbcDatabase.html"><span class="name">JdbcDatabase</span></a><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.package@JdbcDatabaseextendsDatabase" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@JdbcDatabaseextendsDatabasewithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Defines a JDBC database
 </p>
-    </li><li name="com.krux.hyperion.database.RdsDatabase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="RdsDatabaseextendsDatabase"></a>
+    </li><li name="com.krux.hyperion.database.RdsDatabase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdsDatabaseextendsDatabasewithProductwithSerializable"></a>
       <a id="RdsDatabase:RdsDatabase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="RdsDatabase.html"><span class="name">RdsDatabase</span></a><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>
+        <a href="RdsDatabase.html"><span class="name">RdsDatabase</span></a><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.package@RdsDatabaseextendsDatabase" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@RdsDatabaseextendsDatabasewithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.database.RedshiftDatabase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="RedshiftDatabaseextendsDatabase"></a>
+    </li><li name="com.krux.hyperion.database.RedshiftDatabase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftDatabaseextendsDatabasewithProductwithSerializable"></a>
       <a id="RedshiftDatabase:RedshiftDatabase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="RedshiftDatabase.html"><span class="name">RedshiftDatabase</span></a><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>
+        <a href="RedshiftDatabase.html"><span class="name">RedshiftDatabase</span></a><span class="result"> extends <a href="Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.database.package@RedshiftDatabaseextendsDatabase" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@RedshiftDatabaseextendsDatabasewithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -141,7 +158,61 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.krux.hyperion.database.JdbcDatabase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JdbcDatabase"></a>
+      <a id="JdbcDatabase:JdbcDatabase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JdbcDatabase$.html"><span class="name">JdbcDatabase</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@JdbcDatabase" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database.RdsDatabase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdsDatabase"></a>
+      <a id="RdsDatabase:RdsDatabase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RdsDatabase$.html"><span class="name">RdsDatabase</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@RdsDatabase" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.database.RedshiftDatabase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftDatabase"></a>
+      <a id="RedshiftDatabase:RedshiftDatabase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftDatabase$.html"><span class="name">RedshiftDatabase</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.database.package@RedshiftDatabase" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         
 

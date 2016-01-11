@@ -44,16 +44,16 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">SplitMergeFilesActivity</span><span class="result"> extends <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></span>
+        <span class="name">SplitMergeFilesActivity</span><span class="result"> extends <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> with <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a> with <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//contrib/activity/definition/src/main/scala/com/krux/hyperion/activity/SplitMergeFilesActivity.scala" target="_blank">SplitMergeFilesActivity.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a>, <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a>, <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a>, <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>], <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.activity.SplitMergeFilesActivity"><span>SplitMergeFilesActivity</span></li><li class="in" name="com.krux.hyperion.activity.PipelineActivity"><span>PipelineActivity</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.activity.SplitMergeFilesActivity"><span>SplitMergeFilesActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.activity.WithS3Output"><span>WithS3Output</span></li><li class="in" name="com.krux.hyperion.activity.WithS3Input"><span>WithS3Input</span></li><li class="in" name="com.krux.hyperion.activity.BaseShellCommandActivity"><span>BaseShellCommandActivity</span></li><li class="in" name="com.krux.hyperion.activity.PipelineActivity"><span>PipelineActivity</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,7 +90,27 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@Self=com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a> → <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         
 
@@ -215,6 +235,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#activityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="activityFields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]"></a>
+      <a id="activityFields:ActivityFields[Ec2Resource]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">activityFields</span><span class="result">: <a href="ActivityFields.html" class="extype" name="com.krux.hyperion.activity.ActivityFields">ActivityFields</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@activityFields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -232,53 +269,70 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#attemptTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="attemptTimeout:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#attemptTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="attemptTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="attemptTimeout:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">attemptTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">attemptTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@attemptTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#bufferSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bufferSize:Option[String]"></a>
-      <a id="bufferSize:Option[String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">bufferSize</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@bufferSize:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#bufferSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bufferSize:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="bufferSize:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bufferSize</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@bufferSize:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#bytesPerFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bytesPerFile:Option[String]"></a>
-      <a id="bytesPerFile:Option[String]"></a>
+      <a id="bytesPerFile:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="bytesPerFile:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">bytesPerFile</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">bytesPerFile</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@bytesPerFile:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@bytesPerFile:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -341,56 +395,39 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#compressedOutput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="compressedOutput:Boolean"></a>
-      <a id="compressedOutput:Boolean"></a>
+      <a id="compressedOutput:com.krux.hyperion.adt.HBoolean"></a>
+      <a id="compressedOutput:HBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">compressedOutput</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">compressedOutput</span><span class="result">: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@compressedOutput:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@compressedOutput:com.krux.hyperion.adt.HBoolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#copy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="copy(id:com.krux.hyperion.common.PipelineObjectId,scriptUri:Option[String],jarUri:String,mainClass:String,filename:String,header:Option[String],compressedOutput:Boolean,skipFirstInputLine:Boolean,ignoreEmptyInput:Boolean,linkOutputs:Boolean,suffixLength:Option[com.krux.hyperion.parameter.Parameter[Int]],numberOfFiles:Option[com.krux.hyperion.parameter.Parameter[Int]],linesPerFile:Option[Long],bytesPerFile:Option[String],bufferSize:Option[String],pattern:Option[String],markSuccessfulJobs:Boolean,input:Seq[com.krux.hyperion.datanode.S3DataNode],output:Seq[com.krux.hyperion.datanode.S3DataNode],stdout:Option[String],stderr:Option[String],runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource],dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity],preconditions:Seq[com.krux.hyperion.precondition.Precondition],onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm],onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm],onLateActionAlarms:Seq[com.krux.hyperion.action.SnsAlarm],attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]],retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],failureAndRerunMode:Option[com.krux.hyperion.activity.FailureAndRerunMode]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="copy(PipelineObjectId,Option[String],String,String,String,Option[String],Boolean,Boolean,Boolean,Boolean,Option[Parameter[Int]],Option[Parameter[Int]],Option[Long],Option[String],Option[String],Option[String],Boolean,Seq[S3DataNode],Seq[S3DataNode],Option[String],Option[String],Resource[Ec2Resource],Seq[PipelineActivity],Seq[Precondition],Seq[SnsAlarm],Seq[SnsAlarm],Seq[SnsAlarm],Option[Parameter[Duration]],Option[Parameter[Duration]],Option[Parameter[Int]],Option[Parameter[Duration]],Option[FailureAndRerunMode]):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#dependsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity[_]]"></a>
+      <a id="dependsOn:Seq[PipelineActivity[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copy</span><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a> = <span class="symbol">id</span></span>, <span name="scriptUri">scriptUri: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scriptUri</span></span>, <span name="jarUri">jarUri: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">jarUri</span></span>, <span name="mainClass">mainClass: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">mainClass</span></span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">filename</span></span>, <span name="header">header: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">header</span></span>, <span name="compressedOutput">compressedOutput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">compressedOutput</span></span>, <span name="skipFirstInputLine">skipFirstInputLine: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">skipFirstInputLine</span></span>, <span name="ignoreEmptyInput">ignoreEmptyInput: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">ignoreEmptyInput</span></span>, <span name="linkOutputs">linkOutputs: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">linkOutputs</span></span>, <span name="suffixLength">suffixLength: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]] = <span class="symbol">suffixLength</span></span>, <span name="numberOfFiles">numberOfFiles: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]] = <span class="symbol">numberOfFiles</span></span>, <span name="linesPerFile">linesPerFile: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>] = <span class="symbol">linesPerFile</span></span>, <span name="bytesPerFile">bytesPerFile: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">bytesPerFile</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">bufferSize</span></span>, <span name="pattern">pattern: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">pattern</span></span>, <span name="markSuccessfulJobs">markSuccessfulJobs: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">markSuccessfulJobs</span></span>, <span name="input">input: <span class="extype" name="scala.Seq">Seq</span>[<a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>] = <span class="symbol">input</span></span>, <span name="output">output: <span class="extype" name="scala.Seq">Seq</span>[<a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>] = <span class="symbol">output</span></span>, <span name="stdout">stdout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">stdout</span></span>, <span name="stderr">stderr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">stderr</span></span>, <span name="runsOn">runsOn: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>] = <span class="symbol">runsOn</span></span>, <span name="dependsOn">dependsOn: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>] = <span class="symbol">dependsOn</span></span>, <span name="preconditions">preconditions: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>] = <span class="symbol">preconditions</span></span>, <span name="onFailAlarms">onFailAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">onFailAlarms</span></span>, <span name="onSuccessAlarms">onSuccessAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">onSuccessAlarms</span></span>, <span name="onLateActionAlarms">onLateActionAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">onLateActionAlarms</span></span>, <span name="attemptTimeout">attemptTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">attemptTimeout</span></span>, <span name="lateAfterTimeout">lateAfterTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">lateAfterTimeout</span></span>, <span name="maximumRetries">maximumRetries: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]] = <span class="symbol">maximumRetries</span></span>, <span name="retryDelay">retryDelay: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]] = <span class="symbol">retryDelay</span></span>, <span name="failureAndRerunMode">failureAndRerunMode: <span class="extype" name="scala.Option">Option</span>[<a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a>] = <span class="symbol">failureAndRerunMode</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">dependsOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@copy(id:com.krux.hyperion.common.PipelineObjectId,scriptUri:Option[String],jarUri:String,mainClass:String,filename:String,header:Option[String],compressedOutput:Boolean,skipFirstInputLine:Boolean,ignoreEmptyInput:Boolean,linkOutputs:Boolean,suffixLength:Option[com.krux.hyperion.parameter.Parameter[Int]],numberOfFiles:Option[com.krux.hyperion.parameter.Parameter[Int]],linesPerFile:Option[Long],bytesPerFile:Option[String],bufferSize:Option[String],pattern:Option[String],markSuccessfulJobs:Boolean,input:Seq[com.krux.hyperion.datanode.S3DataNode],output:Seq[com.krux.hyperion.datanode.S3DataNode],stdout:Option[String],stderr:Option[String],runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource],dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity],preconditions:Seq[com.krux.hyperion.precondition.Precondition],onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm],onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm],onLateActionAlarms:Seq[com.krux.hyperion.action.SnsAlarm],attemptTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]],retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]],failureAndRerunMode:Option[com.krux.hyperion.activity.FailureAndRerunMode]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity[_]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#dependsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity]"></a>
-      <a id="dependsOn:Seq[PipelineActivity]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">dependsOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@dependsOn:Seq[com.krux.hyperion.activity.PipelineActivity]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -408,30 +445,13 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#failureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#failureAndRerunMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="failureAndRerunMode:Option[com.krux.hyperion.activity.FailureAndRerunMode]"></a>
       <a id="failureAndRerunMode:Option[FailureAndRerunMode]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">failureAndRerunMode</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a>]</span>
@@ -441,20 +461,20 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#filename" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="filename:String"></a>
-      <a id="filename:String"></a>
+      <a id="filename:com.krux.hyperion.adt.HString"></a>
+      <a id="filename:HString"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">filename</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">filename</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@filename:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@filename:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -499,64 +519,47 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="groupedBy(group:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="groupedBy(String):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@groupedBy(group:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#header" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="header:Option[String]"></a>
-      <a id="header:Option[String]"></a>
+      <a id="header:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="header:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">header</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">header</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@header:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@header:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
       <a id="id:PipelineObjectId"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
@@ -566,20 +569,20 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#ignoreEmptyInput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ignoreEmptyInput:Boolean"></a>
-      <a id="ignoreEmptyInput:Boolean"></a>
+      <a id="ignoreEmptyInput:com.krux.hyperion.adt.HBoolean"></a>
+      <a id="ignoreEmptyInput:HBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">ignoreEmptyInput</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ignoreEmptyInput</span><span class="result">: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@ignoreEmptyInput:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@ignoreEmptyInput:com.krux.hyperion.adt.HBoolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -601,13 +604,13 @@
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#input" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#input" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="input:Seq[com.krux.hyperion.datanode.S3DataNode]"></a>
       <a id="input:Seq[S3DataNode]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">input</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>]</span>
@@ -617,7 +620,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -636,103 +639,103 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#jarUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="jarUri:String"></a>
-      <a id="jarUri:String"></a>
+      <a id="jarUri:com.krux.hyperion.adt.HString"></a>
+      <a id="jarUri:HString"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">jarUri</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">jarUri</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@jarUri:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@jarUri:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#lateAfterTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="lateAfterTimeout:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#lateAfterTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lateAfterTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="lateAfterTimeout:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lateAfterTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">lateAfterTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@lateAfterTimeout:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@lateAfterTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#linesPerFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="linesPerFile:Option[Long]"></a>
-      <a id="linesPerFile:Option[Long]"></a>
+      <a id="linesPerFile:Option[com.krux.hyperion.adt.HLong]"></a>
+      <a id="linesPerFile:Option[HLong]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">linesPerFile</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]</span>
+        <span class="name">linesPerFile</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HLong.html" class="extype" name="com.krux.hyperion.adt.HLong">HLong</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@linesPerFile:Option[Long]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@linesPerFile:Option[com.krux.hyperion.adt.HLong]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#linkOutputs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="linkOutputs:Boolean"></a>
-      <a id="linkOutputs:Boolean"></a>
+      <a id="linkOutputs:com.krux.hyperion.adt.HBoolean"></a>
+      <a id="linkOutputs:HBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">linkOutputs</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">linkOutputs</span><span class="result">: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@linkOutputs:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@linkOutputs:com.krux.hyperion.adt.HBoolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#mainClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="mainClass:String"></a>
-      <a id="mainClass:String"></a>
+      <a id="mainClass:com.krux.hyperion.adt.HString"></a>
+      <a id="mainClass:HString"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">mainClass</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">mainClass</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@mainClass:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@mainClass:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#markSuccessfulJobs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="markSuccessfulJobs:Boolean"></a>
-      <a id="markSuccessfulJobs:Boolean"></a>
+      <a id="markSuccessfulJobs:com.krux.hyperion.adt.HBoolean"></a>
+      <a id="markSuccessfulJobs:HBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">markSuccessfulJobs</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">markSuccessfulJobs</span><span class="result">: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@markSuccessfulJobs:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@markSuccessfulJobs:com.krux.hyperion.adt.HBoolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -754,40 +757,40 @@
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#maximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]]"></a>
-      <a id="maximumRetries:Option[Parameter[Int]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@maximumRetries:Option[com.krux.hyperion.parameter.Parameter[Int]]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="named(name:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="named(String):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@named(name:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -840,23 +843,23 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#numberOfFiles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="numberOfFiles:Option[com.krux.hyperion.parameter.Parameter[Int]]"></a>
-      <a id="numberOfFiles:Option[Parameter[Int]]"></a>
+      <a id="numberOfFiles:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="numberOfFiles:Option[HInt]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">numberOfFiles</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
+        <span class="name">numberOfFiles</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@numberOfFiles:Option[com.krux.hyperion.parameter.Parameter[Int]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@numberOfFiles:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
       <a id="objects:Iterable[PipelineObject]"></a>
       <h4 class="signature">
@@ -872,31 +875,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="onFail(SnsAlarm*):SplitMergeFilesActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onFail(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#onFailAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onFailAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onFailAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onFailAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -906,31 +909,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="onLateAction(SnsAlarm*):SplitMergeFilesActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onLateAction(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onLateAction</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">onLateAction</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@onLateAction(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#onLateActionAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onLateActionAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onLateActionAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onLateActionAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onLateActionAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -940,31 +943,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="onSuccess(SnsAlarm*):SplitMergeFilesActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self"></a>
+      <a id="onSuccess(SnsAlarm*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
       <a id="onSuccessAlarms:Seq[SnsAlarm]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">onSuccessAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
@@ -974,14 +977,14 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#output" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#output" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="output:Seq[com.krux.hyperion.datanode.S3DataNode]"></a>
       <a id="output:Seq[S3DataNode]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">output</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>]</span>
@@ -991,31 +994,31 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#pattern" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pattern:Option[String]"></a>
-      <a id="pattern:Option[String]"></a>
+      <a id="pattern:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="pattern:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">pattern</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">pattern</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@pattern:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@pattern:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#preconditions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#preconditions" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preconditions:Seq[com.krux.hyperion.precondition.Precondition]"></a>
       <a id="preconditions:Seq[Precondition]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">preconditions</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>]</span>
@@ -1025,7 +1028,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.PipelineActivity#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpActivity]"></a>
       <a id="ref:AdpRef[AdpActivity]"></a>
@@ -1043,57 +1046,74 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#retryDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]"></a>
-      <a id="retryDelay:Option[Parameter[Duration]]"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#retryDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="retryDelay:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="retryDelay:Option[HDuration]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">retryDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]]</span>
+        <span class="name">retryDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@retryDelay:Option[com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@retryDelay:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#runsOn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#runsOn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runsOn:com.krux.hyperion.resource.Resource[A]"></a>
       <a id="runsOn:Resource[Ec2Resource]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">runsOn</span><span class="result">: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.Ec2Resource]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@runsOn:com.krux.hyperion.resource.Resource[A]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#scriptUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scriptUri:Option[String]"></a>
-      <a id="scriptUri:Option[String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#script" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="script:com.krux.hyperion.activity.Script"></a>
+      <a id="script:Script"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">scriptUri</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">script</span><span class="result">: <a href="Script.html" class="extype" name="com.krux.hyperion.activity.Script">Script</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@scriptUri:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@script:com.krux.hyperion.activity.Script" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#scriptArguments" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scriptArguments:Seq[com.krux.hyperion.adt.HType]"></a>
+      <a id="scriptArguments:Seq[HType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scriptArguments</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HType.html" class="extype" name="com.krux.hyperion.adt.HType">HType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@scriptArguments:Seq[com.krux.hyperion.adt.HType]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
       <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
@@ -1128,13 +1148,13 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serialize:com.krux.hyperion.aws.AdpShellCommandActivity"></a>
       <a id="serialize:AdpShellCommandActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">lazy val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">serialize</span><span class="result">: <a href="../aws/AdpShellCommandActivity.html" class="extype" name="com.krux.hyperion.aws.AdpShellCommandActivity">AdpShellCommandActivity</a></span>
@@ -1144,71 +1164,105 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#shellCommandActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shellCommandActivityFields:com.krux.hyperion.activity.ShellCommandActivityFields"></a>
+      <a id="shellCommandActivityFields:ShellCommandActivityFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shellCommandActivityFields</span><span class="result">: <a href="ShellCommandActivityFields.html" class="extype" name="com.krux.hyperion.activity.ShellCommandActivityFields">ShellCommandActivityFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@shellCommandActivityFields:com.krux.hyperion.activity.ShellCommandActivityFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a> → <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#skipFirstInputLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="skipFirstInputLine:Boolean"></a>
-      <a id="skipFirstInputLine:Boolean"></a>
+      <a id="skipFirstInputLine:com.krux.hyperion.adt.HBoolean"></a>
+      <a id="skipFirstInputLine:HBoolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">skipFirstInputLine</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">skipFirstInputLine</span><span class="result">: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@skipFirstInputLine:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@skipFirstInputLine:com.krux.hyperion.adt.HBoolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#stderr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="stderr:Option[String]"></a>
-      <a id="stderr:Option[String]"></a>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#stage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stage:Option[com.krux.hyperion.adt.HBoolean]"></a>
+      <a id="stage:Option[HBoolean]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">stderr</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">stage</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@stderr:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@stage:Option[com.krux.hyperion.adt.HBoolean]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#stdout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="stdout:Option[String]"></a>
-      <a id="stdout:Option[String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#stderr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stderr:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="stderr:Option[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">stdout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">stderr</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@stdout:Option[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@stderr:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#stdout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stdout:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="stdout:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stdout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@stdout:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#suffixLength" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="suffixLength:Option[com.krux.hyperion.parameter.Parameter[Int]]"></a>
-      <a id="suffixLength:Option[Parameter[Int]]"></a>
+      <a id="suffixLength:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="suffixLength:Option[HInt]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">suffixLength</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
+        <span class="name">suffixLength</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@suffixLength:Option[com.krux.hyperion.parameter.Parameter[Int]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@suffixLength:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1230,23 +1284,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@toString():String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#uniquePipelineId2String" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String"></a>
       <a id="uniquePipelineId2String(PipelineObjectId):String"></a>
@@ -1264,6 +1301,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#updateActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateActivityFields(fields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="updateActivityFields(ActivityFields[Ec2Resource]):SplitMergeFilesActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateActivityFields</span><span class="params">(<span name="fields">fields: <a href="ActivityFields.html" class="extype" name="com.krux.hyperion.activity.ActivityFields">ActivityFields</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@updateActivityFields(fields:com.krux.hyperion.activity.ActivityFields[com.krux.hyperion.resource.Ec2Resource]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="updateBaseFields(BaseFields):SplitMergeFilesActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#updateShellCommandActivityFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateShellCommandActivityFields(fields:com.krux.hyperion.activity.ShellCommandActivityFields):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="updateShellCommandActivityFields(ShellCommandActivityFields):SplitMergeFilesActivity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateShellCommandActivityFields</span><span class="params">(<span name="fields">fields: <a href="ShellCommandActivityFields.html" class="extype" name="com.krux.hyperion.activity.ShellCommandActivityFields">ShellCommandActivityFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@updateShellCommandActivityFields(fields:com.krux.hyperion.activity.ShellCommandActivityFields):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a> → <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a> → <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -1333,53 +1421,70 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#whenMet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="whenMet(Precondition*):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#whenMet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):PipelineActivity.this.Self"></a>
+      <a id="whenMet(Precondition*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a> → <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withAttemptTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withAttemptTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withAttemptTimeout(Parameter[Duration]):SplitMergeFilesActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#withArguments" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withArguments(args:com.krux.hyperion.adt.HString*):BaseShellCommandActivity.this.Self"></a>
+      <a id="withArguments(HString*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withAttemptTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withArguments</span><span class="params">(<span name="args">args: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withAttemptTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withArguments(args:com.krux.hyperion.adt.HString*):BaseShellCommandActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withAttemptTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAttemptTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withAttemptTimeout(HDuration):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAttemptTimeout</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withAttemptTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withBufferSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withBufferSize(bufferSize:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withBufferSize(String):SplitMergeFilesActivity"></a>
+      <a id="withBufferSize(bufferSize:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withBufferSize(HString):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withBufferSize</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withBufferSize</span><span class="params">(<span name="bufferSize">bufferSize: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withBufferSize(bufferSize:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withBufferSize(bufferSize:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1401,91 +1506,91 @@
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withFailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withFailureAndRerunMode(FailureAndRerunMode):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withFailureAndRerunMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):PipelineActivity.this.Self"></a>
+      <a id="withFailureAndRerunMode(FailureAndRerunMode):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withFailureAndRerunMode</span><span class="params">(<span name="mode">mode: <a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withFailureAndRerunMode</span><span class="params">(<span name="mode">mode: <a href="FailureAndRerunMode.html" class="extype" name="com.krux.hyperion.activity.FailureAndRerunMode">FailureAndRerunMode</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withFailureAndRerunMode(mode:com.krux.hyperion.activity.FailureAndRerunMode):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withHeader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withHeader(header:String*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withHeader(String*):SplitMergeFilesActivity"></a>
+      <a id="withHeader(header:com.krux.hyperion.adt.HString*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withHeader(HString*):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withHeader</span><span class="params">(<span name="header">header: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withHeader</span><span class="params">(<span name="header">header: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withHeader(header:String*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withHeader(header:com.krux.hyperion.adt.HString*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withInput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withInput(inputs:com.krux.hyperion.datanode.S3DataNode*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withInput(S3DataNode*):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.WithS3Input#withInput" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withInput(inputs:com.krux.hyperion.datanode.S3DataNode*):WithS3Input.this.Self"></a>
+      <a id="withInput(S3DataNode*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withInput</span><span class="params">(<span name="inputs">inputs: <a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withInput</span><span class="params">(<span name="inputs">inputs: <a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withInput(inputs:com.krux.hyperion.datanode.S3DataNode*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withInput(inputs:com.krux.hyperion.datanode.S3DataNode*):WithS3Input.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withInputPattern" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withInputPattern(pattern:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withInputPattern(String):SplitMergeFilesActivity"></a>
+      <a id="withInputPattern(pattern:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withInputPattern(HString):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withInputPattern</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withInputPattern</span><span class="params">(<span name="pattern">pattern: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withInputPattern(pattern:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withInputPattern(pattern:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withLateAfterTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withLateAfterTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withLateAfterTimeout(Parameter[Duration]):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withLateAfterTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withLateAfterTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withLateAfterTimeout(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withLateAfterTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withLateAfterTimeout</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withLateAfterTimeout(timeout:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withLateAfterTimeout(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withLinkOutputs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withLinkOutputs():com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
       <a id="withLinkOutputs():SplitMergeFilesActivity"></a>
@@ -1503,108 +1608,108 @@
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withMaximumRetries(retries:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withMaximumRetries(Parameter[Int]):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMaximumRetries(retries:com.krux.hyperion.adt.HInt):PipelineActivity.this.Self"></a>
+      <a id="withMaximumRetries(HInt):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withMaximumRetries(retries:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withMaximumRetries(retries:com.krux.hyperion.adt.HInt):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withNumberOfBytesPerFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withNumberOfBytesPerFile(bytesPerFile:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withNumberOfBytesPerFile(String):SplitMergeFilesActivity"></a>
+      <a id="withNumberOfBytesPerFile(bytesPerFile:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withNumberOfBytesPerFile(HString):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withNumberOfBytesPerFile</span><span class="params">(<span name="bytesPerFile">bytesPerFile: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withNumberOfBytesPerFile</span><span class="params">(<span name="bytesPerFile">bytesPerFile: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withNumberOfBytesPerFile(bytesPerFile:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withNumberOfBytesPerFile(bytesPerFile:com.krux.hyperion.adt.HString):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withNumberOfFiles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withNumberOfFiles(numberOfFiles:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withNumberOfFiles(Parameter[Int]):SplitMergeFilesActivity"></a>
+      <a id="withNumberOfFiles(numberOfFiles:com.krux.hyperion.adt.HInt):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withNumberOfFiles(HInt):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withNumberOfFiles</span><span class="params">(<span name="numberOfFiles">numberOfFiles: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withNumberOfFiles</span><span class="params">(<span name="numberOfFiles">numberOfFiles: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withNumberOfFiles(numberOfFiles:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withNumberOfFiles(numberOfFiles:com.krux.hyperion.adt.HInt):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withNumberOfLinesPerFile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withNumberOfLinesPerFile(linesPerFile:Long):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withNumberOfLinesPerFile(Long):SplitMergeFilesActivity"></a>
+      <a id="withNumberOfLinesPerFile(linesPerFile:com.krux.hyperion.adt.HLong):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withNumberOfLinesPerFile(HLong):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withNumberOfLinesPerFile</span><span class="params">(<span name="linesPerFile">linesPerFile: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withNumberOfLinesPerFile</span><span class="params">(<span name="linesPerFile">linesPerFile: <a href="../adt/HLong.html" class="extype" name="com.krux.hyperion.adt.HLong">HLong</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withNumberOfLinesPerFile(linesPerFile:Long):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withNumberOfLinesPerFile(linesPerFile:com.krux.hyperion.adt.HLong):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withOutput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withOutput(outputs:com.krux.hyperion.datanode.S3DataNode*):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withOutput(S3DataNode*):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.WithS3Output#withOutput" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withOutput(outputs:com.krux.hyperion.datanode.S3DataNode*):WithS3Output.this.Self"></a>
+      <a id="withOutput(S3DataNode*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withOutput</span><span class="params">(<span name="outputs">outputs: <a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withOutput</span><span class="params">(<span name="outputs">outputs: <a href="../datanode/S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withOutput(outputs:com.krux.hyperion.datanode.S3DataNode*):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withOutput(outputs:com.krux.hyperion.datanode.S3DataNode*):WithS3Output.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withRetryDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withRetryDelay(delay:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withRetryDelay(Parameter[Duration]):SplitMergeFilesActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.PipelineActivity#withRetryDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withRetryDelay(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self"></a>
+      <a id="withRetryDelay(HDuration):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withRetryDelay</span><span class="params">(<span name="delay">delay: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<a href="../expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withRetryDelay</span><span class="params">(<span name="duration">duration: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withRetryDelay(delay:com.krux.hyperion.parameter.Parameter[com.krux.hyperion.expression.Duration]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withRetryDelay(duration:com.krux.hyperion.adt.HDuration):PipelineActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withSkipFirstInputLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withSkipFirstInputLine():com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
       <a id="withSkipFirstInputLine():SplitMergeFilesActivity"></a>
@@ -1622,53 +1727,53 @@
       </a>
     </span>
       
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withStderrTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withStderrTo(err:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withStderrTo(String):SplitMergeFilesActivity"></a>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#withStderrTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withStderrTo(err:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self"></a>
+      <a id="withStderrTo(HString):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withStderrTo</span><span class="params">(<span name="err">err: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withStderrTo</span><span class="params">(<span name="err">err: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withStderrTo(err:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withStderrTo(err:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withStdoutTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withStdoutTo(out:String):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withStdoutTo(String):SplitMergeFilesActivity"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.activity.BaseShellCommandActivity#withStdoutTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withStdoutTo(out:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self"></a>
+      <a id="withStdoutTo(HString):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withStdoutTo</span><span class="params">(<span name="out">out: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withStdoutTo</span><span class="params">(<span name="out">out: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.activity.SplitMergeFilesActivity" class="extmbr" name="com.krux.hyperion.activity.SplitMergeFilesActivity.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withStdoutTo(out:String):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withStdoutTo(out:com.krux.hyperion.adt.HString):BaseShellCommandActivity.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SplitMergeFilesActivity#withSuffixLength" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withSuffixLength(suffixLength:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
-      <a id="withSuffixLength(Parameter[Int]):SplitMergeFilesActivity"></a>
+      <a id="withSuffixLength(suffixLength:com.krux.hyperion.adt.HInt):com.krux.hyperion.activity.SplitMergeFilesActivity"></a>
+      <a id="withSuffixLength(HInt):SplitMergeFilesActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withSuffixLength</span><span class="params">(<span name="suffixLength">suffixLength: <a href="../parameter/Parameter.html" class="extype" name="com.krux.hyperion.parameter.Parameter">Parameter</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
+        <span class="name">withSuffixLength</span><span class="params">(<span name="suffixLength">suffixLength: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.activity.SplitMergeFilesActivity">SplitMergeFilesActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withSuffixLength(suffixLength:com.krux.hyperion.parameter.Parameter[Int]):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SplitMergeFilesActivity@withSuffixLength(suffixLength:com.krux.hyperion.adt.HInt):com.krux.hyperion.activity.SplitMergeFilesActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -1682,8 +1787,24 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="com.krux.hyperion.activity.PipelineActivity">
-              <h3>Inherited from <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.activity.WithS3Output">
+              <h3>Inherited from <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.activity.WithS3Input">
+              <h3>Inherited from <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.activity.BaseShellCommandActivity">
+              <h3>Inherited from <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.activity.PipelineActivity">
+              <h3>Inherited from <a href="PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[<a href="../resource/Ec2Resource.html" class="extype" name="com.krux.hyperion.resource.Ec2Resource">Ec2Resource</a>]</h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
             </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">

@@ -56,7 +56,7 @@ DynamoDBExportDataFormat with a HiveCopyActivity object and DynamoDBDataNode or 
 and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Provides both DynamoDB and Amazon S3 support</li><li>Allows you to filter data by certain columns in your Hive query</li><li>Exports all attributes from DynamoDB even if you have a sparse schema
 </li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/dataformat/DynamoDBExportDataFormat.scala" target="_blank">DynamoDBExportDataFormat.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a>, <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -74,7 +74,7 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat"><span>DynamoDBExportDataFormat</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.dataformat.DataFormat"><span>DataFormat</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat"><span>DynamoDBExportDataFormat</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.dataformat.DataFormat"><span>DataFormat</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -93,7 +93,27 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.dataformat.DynamoDBExportDataFormat"></a>
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@Self=com.krux.hyperion.dataformat.DynamoDBExportDataFormat" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a> → <a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         
 
@@ -235,6 +255,23 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -258,23 +295,23 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#columns" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="columns:Seq[String]"></a>
-      <a id="columns:Seq[String]"></a>
+    </li><li name="com.krux.hyperion.dataformat.DataFormat#columns" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="columns:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="columns:Seq[HString]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">columns</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">columns</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@columns:Seq[String]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@columns:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#compare" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="compare(that:com.krux.hyperion.common.PipelineObject):Int"></a>
       <a id="compare(PipelineObject):Int"></a>
@@ -309,6 +346,23 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
+    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#dataFormatFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dataFormatFields:com.krux.hyperion.dataformat.DataFormatFields"></a>
+      <a id="dataFormatFields:DataFormatFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dataFormatFields</span><span class="result">: <a href="DataFormatFields.html" class="extype" name="com.krux.hyperion.dataformat.DataFormatFields">DataFormatFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@dataFormatFields:com.krux.hyperion.dataformat.DataFormatFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a> → <a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -366,30 +420,30 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#groupedBy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="groupedBy(group:String):com.krux.hyperion.dataformat.DynamoDBExportDataFormat"></a>
-      <a id="groupedBy(String):DynamoDBExportDataFormat"></a>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a></span>
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.dataformat.DynamoDBExportDataFormat" class="extmbr" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@groupedBy(group:String):com.krux.hyperion.dataformat.DynamoDBExportDataFormat" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
       <a id="id:PipelineObjectId"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
         <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
@@ -399,7 +453,7 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -417,23 +471,23 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#named" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="named(name:String):com.krux.hyperion.dataformat.DynamoDBExportDataFormat"></a>
-      <a id="named(String):DynamoDBExportDataFormat"></a>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a></span>
+        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.dataformat.DynamoDBExportDataFormat" class="extmbr" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@named(name:String):com.krux.hyperion.dataformat.DynamoDBExportDataFormat" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -604,6 +658,40 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.dataformat.DynamoDBExportDataFormat"></a>
+      <a id="updateBaseFields(BaseFields):DynamoDBExportDataFormat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.dataformat.DynamoDBExportDataFormat" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#updateDataFormatFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateDataFormatFields(fields:com.krux.hyperion.dataformat.DataFormatFields):com.krux.hyperion.dataformat.DynamoDBExportDataFormat"></a>
+      <a id="updateDataFormatFields(DataFormatFields):DynamoDBExportDataFormat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateDataFormatFields</span><span class="params">(<span name="fields">fields: <a href="DataFormatFields.html" class="extype" name="com.krux.hyperion.dataformat.DataFormatFields">DataFormatFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@updateDataFormatFields(fields:com.krux.hyperion.dataformat.DataFormatFields):com.krux.hyperion.dataformat.DynamoDBExportDataFormat" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a> → <a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -673,23 +761,23 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat#withColumns" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withColumns(col:String*):com.krux.hyperion.dataformat.DynamoDBExportDataFormat"></a>
-      <a id="withColumns(String*):DynamoDBExportDataFormat"></a>
+    </li><li name="com.krux.hyperion.dataformat.DataFormat#withColumns" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withColumns(cols:com.krux.hyperion.adt.HString*):DataFormat.this.Self"></a>
+      <a id="withColumns(HString*):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withColumns</span><span class="params">(<span name="col">col: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat">DynamoDBExportDataFormat</a></span>
+        <span class="name">withColumns</span><span class="params">(<span name="cols">cols: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.dataformat.DynamoDBExportDataFormat" class="extmbr" name="com.krux.hyperion.dataformat.DynamoDBExportDataFormat.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@withColumns(col:String*):com.krux.hyperion.dataformat.DynamoDBExportDataFormat" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.dataformat.DynamoDBExportDataFormat@withColumns(cols:com.krux.hyperion.adt.HString*):DataFormat.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -709,6 +797,8 @@ and output. DynamoDBExportDataFormat has the following benefits:</p><ul><li>Prov
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
             </div><div class="parent" name="com.krux.hyperion.dataformat.DataFormat">
               <h3>Inherited from <a href="DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
             </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">
