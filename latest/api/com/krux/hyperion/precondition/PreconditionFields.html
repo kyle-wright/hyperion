@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">PreconditionFields</span><span class="params">(<span name="role">role: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">PreconditionFields</span><span class="params">(<span name="role">role: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>] = <span class="symbol">None</span></span>, <span name="maximumRetries">maximumRetries: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>] = <span class="symbol">None</span></span>, <span name="onFail">onFail: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onLateAction">onLateAction: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onSuccess">onSuccess: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>] = <span class="symbol">Seq.empty</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -89,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.krux.hyperion.precondition.PreconditionFields#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(role:com.krux.hyperion.adt.HString,preconditionTimeout:Option[com.krux.hyperion.adt.HDuration]):com.krux.hyperion.precondition.PreconditionFields"></a>
+      <a id="&lt;init&gt;(role:com.krux.hyperion.adt.HString,preconditionTimeout:Option[com.krux.hyperion.adt.HDuration],maximumRetries:Option[com.krux.hyperion.adt.HInt],onFail:Seq[com.krux.hyperion.action.Action],onLateAction:Seq[com.krux.hyperion.action.Action],onSuccess:Seq[com.krux.hyperion.action.Action]):com.krux.hyperion.precondition.PreconditionFields"></a>
       <a id="&lt;init&gt;:PreconditionFields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,10 +97,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">PreconditionFields</span><span class="params">(<span name="role">role: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>] = <span class="symbol">None</span></span>)</span>
+        <span class="name">PreconditionFields</span><span class="params">(<span name="role">role: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>] = <span class="symbol">None</span></span>, <span name="maximumRetries">maximumRetries: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>] = <span class="symbol">None</span></span>, <span name="onFail">onFail: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onLateAction">onLateAction: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onSuccess">onSuccess: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>] = <span class="symbol">Seq.empty</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.precondition.PreconditionFields@&lt;init&gt;(role:com.krux.hyperion.adt.HString,preconditionTimeout:Option[com.krux.hyperion.adt.HDuration]):com.krux.hyperion.precondition.PreconditionFields" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.PreconditionFields@&lt;init&gt;(role:com.krux.hyperion.adt.HString,preconditionTimeout:Option[com.krux.hyperion.adt.HDuration],maximumRetries:Option[com.krux.hyperion.adt.HInt],onFail:Seq[com.krux.hyperion.action.Action],onLateAction:Seq[com.krux.hyperion.action.Action],onSuccess:Seq[com.krux.hyperion.action.Action]):com.krux.hyperion.precondition.PreconditionFields" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -279,6 +279,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.PreconditionFields#maximumRetries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.PreconditionFields@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -330,6 +347,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.PreconditionFields#onFail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onFail:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onFail:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.PreconditionFields@onFail:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.precondition.PreconditionFields#onLateAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onLateAction:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onLateAction:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.PreconditionFields@onLateAction:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.precondition.PreconditionFields#onSuccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onSuccess:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onSuccess:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.PreconditionFields@onSuccess:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.precondition.PreconditionFields#preconditionTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="preconditionTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
       <a id="preconditionTimeout:Option[HDuration]"></a>

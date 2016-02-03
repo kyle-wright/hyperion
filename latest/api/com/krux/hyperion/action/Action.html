@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>DataNode - com.krux.hyperion.datanode.DataNode</title>
-          <meta name="description" content="DataNode - com.krux.hyperion.datanode.DataNode" />
-          <meta name="keywords" content="DataNode com.krux.hyperion.datanode.DataNode" />
+          <title>Action - com.krux.hyperion.action.Action</title>
+          <meta name="description" content="Action - com.krux.hyperion.action.Action" />
+          <meta name="keywords" content="Action com.krux.hyperion.action.Action" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'com.krux.hyperion.datanode.DataNode';
+            var hash = 'com.krux.hyperion.action.Action';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,11 +29,11 @@
         <body class="type">
       <div id="definition">
         <img alt="Trait" src="../../../../lib/trait_big.png" />
-        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.datanode">datanode</a></p>
-        <h1>DataNode</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="com.krux.hyperion.datanode">package datanode</a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.action">action</a></p>
+        <h1>Action</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.krux.hyperion.action">package action</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -45,16 +45,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">DataNode</span><span class="result"> extends <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></span>
+        <span class="name">Action</span><span class="result"> extends <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/datanode/DataNode.scala" target="_blank">DataNode.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/action/Action.scala" target="_blank">Action.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="Copyable.html" class="extype" name="com.krux.hyperion.datanode.Copyable">Copyable</a>, <a href="RedshiftDataNode.html" class="extype" name="com.krux.hyperion.datanode.RedshiftDataNode">RedshiftDataNode</a>, <a href="S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a>, <a href="S3File.html" class="extype" name="com.krux.hyperion.datanode.S3File">S3File</a>, <a href="S3Folder.html" class="extype" name="com.krux.hyperion.datanode.S3Folder">S3Folder</a>, <a href="SqlDataNode.html" class="extype" name="com.krux.hyperion.datanode.SqlDataNode">SqlDataNode</a></div>
+            <div class="subClasses hiddenContent"><a href="SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>, <a href="Terminate$.html" class="extype" name="com.krux.hyperion.action.Terminate">Terminate</a></div>
           </div></div>
         
 
@@ -72,7 +72,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.datanode.DataNode"><span>DataNode</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.action.Action"><span>Action</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -93,8 +93,8 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.krux.hyperion.datanode.DataNode.Self" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Self&lt;:com.krux.hyperion.datanode.DataNode"></a>
+              <ol><li name="com.krux.hyperion.action.Action.Self" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Self&lt;:com.krux.hyperion.action.Action"></a>
       <a id="Self:Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -102,104 +102,70 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Self</span><span class="result"> &lt;: <a href="" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a></span>
+        <span class="name">Self</span><span class="result"> &lt;: <a href="" class="extype" name="com.krux.hyperion.action.Action">Action</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@Self&lt;:com.krux.hyperion.datanode.DataNode" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@Self&lt;:com.krux.hyperion.action.Action" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.action.Action">Action</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li></ol>
             </div>
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="com.krux.hyperion.common.NamedPipelineObject#baseFields" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
-      <a id="baseFields:BaseFields"></a>
+              <ol><li name="com.krux.hyperion.common.PipelineObject#id" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
+      <a id="id:PipelineObjectId"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
+        <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.datanode.DataNode#dataNodeFields" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="dataNodeFields:com.krux.hyperion.datanode.DataNodeFields"></a>
-      <a id="dataNodeFields:DataNodeFields"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#objects" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
+      <a id="objects:Iterable[PipelineObject]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dataNodeFields</span><span class="result">: <a href="DataNodeFields.html" class="extype" name="com.krux.hyperion.datanode.DataNodeFields">DataNodeFields</a></span>
+        <span class="name">objects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@dataNodeFields:com.krux.hyperion.datanode.DataNodeFields" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@objects:Iterable[com.krux.hyperion.common.PipelineObject]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="com.krux.hyperion.datanode.DataNode#serialize" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="serialize:com.krux.hyperion.aws.AdpDataNode"></a>
-      <a id="serialize:AdpDataNode"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.action.Action#serialize" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="serialize:com.krux.hyperion.aws.AdpAction"></a>
+      <a id="serialize:AdpAction"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">serialize</span><span class="result">: <a href="../aws/AdpDataNode.html" class="extype" name="com.krux.hyperion.aws.AdpDataNode">AdpDataNode</a></span>
+        <span class="name">serialize</span><span class="result">: <a href="../aws/AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@serialize:com.krux.hyperion.aws.AdpDataNode" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@serialize:com.krux.hyperion.aws.AdpAction" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#updateBaseFields" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):NamedPipelineObject.this.Self"></a>
-      <a id="updateBaseFields(BaseFields):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):NamedPipelineObject.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.datanode.DataNode#updateDataNodeFields" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="updateDataNodeFields(fields:com.krux.hyperion.datanode.DataNodeFields):DataNode.this.Self"></a>
-      <a id="updateDataNodeFields(DataNodeFields):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">updateDataNodeFields</span><span class="params">(<span name="fields">fields: <a href="DataNodeFields.html" class="extype" name="com.krux.hyperion.datanode.DataNodeFields">DataNodeFields</a></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@updateDataNodeFields(fields:com.krux.hyperion.datanode.DataNodeFields):DataNode.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.action.Action">Action</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -217,7 +183,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -234,7 +200,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@##():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@##():Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -251,7 +217,7 @@
         <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@&lt;(that:A):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@&lt;(that:A):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -268,7 +234,7 @@
         <span title="gt4s: $less$eq" class="name">&lt;=</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@&lt;=(that:A):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@&lt;=(that:A):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -285,7 +251,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -302,7 +268,7 @@
         <span title="gt4s: $greater" class="name">&gt;</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@&gt;(that:A):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@&gt;(that:A):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -319,7 +285,7 @@
         <span title="gt4s: $greater$eq" class="name">&gt;=</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@&gt;=(that:A):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@&gt;=(that:A):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -336,7 +302,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -353,7 +319,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@clone():Object" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -376,7 +342,7 @@
         <span class="name">compare</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@compare(that:com.krux.hyperion.common.PipelineObject):Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@compare(that:com.krux.hyperion.common.PipelineObject):Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -393,7 +359,7 @@
         <span class="name">compareTo</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@compareTo(that:A):Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@compareTo(that:A):Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -410,7 +376,7 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -427,7 +393,7 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -444,7 +410,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -467,30 +433,11 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
-      <a id="groupedBy(String):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Postfix the name field
-</p><div class="fullcomment"><div class="comment cmt"><p>Postfix the name field
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -503,68 +450,11 @@
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
-      <a id="id:PipelineObjectId"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idGroupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="idGroupedBy(group:String):NamedPipelineObject.this.Self"></a>
-      <a id="idGroupedBy(String):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">idGroupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@idGroupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Have a grouping postfix in the id field
-</p><div class="fullcomment"><div class="comment cmt"><p>Have a grouping postfix in the id field
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unleass you have
-a good reason</p></span></dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idNamed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="idNamed(namePrefix:String):NamedPipelineObject.this.Self"></a>
-      <a id="idNamed(String):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">idNamed</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@idNamed(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Id field will be prefixed with name
-</p><div class="fullcomment"><div class="comment cmt"><p>Id field will be prefixed with name
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unless you have
-a good reason</p></span></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -577,47 +467,11 @@ a good reason</p></span></dd></dl></div>
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="name:Option[String]"></a>
-      <a id="name:Option[String]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@name:Option[String]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Name of the pipeline object, if not set, it will defaults to </p><div class="fullcomment"><div class="comment cmt"><p>Name of the pipeline object, if not set, it will defaults to </p><pre><span class="std">Option</span>(id)</pre></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="named(namePrefix:String):NamedPipelineObject.this.Self"></a>
-      <a id="named(String):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@named(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Give the object a name prefix
-</p><div class="fullcomment"><div class="comment cmt"><p>Give the object a name prefix
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -630,7 +484,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -647,7 +501,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -664,130 +518,28 @@ a good reason</p></span></dd></dl></div>
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.datanode.DataNode#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
-      <a id="objects:Iterable[PipelineObject]"></a>
+    </li><li name="com.krux.hyperion.action.Action#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]"></a>
+      <a id="ref:AdpRef[AdpAction]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">objects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</span>
+        <span class="name">ref</span><span class="result">: <a href="../aws/AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="../aws/AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@objects:Iterable[com.krux.hyperion.common.PipelineObject]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.datanode.DataNode#onFail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="onFail(alarms:com.krux.hyperion.action.SnsAlarm*):DataNode.this.Self"></a>
-      <a id="onFail(SnsAlarm*):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">onFail</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@onFail(alarms:com.krux.hyperion.action.SnsAlarm*):DataNode.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.datanode.DataNode#onFailAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
-      <a id="onFailAlarms:Seq[SnsAlarm]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">onFailAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@onFailAlarms:Seq[com.krux.hyperion.action.SnsAlarm]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.datanode.DataNode#onSuccess" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):DataNode.this.Self"></a>
-      <a id="onSuccess(SnsAlarm*):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">onSuccess</span><span class="params">(<span name="alarms">alarms: <a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>*</span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@onSuccess(alarms:com.krux.hyperion.action.SnsAlarm*):DataNode.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.datanode.DataNode#onSuccessAlarms" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm]"></a>
-      <a id="onSuccessAlarms:Seq[SnsAlarm]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">onSuccessAlarms</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@onSuccessAlarms:Seq[com.krux.hyperion.action.SnsAlarm]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.datanode.DataNode#preconditions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="preconditions:Seq[com.krux.hyperion.precondition.Precondition]"></a>
-      <a id="preconditions:Seq[Precondition]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">preconditions</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@preconditions:Seq[com.krux.hyperion.precondition.Precondition]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.datanode.DataNode#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpDataNode]"></a>
-      <a id="ref:AdpRef[AdpDataNode]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">lazy val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">ref</span><span class="result">: <a href="../aws/AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="../aws/AdpDataNode.html" class="extype" name="com.krux.hyperion.aws.AdpDataNode">AdpDataNode</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpDataNode]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.action.Action">Action</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
       <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
@@ -800,7 +552,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">seq2Option</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="anySeq">anySeq: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seq2Option.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seq2Option.A">A</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -817,7 +569,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">seqToOption</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="anySeq">anySeq: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.A">A</span>]</span>)</span><span class="params">(<span name="transform">transform: (<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.A">A</span>) ⇒ <span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@seqToOption[A,B](anySeq:Seq[A])(transform:A=&gt;B):Option[Seq[B]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@seqToOption[A,B](anySeq:Seq[A])(transform:A=&gt;B):Option[Seq[B]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -834,7 +586,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -851,7 +603,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@toString():String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@toString():String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -868,7 +620,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">uniquePipelineId2String</span><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -885,7 +637,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -908,7 +660,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -931,7 +683,7 @@ a good reason</p></span></dd></dl></div>
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.action.Action@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -942,23 +694,6 @@ a good reason</p></span></dd></dl></div>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.krux.hyperion.datanode.DataNode#whenMet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="whenMet(conditions:com.krux.hyperion.precondition.Precondition*):DataNode.this.Self"></a>
-      <a id="whenMet(Precondition*):Self"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">whenMet</span><span class="params">(<span name="conditions">conditions: <a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>*</span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.datanode.DataNode" class="extmbr" name="com.krux.hyperion.datanode.DataNode.Self">Self</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.datanode.DataNode@whenMet(conditions:com.krux.hyperion.precondition.Precondition*):DataNode.this.Self" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li></ol>
             </div>
 
@@ -968,9 +703,7 @@ a good reason</p></span></dd></dl></div>
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
-              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
-            </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
+        <div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">
               <h3>Inherited from <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</h3>

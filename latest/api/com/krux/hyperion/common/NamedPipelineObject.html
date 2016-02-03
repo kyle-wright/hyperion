@@ -488,7 +488,8 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Postfix the name field
+</p>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -523,6 +524,46 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idGroupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idGroupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="idGroupedBy(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idGroupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.common.NamedPipelineObject" class="extmbr" name="com.krux.hyperion.common.NamedPipelineObject.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.NamedPipelineObject@idGroupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Have a grouping postfix in the id field
+</p><div class="fullcomment"><div class="comment cmt"><p>Have a grouping postfix in the id field
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unleass you have
+a good reason</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idNamed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idNamed(namePrefix:String):NamedPipelineObject.this.Self"></a>
+      <a id="idNamed(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idNamed</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.common.NamedPipelineObject" class="extmbr" name="com.krux.hyperion.common.NamedPipelineObject.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.NamedPipelineObject@idNamed(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Id field will be prefixed with name
+</p><div class="fullcomment"><div class="comment cmt"><p>Id field will be prefixed with name
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unless you have
+a good reason</p></span></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -540,8 +581,25 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:Option[String]"></a>
+      <a id="name:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.NamedPipelineObject@name:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Name of the pipeline object, if not set, it will defaults to </p><div class="fullcomment"><div class="comment cmt"><p>Name of the pipeline object, if not set, it will defaults to </p><pre><span class="std">Option</span>(id)</pre></div></div>
     </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(namePrefix:String):NamedPipelineObject.this.Self"></a>
       <a id="named(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -549,14 +607,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.common.NamedPipelineObject" class="extmbr" name="com.krux.hyperion.common.NamedPipelineObject.Self">Self</a></span>
+        <span class="name">named</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self&lt;:com.krux.hyperion.common.NamedPipelineObject" class="extmbr" name="com.krux.hyperion.common.NamedPipelineObject.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.common.NamedPipelineObject@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.common.NamedPipelineObject@named(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Give the object a name prefix
+</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

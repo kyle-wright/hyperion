@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">AdpShellCommandPrecondition</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="command">command: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptUri">scriptUri: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptArgument">scriptArgument: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="stdout">stdout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stderr">stderr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="role">role: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="AdpDataPipelineAbstractObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineAbstractObject">AdpDataPipelineAbstractObject</a> with <a href="AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">AdpShellCommandPrecondition</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="command">command: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptUri">scriptUri: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptArgument">scriptArgument: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="stdout">stdout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stderr">stderr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="role">role: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="maximumRetries">maximumRetries: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="onFail">onFail: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>, <span name="onLateAction">onLateAction: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>, <span name="onSuccess">onSuccess: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>)</span><span class="result"> extends <a href="AdpDataPipelineAbstractObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineAbstractObject">AdpDataPipelineAbstractObject</a> with <a href="AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -90,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(id:String,name:Option[String],command:Option[String],scriptUri:Option[String],scriptArgument:Option[Seq[String]],stdout:Option[String],stderr:Option[String],role:String,preconditionTimeout:Option[String]):com.krux.hyperion.aws.AdpShellCommandPrecondition"></a>
+      <a id="&lt;init&gt;(id:String,name:Option[String],command:Option[String],scriptUri:Option[String],scriptArgument:Option[Seq[String]],stdout:Option[String],stderr:Option[String],role:String,preconditionTimeout:Option[String],maximumRetries:Option[String],onFail:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]],onLateAction:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]],onSuccess:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]):com.krux.hyperion.aws.AdpShellCommandPrecondition"></a>
       <a id="&lt;init&gt;:AdpShellCommandPrecondition"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">AdpShellCommandPrecondition</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="command">command: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptUri">scriptUri: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptArgument">scriptArgument: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="stdout">stdout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stderr">stderr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="role">role: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span>
+        <span class="name">AdpShellCommandPrecondition</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="command">command: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptUri">scriptUri: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="scriptArgument">scriptArgument: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="stdout">stdout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stderr">stderr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="role">role: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="preconditionTimeout">preconditionTimeout: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="maximumRetries">maximumRetries: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="onFail">onFail: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>, <span name="onLateAction">onLateAction: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>, <span name="onSuccess">onSuccess: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.aws.AdpShellCommandPrecondition@&lt;init&gt;(id:String,name:Option[String],command:Option[String],scriptUri:Option[String],scriptArgument:Option[Seq[String]],stdout:Option[String],stderr:Option[String],role:String,preconditionTimeout:Option[String]):com.krux.hyperion.aws.AdpShellCommandPrecondition" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpShellCommandPrecondition@&lt;init&gt;(id:String,name:Option[String],command:Option[String],scriptUri:Option[String],scriptArgument:Option[Seq[String]],stdout:Option[String],stderr:Option[String],role:String,preconditionTimeout:Option[String],maximumRetries:Option[String],onFail:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]],onLateAction:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]],onSuccess:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]):com.krux.hyperion.aws.AdpShellCommandPrecondition" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -316,6 +316,25 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[String]"></a>
+      <a id="maximumRetries:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpShellCommandPrecondition@maximumRetries:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Maximum number attempt retries on failure
+</p><div class="fullcomment"><div class="comment cmt"><p>Maximum number attempt retries on failure
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.aws.AdpShellCommandPrecondition">AdpShellCommandPrecondition</a> → <a href="AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a></dd></dl></div>
     </li><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="name:Option[String]"></a>
       <a id="name:Option[String]"></a>
@@ -386,6 +405,62 @@ a pipeline definition, AWS Data Pipeline automatically duplicates the value of i
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]"></a>
+      <a id="onFail:Option[Seq[AdpRef[AdpAction]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpShellCommandPrecondition@onFail:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Actions to run when current object fails.</p><div class="fullcomment"><div class="comment cmt"><p>Actions to run when current object fails.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.aws.AdpShellCommandPrecondition">AdpShellCommandPrecondition</a> → <a href="AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]"></a>
+      <a id="onLateAction:Option[Seq[AdpRef[AdpAction]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpShellCommandPrecondition@onLateAction:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Actions that should be triggered if an object has not yet been scheduled or still not
+completed.</p><div class="fullcomment"><div class="comment cmt"><p>Actions that should be triggered if an object has not yet been scheduled or still not
+completed.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.aws.AdpShellCommandPrecondition">AdpShellCommandPrecondition</a> → <a href="AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]"></a>
+      <a id="onSuccess:Option[Seq[AdpRef[AdpAction]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpShellCommandPrecondition@onSuccess:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Actions to run when current object succeeds.</p><div class="fullcomment"><div class="comment cmt"><p>Actions to run when current object succeeds.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.aws.AdpShellCommandPrecondition">AdpShellCommandPrecondition</a> → <a href="AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a></dd></dl></div>
     </li><li name="com.krux.hyperion.aws.AdpShellCommandPrecondition#preconditionTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preconditionTimeout:Option[String]"></a>
       <a id="preconditionTimeout:Option[String]"></a>

@@ -246,7 +246,7 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
       <p class="shortcomment cmt">Google Storage Download activity
 </p>
     </li><li name="com.krux.hyperion.activity.GoogleStorageUploadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GoogleStorageUploadActivityextendsGoogleStorageActivitywithWithS3OutputwithProductwithSerializable"></a>
+      <a id="GoogleStorageUploadActivityextendsGoogleStorageActivitywithWithS3InputwithProductwithSerializable"></a>
       <a id="GoogleStorageUploadActivity:GoogleStorageUploadActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -254,10 +254,10 @@ default CsvDataFormat for tasks involving both exporting to S3 and copy to redsh
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GoogleStorageUploadActivity.html"><span class="name">GoogleStorageUploadActivity</span></a><span class="result"> extends <a href="GoogleStorageActivity.html" class="extype" name="com.krux.hyperion.activity.GoogleStorageActivity">GoogleStorageActivity</a> with <a href="WithS3Output.html" class="extype" name="com.krux.hyperion.activity.WithS3Output">WithS3Output</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="GoogleStorageUploadActivity.html"><span class="name">GoogleStorageUploadActivity</span></a><span class="result"> extends <a href="GoogleStorageActivity.html" class="extype" name="com.krux.hyperion.activity.GoogleStorageActivity">GoogleStorageActivity</a> with <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageUploadActivityextendsGoogleStorageActivitywithWithS3OutputwithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@GoogleStorageUploadActivityextendsGoogleStorageActivitywithWithS3InputwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -614,7 +614,7 @@ table, or easily merge data into an existing table.
     </span>
       
     </li><li name="com.krux.hyperion.activity.SendEmailActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="SendEmailActivityextendsBaseShellCommandActivitywithProductwithSerializable"></a>
+      <a id="SendEmailActivityextendsBaseShellCommandActivitywithWithS3InputwithProductwithSerializable"></a>
       <a id="SendEmailActivity:SendEmailActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -622,10 +622,10 @@ table, or easily merge data into an existing table.
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="SendEmailActivity.html"><span class="name">SendEmailActivity</span></a><span class="result"> extends <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="SendEmailActivity.html"><span class="name">SendEmailActivity</span></a><span class="result"> extends <a href="BaseShellCommandActivity.html" class="extype" name="com.krux.hyperion.activity.BaseShellCommandActivity">BaseShellCommandActivity</a> with <a href="WithS3Input.html" class="extype" name="com.krux.hyperion.activity.WithS3Input">WithS3Input</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.package@SendEmailActivityextendsBaseShellCommandActivitywithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.package@SendEmailActivityextendsBaseShellCommandActivitywithWithS3InputwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -748,8 +748,7 @@ table, or easily merge data into an existing table.
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Shell command activity that runs a given Jar
-</p>
+      <p class="shortcomment cmt">Activity that downloads from an SFTP endpoint into an S3 endpoint.</p>
     </li><li name="com.krux.hyperion.activity.SftpUploadActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SftpUploadActivityextendsSftpActivitywithWithS3InputwithProductwithSerializable"></a>
       <a id="SftpUploadActivity:SftpUploadActivity"></a>
@@ -766,8 +765,7 @@ table, or easily merge data into an existing table.
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Shell command activity that runs a given Jar
-</p>
+      <p class="shortcomment cmt">Activity that uploads from an S3 endpoint to an SFTP endpoint.</p>
     </li><li name="com.krux.hyperion.activity.ShellCommandActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ShellCommandActivityextendsBaseShellCommandActivitywithWithS3InputwithWithS3OutputwithProductwithSerializable"></a>
       <a id="ShellCommandActivity:ShellCommandActivity"></a>

@@ -400,7 +400,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+      <p class="shortcomment cmt">Postfix the name field
+</p><div class="fullcomment"><div class="comment cmt"><p>Postfix the name field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
       <a id="id:PipelineObjectId"></a>
@@ -418,6 +420,46 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idGroupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idGroupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="idGroupedBy(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idGroupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@idGroupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Have a grouping postfix in the id field
+</p><div class="fullcomment"><div class="comment cmt"><p>Have a grouping postfix in the id field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unleass you have
+a good reason</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idNamed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idNamed(namePrefix:String):NamedPipelineObject.this.Self"></a>
+      <a id="idNamed(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idNamed</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@idNamed(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Id field will be prefixed with name
+</p><div class="fullcomment"><div class="comment cmt"><p>Id field will be prefixed with name
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unless you have
+a good reason</p></span></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -435,8 +477,42 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:Option[String]"></a>
+      <a id="name:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@name:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Name of the pipeline object, if not set, it will defaults to </p><div class="fullcomment"><div class="comment cmt"><p>Name of the pipeline object, if not set, it will defaults to </p><pre><span class="std">Option</span>(id)</pre></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="named(name:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(namePrefix:String):NamedPipelineObject.this.Self"></a>
       <a id="named(String):Self"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -444,14 +520,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+        <span class="name">named</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@named(name:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@named(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+      <p class="shortcomment cmt">Give the object a name prefix
+</p><div class="fullcomment"><div class="comment cmt"><p>Give the object a name prefix
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -520,6 +598,108 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail(actions:com.krux.hyperion.action.Action*):Precondition.this.Self"></a>
+      <a id="onFail(Action*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="params">(<span name="actions">actions: <a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@onFail(actions:com.krux.hyperion.action.Action*):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onFail:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@onFail:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction(actions:com.krux.hyperion.action.Action*):Precondition.this.Self"></a>
+      <a id="onLateAction(Action*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="params">(<span name="actions">actions: <a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@onLateAction(actions:com.krux.hyperion.action.Action*):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onLateAction:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@onLateAction:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess(actions:com.krux.hyperion.action.Action*):Precondition.this.Self"></a>
+      <a id="onSuccess(Action*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="params">(<span name="actions">actions: <a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@onSuccess(actions:com.krux.hyperion.action.Action*):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onSuccess:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@onSuccess:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
     </li><li name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition#preconditionFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="preconditionFields:com.krux.hyperion.precondition.PreconditionFields"></a>
       <a id="preconditionFields:PreconditionFields"></a>
@@ -796,6 +976,23 @@ Time period; for example, &quot;1 hour&quot;.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMaximumRetries(retries:com.krux.hyperion.adt.HInt):Precondition.this.Self"></a>
+      <a id="withMaximumRetries(HInt):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.DynamoDBDataExistsPrecondition@withMaximumRetries(retries:com.krux.hyperion.adt.HInt):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
     </li><li name="com.krux.hyperion.precondition.Precondition#withPreconditionTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withPreconditionTimeout(timeout:com.krux.hyperion.adt.HDuration):Precondition.this.Self"></a>
       <a id="withPreconditionTimeout(HDuration):Self"></a>

@@ -116,6 +116,24 @@ The activity cannot run until all its conditions are met.
       <p class="shortcomment cmt">The ID of the object, IDs must be unique within a pipeline definition
 </p><div class="fullcomment"><div class="comment cmt"><p>The ID of the object, IDs must be unique within a pipeline definition
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AdpDataPipelineObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineObject">AdpDataPipelineObject</a> → <a href="AdpObject.html" class="extype" name="com.krux.hyperion.aws.AdpObject">AdpObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.aws.AdpPrecondition#maximumRetries" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="maximumRetries:Option[String]"></a>
+      <a id="maximumRetries:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpPrecondition@maximumRetries:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Maximum number attempt retries on failure
+</p>
     </li><li name="com.krux.hyperion.aws.AdpDataPipelineObject#name" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="name:Option[String]"></a>
       <a id="name:Option[String]"></a>
@@ -135,6 +153,58 @@ The activity cannot run until all its conditions are met.
       <p class="shortcomment cmt">The optional, user-defined label of the object.</p><div class="fullcomment"><div class="comment cmt"><p>The optional, user-defined label of the object. If you do not provide a name for an object in
 a pipeline definition, AWS Data Pipeline automatically duplicates the value of id.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AdpDataPipelineObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineObject">AdpDataPipelineObject</a> → <a href="AdpDataPipelineAbstractObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineAbstractObject">AdpDataPipelineAbstractObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.aws.AdpPrecondition#onFail" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="onFail:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]"></a>
+      <a id="onFail:Option[Seq[AdpRef[AdpAction]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpPrecondition@onFail:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Actions to run when current object fails.</p>
+    </li><li name="com.krux.hyperion.aws.AdpPrecondition#onLateAction" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="onLateAction:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]"></a>
+      <a id="onLateAction:Option[Seq[AdpRef[AdpAction]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpPrecondition@onLateAction:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Actions that should be triggered if an object has not yet been scheduled or still not
+completed.</p>
+    </li><li name="com.krux.hyperion.aws.AdpPrecondition#onSuccess" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="onSuccess:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]"></a>
+      <a id="onSuccess:Option[Seq[AdpRef[AdpAction]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="AdpAction.html" class="extype" name="com.krux.hyperion.aws.AdpAction">AdpAction</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.aws.AdpPrecondition@onSuccess:Option[Seq[com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpAction]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Actions to run when current object succeeds.</p>
     </li><li name="com.krux.hyperion.aws.AdpPrecondition#preconditionTimeout" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="preconditionTimeout:Option[String]"></a>
       <a id="preconditionTimeout:Option[String]"></a>
