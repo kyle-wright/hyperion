@@ -28,7 +28,7 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="Schedule$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
+        <a href="Schedule$.html" title="See companion object"><img alt="Trait/Object" src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.krux">krux</a>.<a href="package.html" class="extype" name="com.krux.hyperion">hyperion</a></p>
         <h1><a href="Schedule$.html" title="See companion object">Schedule</a></h1><h3><span class="morelinks"><div>
             Related Docs:
@@ -44,18 +44,21 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">case class</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Schedule</span><span class="result"> extends <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Schedule</span><span class="result"> extends <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Schedule that runs at defined period.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/Schedule.scala" target="_blank">Schedule.scala</a></dd><dt>Note</dt><dd><span class="cmt"><p>If start time given is a past time, data pipeline will perform back fill from the start.</p></span></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Schedule defines how a pipeline is run.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/Schedule.scala" target="_blank">Schedule.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+          <div class="superTypes hiddenContent"><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="OnDemandSchedule.html" class="extype" name="com.krux.hyperion.OnDemandSchedule">OnDemandSchedule</a>, <a href="RecurringSchedule.html" class="extype" name="com.krux.hyperion.RecurringSchedule">RecurringSchedule</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -72,7 +75,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.Schedule"><span>Schedule</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.Schedule"><span>Schedule</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -113,10 +116,98 @@
     </li></ol>
             </div>
 
-        
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="com.krux.hyperion.common.PipelineObject#id" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
+      <a id="id:PipelineObjectId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">id</span><span class="result">: <a href="common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#objects" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
+      <a id="objects:Iterable[PipelineObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@objects:Iterable[com.krux.hyperion.common.PipelineObject]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#ref" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpDataPipelineAbstractObject]"></a>
+      <a id="ref:AdpRef[AdpDataPipelineAbstractObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ref</span><span class="result">: <a href="aws/AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="aws/AdpDataPipelineAbstractObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineAbstractObject">AdpDataPipelineAbstractObject</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpDataPipelineAbstractObject]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.Schedule#scheduleType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="scheduleType:com.krux.hyperion.ScheduleType"></a>
+      <a id="scheduleType:ScheduleType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleType</span><span class="result">: <a href="ScheduleType.html" class="extype" name="com.krux.hyperion.ScheduleType">ScheduleType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@scheduleType:com.krux.hyperion.ScheduleType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.PipelineObject#serialize" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="serialize:com.krux.hyperion.aws.AdpDataPipelineAbstractObject"></a>
+      <a id="serialize:AdpDataPipelineAbstractObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serialize</span><span class="result">: <a href="aws/AdpDataPipelineAbstractObject.html" class="extype" name="com.krux.hyperion.aws.AdpDataPipelineAbstractObject">AdpDataPipelineAbstractObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@serialize:com.krux.hyperion.aws.AdpDataPipelineAbstractObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -310,23 +401,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#end" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="end:Option[Either[Int,com.github.nscala_time.time.Imports.DateTime]]"></a>
-      <a id="end:Option[Either[Int,github.nscala_time.time.Imports.DateTime]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">end</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="com.github.nscala_time.time.TypeImports.DateTime">github.nscala_time.time.Imports.DateTime</span>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@end:Option[Either[Int,com.github.nscala_time.time.Imports.DateTime]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -344,23 +418,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#every" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="every(p:com.krux.hyperion.expression.Duration):com.krux.hyperion.Schedule"></a>
-      <a id="every(Duration):Schedule"></a>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">every</span><span class="params">(<span name="p">p: <a href="expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@every(p:com.krux.hyperion.expression.Duration):com.krux.hyperion.Schedule" title="Permalink" target="_top">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@equals(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -401,23 +475,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
-      <a id="id:PipelineObjectId"></a>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">id</span><span class="result">: <a href="common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@hashCode():Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a> → <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -486,74 +560,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
-      <a id="objects:Iterable[PipelineObject]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">objects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@objects:Iterable[com.krux.hyperion.common.PipelineObject]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a> → <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#period" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="period:com.krux.hyperion.expression.Duration"></a>
-      <a id="period:Duration"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">period</span><span class="result">: <a href="expression/Duration.html" class="extype" name="com.krux.hyperion.expression.Duration">Duration</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@period:com.krux.hyperion.expression.Duration" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpSchedule]"></a>
-      <a id="ref:AdpRef[AdpSchedule]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">ref</span><span class="result">: <a href="aws/AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="aws/AdpSchedule.html" class="extype" name="com.krux.hyperion.aws.AdpSchedule">AdpSchedule</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpSchedule]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a> → <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#scheduleType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scheduleType:com.krux.hyperion.ScheduleType"></a>
-      <a id="scheduleType:ScheduleType"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">scheduleType</span><span class="result">: <a href="ScheduleType.html" class="extype" name="com.krux.hyperion.ScheduleType">ScheduleType</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@scheduleType:com.krux.hyperion.ScheduleType" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
       <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
@@ -588,159 +594,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="serialize:com.krux.hyperion.aws.AdpSchedule"></a>
-      <a id="serialize:AdpSchedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">lazy val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">serialize</span><span class="result">: <a href="aws/AdpSchedule.html" class="extype" name="com.krux.hyperion.aws.AdpSchedule">AdpSchedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@serialize:com.krux.hyperion.aws.AdpSchedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a> → <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#start" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="start:Option[com.github.nscala_time.time.Imports.DateTime]"></a>
-      <a id="start:Option[github.nscala_time.time.Imports.DateTime]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">start</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="com.github.nscala_time.time.TypeImports.DateTime">github.nscala_time.time.Imports.DateTime</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@start:Option[com.github.nscala_time.time.Imports.DateTime]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#startAtActivation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startAtActivation:com.krux.hyperion.Schedule"></a>
-      <a id="startAtActivation:Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">startAtActivation</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@startAtActivation:com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#startDateTime" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startDateTime(dt:com.github.nscala_time.time.Imports.DateTime):com.krux.hyperion.Schedule"></a>
-      <a id="startDateTime(github.nscala_time.time.Imports.DateTime):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">startDateTime</span><span class="params">(<span name="dt">dt: <span class="extype" name="com.github.nscala_time.time.TypeImports.DateTime">github.nscala_time.time.Imports.DateTime</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@startDateTime(dt:com.github.nscala_time.time.Imports.DateTime):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#startThisHourAt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startThisHourAt(minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule"></a>
-      <a id="startThisHourAt(Int,Int):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">startThisHourAt</span><span class="params">(<span name="minuteOfHour">minuteOfHour: <span class="extype" name="scala.Int">Int</span></span>, <span name="secondOfMinute">secondOfMinute: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@startThisHourAt(minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#startThisMonthAt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startThisMonthAt(dayOfMonth:Int,hourOfDay:Int,minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule"></a>
-      <a id="startThisMonthAt(Int,Int,Int,Int):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">startThisMonthAt</span><span class="params">(<span name="dayOfMonth">dayOfMonth: <span class="extype" name="scala.Int">Int</span></span>, <span name="hourOfDay">hourOfDay: <span class="extype" name="scala.Int">Int</span></span>, <span name="minuteOfHour">minuteOfHour: <span class="extype" name="scala.Int">Int</span></span>, <span name="secondOfMinute">secondOfMinute: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@startThisMonthAt(dayOfMonth:Int,hourOfDay:Int,minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#startThisWeekAt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startThisWeekAt(dayOfWeek:Int,hourOfDay:Int,minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule"></a>
-      <a id="startThisWeekAt(Int,Int,Int,Int):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">startThisWeekAt</span><span class="params">(<span name="dayOfWeek">dayOfWeek: <span class="extype" name="scala.Int">Int</span></span>, <span name="hourOfDay">hourOfDay: <span class="extype" name="scala.Int">Int</span></span>, <span name="minuteOfHour">minuteOfHour: <span class="extype" name="scala.Int">Int</span></span>, <span name="secondOfMinute">secondOfMinute: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@startThisWeekAt(dayOfWeek:Int,hourOfDay:Int,minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#startTodayAt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startTodayAt(hourOfDay:Int,minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule"></a>
-      <a id="startTodayAt(Int,Int,Int):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">startTodayAt</span><span class="params">(<span name="hourOfDay">hourOfDay: <span class="extype" name="scala.Int">Int</span></span>, <span name="minuteOfHour">minuteOfHour: <span class="extype" name="scala.Int">Int</span></span>, <span name="secondOfMinute">secondOfMinute: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@startTodayAt(hourOfDay:Int,minuteOfHour:Int,secondOfMinute:Int):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="com.krux.hyperion.Schedule#stopAfter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="stopAfter(occurrences:Int):com.krux.hyperion.Schedule"></a>
-      <a id="stopAfter(Int):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">stopAfter</span><span class="params">(<span name="occurrences">occurrences: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@stopAfter(occurrences:Int):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -758,6 +611,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.krux.hyperion.Schedule@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.krux.hyperion.common.PipelineObject#uniquePipelineId2String" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String"></a>
       <a id="uniquePipelineId2String(PipelineObjectId):String"></a>
@@ -775,23 +645,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
-    </li><li name="com.krux.hyperion.Schedule#until" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="until(dt:com.github.nscala_time.time.Imports.DateTime):com.krux.hyperion.Schedule"></a>
-      <a id="until(github.nscala_time.time.Imports.DateTime):Schedule"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">until</span><span class="params">(<span name="dt">dt: <span class="extype" name="com.github.nscala_time.time.TypeImports.DateTime">github.nscala_time.time.Imports.DateTime</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#com.krux.hyperion.Schedule@until(dt:com.github.nscala_time.time.Imports.DateTime):com.krux.hyperion.Schedule" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -870,15 +723,7 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.Serializable">
-              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
-            </div><div class="parent" name="java.io.Serializable">
-              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
-            </div><div class="parent" name="scala.Product">
-              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
-            </div><div class="parent" name="scala.Equals">
-              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
-            </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
+        <div class="parent" name="com.krux.hyperion.common.PipelineObject">
               <h3>Inherited from <a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
             </div><div class="parent" name="scala.math.Ordered">
               <h3>Inherited from <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</h3>

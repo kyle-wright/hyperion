@@ -83,23 +83,58 @@
       </a>
     </span>
       <p class="shortcomment cmt">The base fields of all pipeline objects.</p>
-    </li><li name="com.krux.hyperion.common.DefaultObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="DefaultObjectextendsPipelineObjectwithProductwithSerializable"></a>
+    </li><li name="com.krux.hyperion.common.DefaultObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DefaultObjectextendsPipelineObject"></a>
       <a id="DefaultObject:DefaultObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultObject.html"><span class="name">DefaultObject</span></a><span class="result"> extends <a href="PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@DefaultObjectextendsPipelineObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the overall behaviour of a data pipeline.</p>
+    </li><li name="com.krux.hyperion.common.DefaultObjectFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultObjectFieldsextendsProductwithSerializable"></a>
+      <a id="DefaultObjectFields:DefaultObjectFields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="DefaultObject.html"><span class="name">DefaultObject</span></a><span class="params">(<span name="schedule">schedule: <a href="../Schedule.html" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="hc">hc: <a href="../HyperionContext.html" class="extype" name="com.krux.hyperion.HyperionContext">HyperionContext</a></span>)</span><span class="result"> extends <a href="PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="DefaultObjectFields.html"><span class="name">DefaultObjectFields</span></a><span class="params">(<span name="schedule">schedule: <a href="../Schedule.html" class="extype" name="com.krux.hyperion.Schedule">Schedule</a></span>, <span name="properties">properties: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Either">Either</span>[<a href="../adt/HType.html" class="extype" name="com.krux.hyperion.adt.HType">HType</a>, <a href="PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.common.package@DefaultObjectextendsPipelineObjectwithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@DefaultObjectFieldsextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Defines the overall behaviour of a data pipeline.</p>
+      <p class="shortcomment cmt">Fields used by the DefaultObjects.</p><div class="fullcomment"><div class="comment cmt"><p>Fields used by the DefaultObjects.
+</p></div><dl class="paramcmts block"><dt class="param">schedule</dt><dd class="cmt"><p>The pipeline schedule.</p></dd><dt class="param">properties</dt><dd class="cmt"><p>Additional custom properties to attach to the default object.</p></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.Escapable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EscapableextendsAnyRef"></a>
+      <a id="Escapable:Escapable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Escapable.html"><span class="name">Escapable</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@EscapableextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.krux.hyperion.common.FixedObjectId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FixedObjectIdextendsPipelineObjectIdwithProductwithSerializable"></a>
       <a id="FixedObjectId:FixedObjectId"></a>
@@ -113,6 +148,40 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.package@FixedObjectIdextendsPipelineObjectIdwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.HdfsUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HdfsUriextendsProductwithSerializable"></a>
+      <a id="HdfsUri:HdfsUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HdfsUri.html"><span class="name">HdfsUri</span></a><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@HdfsUriextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.HdfsUriHelper" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HdfsUriHelperextendsAnyRef"></a>
+      <a id="HdfsUriHelper:HdfsUriHelper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HdfsUriHelper.html"><span class="name">HdfsUriHelper</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@HdfsUriHelperextendsAnyRef" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -291,6 +360,40 @@ or using a builder such as s3 / &quot;hyperion-bucket&quot; / &quot;some-path&qu
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.common.SparkCommandRunner" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SparkCommandRunnerextendsAnyRef"></a>
+      <a id="SparkCommandRunner:SparkCommandRunner"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SparkCommandRunner.html"><span class="name">SparkCommandRunner</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@SparkCommandRunnerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.StandardDefaultObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StandardDefaultObjectextendsDefaultObjectwithProductwithSerializable"></a>
+      <a id="StandardDefaultObject:StandardDefaultObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StandardDefaultObject.html"><span class="name">StandardDefaultObject</span></a><span class="result"> extends <a href="DefaultObject.html" class="extype" name="com.krux.hyperion.common.DefaultObject">DefaultObject</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@StandardDefaultObjectextendsDefaultObjectwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The standard default object.</p>
     </li><li name="com.krux.hyperion.common.StorageClass" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="StorageClassextendsAnyRef"></a>
       <a id="StorageClass:StorageClass"></a>
@@ -315,7 +418,24 @@ or using a builder such as s3 / &quot;hyperion-bucket&quot; / &quot;some-path&qu
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="com.krux.hyperion.common.DefaultObjectId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="com.krux.hyperion.common.DefaultObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultObject"></a>
+      <a id="DefaultObject:DefaultObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultObject$.html"><span class="name">DefaultObject</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@DefaultObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.DefaultObjectId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DefaultObjectId"></a>
       <a id="DefaultObjectId:DefaultObjectId"></a>
       <h4 class="signature">
@@ -328,6 +448,40 @@ or using a builder such as s3 / &quot;hyperion-bucket&quot; / &quot;some-path&qu
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.krux.hyperion.common.package@DefaultObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.Escapable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Escapable"></a>
+      <a id="Escapable:Escapable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Escapable$.html"><span class="name">Escapable</span></a><span class="result"> extends <a href="Escapable.html" class="extype" name="com.krux.hyperion.common.Escapable">Escapable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@Escapable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.common.HdfsUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HdfsUri"></a>
+      <a id="HdfsUri:HdfsUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HdfsUri$.html"><span class="name">HdfsUri</span></a><span class="result"> extends <a href="HdfsUriHelper.html" class="extype" name="com.krux.hyperion.common.HdfsUriHelper">HdfsUriHelper</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.common.package@HdfsUri" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

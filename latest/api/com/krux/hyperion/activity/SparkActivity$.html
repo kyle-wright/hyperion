@@ -47,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">SparkActivity</span><span class="result"> extends <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">SparkActivity</span><span class="result"> extends <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a> with <a href="../common/SparkCommandRunner.html" class="extype" name="com.krux.hyperion.common.SparkCommandRunner">SparkCommandRunner</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/activity/SparkActivity.scala" target="_blank">SparkActivity.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="../common/SparkCommandRunner.html" class="extype" name="com.krux.hyperion.common.SparkCommandRunner">SparkCommandRunner</a>, <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.krux.hyperion.activity.SparkActivity"><span>SparkActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="com.krux.hyperion.expression.RunnableObject"><span>RunnableObject</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.krux.hyperion.activity.SparkActivity"><span>SparkActivity</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="com.krux.hyperion.common.SparkCommandRunner"><span>SparkCommandRunner</span></li><li class="in" name="com.krux.hyperion.expression.RunnableObject"><span>RunnableObject</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -362,18 +362,18 @@
       <p class="shortcomment cmt">A list of all objects that this object is waiting on before it can enter the RUNNING state.</p><div class="fullcomment"><div class="comment cmt"><p>A list of all objects that this object is waiting on before it can enter the RUNNING state.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
     </li><li name="com.krux.hyperion.activity.SparkActivity#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster]):com.krux.hyperion.activity.SparkActivity"></a>
-      <a id="apply(Resource[SparkCluster]):SparkActivity"></a>
+      <a id="apply(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster])(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.activity.SparkActivity"></a>
+      <a id="apply(Resource[SparkCluster])(HyperionContext):SparkActivity"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="runsOn">runsOn: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/SparkCluster.html" class="extype" name="com.krux.hyperion.resource.SparkCluster">SparkCluster</a>]</span>)</span><span class="result">: <a href="SparkActivity.html" class="extype" name="com.krux.hyperion.activity.SparkActivity">SparkActivity</a></span>
+        <span class="name">apply</span><span class="params">(<span name="runsOn">runsOn: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/SparkCluster.html" class="extype" name="com.krux.hyperion.resource.SparkCluster">SparkCluster</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="hc">hc: <a href="../HyperionContext.html" class="extype" name="com.krux.hyperion.HyperionContext">HyperionContext</a></span>)</span><span class="result">: <a href="SparkActivity.html" class="extype" name="com.krux.hyperion.activity.SparkActivity">SparkActivity</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.krux.hyperion.activity.SparkActivity$@apply(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster]):com.krux.hyperion.activity.SparkActivity" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkActivity$@apply(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster])(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.activity.SparkActivity" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -526,6 +526,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.SparkCommandRunner#jobRunner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jobRunner(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster])(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.adt.HString"></a>
+      <a id="jobRunner(Resource[SparkCluster])(HyperionContext):HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jobRunner</span><span class="params">(<span name="runsOn">runsOn: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/SparkCluster.html" class="extype" name="com.krux.hyperion.resource.SparkCluster">SparkCluster</a>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="hc">hc: <a href="../HyperionContext.html" class="extype" name="com.krux.hyperion.HyperionContext">HyperionContext</a></span>)</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkActivity$@jobRunner(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster])(implicithc:com.krux.hyperion.HyperionContext):com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/SparkCommandRunner.html" class="extype" name="com.krux.hyperion.common.SparkCommandRunner">SparkCommandRunner</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -594,6 +611,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.SparkCommandRunner#scriptRunner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scriptRunner(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster]):com.krux.hyperion.adt.HString"></a>
+      <a id="scriptRunner(Resource[SparkCluster]):HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scriptRunner</span><span class="params">(<span name="runsOn">runsOn: <a href="../resource/Resource.html" class="extype" name="com.krux.hyperion.resource.Resource">Resource</a>[<a href="../resource/SparkCluster.html" class="extype" name="com.krux.hyperion.resource.SparkCluster">SparkCluster</a>]</span>)</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.activity.SparkActivity$@scriptRunner(runsOn:com.krux.hyperion.resource.Resource[com.krux.hyperion.resource.SparkCluster]):com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/SparkCommandRunner.html" class="extype" name="com.krux.hyperion.common.SparkCommandRunner">SparkCommandRunner</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -710,6 +744,8 @@
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.SparkCommandRunner">
+              <h3>Inherited from <a href="../common/SparkCommandRunner.html" class="extype" name="com.krux.hyperion.common.SparkCommandRunner">SparkCommandRunner</a></h3>
             </div><div class="parent" name="com.krux.hyperion.expression.RunnableObject">
               <h3>Inherited from <a href="../expression/RunnableObject.html" class="extype" name="com.krux.hyperion.expression.RunnableObject">RunnableObject</a></h3>
             </div><div class="parent" name="scala.AnyRef">

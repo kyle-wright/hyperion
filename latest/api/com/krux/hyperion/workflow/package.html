@@ -66,7 +66,58 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.krux.hyperion.workflow.WorkflowExpressionImplicits" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="com.krux.hyperion.workflow.WorkflowActivityExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowActivityExpressionextendsWorkflowExpressionwithProductwithSerializable"></a>
+      <a id="WorkflowActivityExpression:WorkflowActivityExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowActivityExpression.html"><span class="name">WorkflowActivityExpression</span></a><span class="params">(<span name="activity">activity: <a href="../activity/PipelineActivity.html" class="extype" name="com.krux.hyperion.activity.PipelineActivity">PipelineActivity</a>[_ &lt;: <a href="../resource/ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>]</span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.workflow.package@WorkflowActivityExpressionextendsWorkflowExpressionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.workflow.WorkflowArrowExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowArrowExpressionextendsWorkflowExpressionwithProductwithSerializable"></a>
+      <a id="WorkflowArrowExpression:WorkflowArrowExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowArrowExpression.html"><span class="name">WorkflowArrowExpression</span></a><span class="params">(<span name="left">left: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a></span>, <span name="right">right: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a></span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.workflow.package@WorkflowArrowExpressionextendsWorkflowExpressionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.workflow.WorkflowExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WorkflowExpressionextendsAnyRef"></a>
+      <a id="WorkflowExpression:WorkflowExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowExpression.html"><span class="name">WorkflowExpression</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.workflow.package@WorkflowExpressionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.workflow.WorkflowExpressionImplicits" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="WorkflowExpressionImplicitsextendsAnyRef"></a>
       <a id="WorkflowExpressionImplicits:WorkflowExpressionImplicits"></a>
       <h4 class="signature">
@@ -117,12 +168,66 @@
       </a>
     </span>
       
+    </li><li name="com.krux.hyperion.workflow.WorkflowPlusExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowPlusExpressionextendsWorkflowExpressionwithProductwithSerializable"></a>
+      <a id="WorkflowPlusExpression:WorkflowPlusExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowPlusExpression.html"><span class="name">WorkflowPlusExpression</span></a><span class="params">(<span name="left">left: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a></span>, <span name="right">right: <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a></span>)</span><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.workflow.package@WorkflowPlusExpressionextendsWorkflowExpressionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.krux.hyperion.workflow.WorkflowExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowExpression"></a>
+      <a id="WorkflowExpression:WorkflowExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowExpression$.html"><span class="name">WorkflowExpression</span></a><span class="result"> extends <a href="WorkflowExpressionImplicits.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpressionImplicits">WorkflowExpressionImplicits</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.workflow.package@WorkflowExpression" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.workflow.WorkflowNoActivityExpression" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WorkflowNoActivityExpression"></a>
+      <a id="WorkflowNoActivityExpression:WorkflowNoActivityExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WorkflowNoActivityExpression$.html"><span class="name">WorkflowNoActivityExpression</span></a><span class="result"> extends <a href="WorkflowExpression.html" class="extype" name="com.krux.hyperion.workflow.WorkflowExpression">WorkflowExpression</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.workflow.package@WorkflowNoActivityExpression" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         
 
