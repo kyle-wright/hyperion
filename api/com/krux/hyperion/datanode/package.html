@@ -1,0 +1,399 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>datanode - com.krux.hyperion.datanode</title>
+          <meta name="description" content="datanode - com.krux.hyperion.datanode" />
+          <meta name="keywords" content="datanode com.krux.hyperion.datanode" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.krux.hyperion.datanode.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a></p>
+        <h1>datanode</h1><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">datanode</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.datanode.Copyable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CopyableextendsDataNode"></a>
+      <a id="Copyable:Copyable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Copyable.html"><span class="name">Copyable</span></a><span class="result"> extends <a href="DataNode.html" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@CopyableextendsDataNode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The data node that can be used as input and output in CopyActivity
+</p>
+    </li><li name="com.krux.hyperion.datanode.DataNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DataNodeextendsNamedPipelineObject"></a>
+      <a id="DataNode:DataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DataNode.html"><span class="name">DataNode</span></a><span class="result"> extends <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@DataNodeextendsNamedPipelineObject" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.DataNodeFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DataNodeFieldsextendsProductwithSerializable"></a>
+      <a id="DataNodeFields:DataNodeFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DataNodeFields.html"><span class="name">DataNodeFields</span></a><span class="params">(<span name="preconditions">preconditions: <span class="extype" name="scala.Seq">Seq</span>[<a href="../precondition/Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onFailAlarms">onFailAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">Seq.empty</span></span>, <span name="onSuccessAlarms">onSuccessAlarms: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/SnsAlarm.html" class="extype" name="com.krux.hyperion.action.SnsAlarm">SnsAlarm</a>] = <span class="symbol">Seq.empty</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@DataNodeFieldsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.InsertTableQuery" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InsertTableQueryextendsTableQuerywithProductwithSerializable"></a>
+      <a id="InsertTableQuery:InsertTableQuery"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InsertTableQuery.html"><span class="name">InsertTableQuery</span></a><span class="params">(<span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="columns">columns: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="TableQuery.html" class="extype" name="com.krux.hyperion.datanode.TableQuery">TableQuery</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@InsertTableQueryextendsTableQuerywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.RedshiftDataNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftDataNodeextendsDataNodewithProductwithSerializable"></a>
+      <a id="RedshiftDataNode:RedshiftDataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftDataNode.html"><span class="name">RedshiftDataNode</span></a><span class="result"> extends <a href="DataNode.html" class="extype" name="com.krux.hyperion.datanode.DataNode">DataNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@RedshiftDataNodeextendsDataNodewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The abstracted RedshiftDataNode
+</p>
+    </li><li name="com.krux.hyperion.datanode.S3DataNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="S3DataNodeextendsCopyable"></a>
+      <a id="S3DataNode:S3DataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="S3DataNode.html"><span class="name">S3DataNode</span></a><span class="result"> extends <a href="Copyable.html" class="extype" name="com.krux.hyperion.datanode.Copyable">Copyable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3DataNodeextendsCopyable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.S3DataNodeFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3DataNodeFieldsextendsProductwithSerializable"></a>
+      <a id="S3DataNodeFields:S3DataNodeFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="S3DataNodeFields.html"><span class="name">S3DataNodeFields</span></a><span class="params">(<span name="dataFormat">dataFormat: <span class="extype" name="scala.Option">Option</span>[<a href="../dataformat/DataFormat.html" class="extype" name="com.krux.hyperion.dataformat.DataFormat">DataFormat</a>] = <span class="symbol">None</span></span>, <span name="manifestFilePath">manifestFilePath: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HS3Uri.html" class="extype" name="com.krux.hyperion.adt.HS3Uri">HS3Uri</a>] = <span class="symbol">None</span></span>, <span name="isEncrypted">isEncrypted: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a> = <span class="symbol"><span class="name"><a href="../../../package.html">HBoolean.True</a></span></span></span>, <span name="isCompressed">isCompressed: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a> = <span class="symbol"><span class="name"><a href="../../../package.html">HBoolean.False</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3DataNodeFieldsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.S3File" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3FileextendsS3DataNodewithProductwithSerializable"></a>
+      <a id="S3File:S3File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="S3File.html"><span class="name">S3File</span></a><span class="result"> extends <a href="S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3FileextendsS3DataNodewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines data from s3
+</p>
+    </li><li name="com.krux.hyperion.datanode.S3Folder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3FolderextendsS3DataNodewithProductwithSerializable"></a>
+      <a id="S3Folder:S3Folder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="S3Folder.html"><span class="name">S3Folder</span></a><span class="result"> extends <a href="S3DataNode.html" class="extype" name="com.krux.hyperion.datanode.S3DataNode">S3DataNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3FolderextendsS3DataNodewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines data from s3 directory
+</p>
+    </li><li name="com.krux.hyperion.datanode.SelectTableQuery" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SelectTableQueryextendsTableQuerywithProductwithSerializable"></a>
+      <a id="SelectTableQuery:SelectTableQuery"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SelectTableQuery.html"><span class="name">SelectTableQuery</span></a><span class="params">(<span name="table">table: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="columns">columns: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="whereClause">whereClause: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="distinct">distinct: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <a href="TableQuery.html" class="extype" name="com.krux.hyperion.datanode.TableQuery">TableQuery</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@SelectTableQueryextendsTableQuerywithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.SqlDataNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SqlDataNodeextendsCopyablewithProductwithSerializable"></a>
+      <a id="SqlDataNode:SqlDataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SqlDataNode.html"><span class="name">SqlDataNode</span></a><span class="params">(<span name="baseFields">baseFields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>, <span name="dataNodeFields">dataNodeFields: <a href="DataNodeFields.html" class="extype" name="com.krux.hyperion.datanode.DataNodeFields">DataNodeFields</a></span>, <span name="tableQuery">tableQuery: <a href="TableQuery.html" class="extype" name="com.krux.hyperion.datanode.TableQuery">TableQuery</a></span>, <span name="database">database: <a href="../database/Database.html" class="extype" name="com.krux.hyperion.database.Database">Database</a></span>)</span><span class="result"> extends <a href="Copyable.html" class="extype" name="com.krux.hyperion.datanode.Copyable">Copyable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@SqlDataNodeextendsCopyablewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>that the AWS Datapipeline SqlDataNode does not require a JdbcDatabase parameter, but
+requires specify the username, password, etc. within the object, we require a JdbcDatabase
+object for consistency with other database data node objects.</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.datanode.TableQuery" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TableQueryextendsAnyRef"></a>
+      <a id="TableQuery:TableQuery"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TableQuery.html"><span class="name">TableQuery</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@TableQueryextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.krux.hyperion.datanode.RedshiftDataNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RedshiftDataNode"></a>
+      <a id="RedshiftDataNode:RedshiftDataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RedshiftDataNode$.html"><span class="name">RedshiftDataNode</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@RedshiftDataNode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.S3DataNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3DataNode"></a>
+      <a id="S3DataNode:S3DataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="S3DataNode$.html"><span class="name">S3DataNode</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3DataNode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.S3File" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3File"></a>
+      <a id="S3File:S3File"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="S3File$.html"><span class="name">S3File</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3File" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.S3Folder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="S3Folder"></a>
+      <a id="S3Folder:S3Folder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="S3Folder$.html"><span class="name">S3Folder</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@S3Folder" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.datanode.SqlDataNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SqlDataNode"></a>
+      <a id="SqlDataNode:SqlDataNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SqlDataNode$.html"><span class="name">SqlDataNode</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.datanode.package@SqlDataNode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

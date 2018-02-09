@@ -1,0 +1,2116 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>MapReduceCluster - com.krux.hyperion.resource.MapReduceCluster</title>
+          <meta name="description" content="MapReduceCluster - com.krux.hyperion.resource.MapReduceCluster" />
+          <meta name="keywords" content="MapReduceCluster com.krux.hyperion.resource.MapReduceCluster" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.krux.hyperion.resource.MapReduceCluster';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="MapReduceCluster$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.resource">resource</a></p>
+        <h1><a href="MapReduceCluster$.html" title="See companion object">MapReduceCluster</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="MapReduceCluster$.html" title="See companion object">object MapReduceCluster</a>
+            | <a href="package.html" class="extype" name="com.krux.hyperion.resource">package resource</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MapReduceCluster</span><span class="result"> extends <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Launch a map reduce cluster
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/resource/MapReduceCluster.scala" target="_blank">MapReduceCluster.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a>, <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a>, <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.krux.hyperion.resource.MapReduceCluster"><span>MapReduceCluster</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.resource.EmrCluster"><span>EmrCluster</span></li><li class="in" name="com.krux.hyperion.resource.ResourceObject"><span>ResourceObject</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.resource.MapReduceCluster.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@Self=com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a> → <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.math.Ordered#&lt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;(that:A):Boolean"></a>
+      <a id="&lt;(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@&lt;(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#&lt;=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;=(that:A):Boolean"></a>
+      <a id="&lt;=(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less$eq" class="name">&lt;=</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@&lt;=(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.math.Ordered#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&gt;(that:A):Boolean"></a>
+      <a id="&gt;(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@&gt;(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#&gt;=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&gt;=(that:A):Boolean"></a>
+      <a id="&gt;=(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$eq" class="name">&gt;=</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@&gt;=(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#actionOnResourceFailure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="actionOnResourceFailure:Option[com.krux.hyperion.resource.ActionOnResourceFailure]"></a>
+      <a id="actionOnResourceFailure:Option[ActionOnResourceFailure]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">actionOnResourceFailure</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="ActionOnResourceFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnResourceFailure">ActionOnResourceFailure</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@actionOnResourceFailure:Option[com.krux.hyperion.resource.ActionOnResourceFailure]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#actionOnTaskFailure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="actionOnTaskFailure:Option[com.krux.hyperion.resource.ActionOnTaskFailure]"></a>
+      <a id="actionOnTaskFailure:Option[ActionOnTaskFailure]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">actionOnTaskFailure</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="ActionOnTaskFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnTaskFailure">ActionOnTaskFailure</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@actionOnTaskFailure:Option[com.krux.hyperion.resource.ActionOnTaskFailure]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#additionalMasterSecurityGroupIds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="additionalMasterSecurityGroupIds:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="additionalMasterSecurityGroupIds:Seq[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">additionalMasterSecurityGroupIds</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@additionalMasterSecurityGroupIds:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#additionalSlaveSecurityGroupIds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="additionalSlaveSecurityGroupIds:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="additionalSlaveSecurityGroupIds:Seq[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">additionalSlaveSecurityGroupIds</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@additionalSlaveSecurityGroupIds:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#amiVersion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="amiVersion:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="amiVersion:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">amiVersion</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@amiVersion:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#applications" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="applications:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="applications:Seq[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">applications</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@applications:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#availabilityZone" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="availabilityZone:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="availabilityZone:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">availabilityZone</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@availabilityZone:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#bootstrapAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bootstrapAction:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="bootstrapAction:Seq[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bootstrapAction</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@bootstrapAction:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#compare" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compare(that:com.krux.hyperion.common.PipelineObject):Int"></a>
+      <a id="compare(PipelineObject):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compare</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@compare(that:com.krux.hyperion.common.PipelineObject):Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> → Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#compareTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareTo(that:A):Int"></a>
+      <a id="compareTo(PipelineObject):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareTo</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@compareTo(that:A):Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#configuration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="configuration:Seq[com.krux.hyperion.resource.EmrConfiguration]"></a>
+      <a id="configuration:Seq[EmrConfiguration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">configuration</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="EmrConfiguration.html" class="extype" name="com.krux.hyperion.resource.EmrConfiguration">EmrConfiguration</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@configuration:Seq[com.krux.hyperion.resource.EmrConfiguration]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#coreInstanceBidPrice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="coreInstanceBidPrice:Option[com.krux.hyperion.adt.HDouble]"></a>
+      <a id="coreInstanceBidPrice:Option[HDouble]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">coreInstanceBidPrice</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDouble.html" class="extype" name="com.krux.hyperion.adt.HDouble">HDouble</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@coreInstanceBidPrice:Option[com.krux.hyperion.adt.HDouble]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#coreInstanceCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="coreInstanceCount:com.krux.hyperion.adt.HInt"></a>
+      <a id="coreInstanceCount:HInt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">coreInstanceCount</span><span class="result">: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@coreInstanceCount:com.krux.hyperion.adt.HInt" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#coreInstanceType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="coreInstanceType:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="coreInstanceType:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">coreInstanceType</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@coreInstanceType:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#emrClusterFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="emrClusterFields:com.krux.hyperion.resource.EmrClusterFields"></a>
+      <a id="emrClusterFields:EmrClusterFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">emrClusterFields</span><span class="result">: <a href="EmrClusterFields.html" class="extype" name="com.krux.hyperion.resource.EmrClusterFields">EmrClusterFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@emrClusterFields:com.krux.hyperion.resource.EmrClusterFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#enableDebugging" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="enableDebugging:Option[com.krux.hyperion.adt.HBoolean]"></a>
+      <a id="enableDebugging:Option[HBoolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enableDebugging</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@enableDebugging:Option[com.krux.hyperion.adt.HBoolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Postfix the name field
+</p><div class="fullcomment"><div class="comment cmt"><p>Postfix the name field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#hadoopSchedulerType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hadoopSchedulerType:Option[com.krux.hyperion.resource.SchedulerType]"></a>
+      <a id="hadoopSchedulerType:Option[SchedulerType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hadoopSchedulerType</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="SchedulerType.html" class="extype" name="com.krux.hyperion.resource.SchedulerType">SchedulerType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@hadoopSchedulerType:Option[com.krux.hyperion.resource.SchedulerType]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#httpProxy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="httpProxy:Option[com.krux.hyperion.common.HttpProxy]"></a>
+      <a id="httpProxy:Option[HttpProxy]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">httpProxy</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../common/HttpProxy.html" class="extype" name="com.krux.hyperion.common.HttpProxy">HttpProxy</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@httpProxy:Option[com.krux.hyperion.common.HttpProxy]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
+      <a id="id:PipelineObjectId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idGroupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idGroupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="idGroupedBy(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idGroupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@idGroupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Have a grouping postfix in the id field
+</p><div class="fullcomment"><div class="comment cmt"><p>Have a grouping postfix in the id field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unleass you have
+a good reason</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idNamed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idNamed(namePrefix:String):NamedPipelineObject.this.Self"></a>
+      <a id="idNamed(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idNamed</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@idNamed(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Id field will be prefixed with name
+</p><div class="fullcomment"><div class="comment cmt"><p>Id field will be prefixed with name
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unless you have
+a good reason</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#initTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="initTimeout:Option[HDuration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@initTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#instanceCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="instanceCount:com.krux.hyperion.adt.HInt"></a>
+      <a id="instanceCount:HInt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">instanceCount</span><span class="result">: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@instanceCount:com.krux.hyperion.adt.HInt" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#keyPair" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="keyPair:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="keyPair:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">keyPair</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@keyPair:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#logger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:org.slf4j.Logger"></a>
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <span class="extype" name="org.slf4j.Logger">Logger</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@logger:org.slf4j.Logger" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#masterInstanceBidPrice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="masterInstanceBidPrice:Option[com.krux.hyperion.adt.HDouble]"></a>
+      <a id="masterInstanceBidPrice:Option[HDouble]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">masterInstanceBidPrice</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDouble.html" class="extype" name="com.krux.hyperion.adt.HDouble">HDouble</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@masterInstanceBidPrice:Option[com.krux.hyperion.adt.HDouble]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#masterInstanceType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="masterInstanceType:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="masterInstanceType:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">masterInstanceType</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@masterInstanceType:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#masterSecurityGroupId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="masterSecurityGroupId:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="masterSecurityGroupId:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">masterSecurityGroupId</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@masterSecurityGroupId:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:Option[String]"></a>
+      <a id="name:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@name:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Name of the pipeline object, if not set, it will defaults to </p><div class="fullcomment"><div class="comment cmt"><p>Name of the pipeline object, if not set, it will defaults to </p><pre><span class="std">Option</span>(id)</pre></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(namePrefix:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">named</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@named(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Give the object a name prefix
+</p><div class="fullcomment"><div class="comment cmt"><p>Give the object a name prefix
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
+      <a id="objects:Iterable[PipelineObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@objects:Iterable[com.krux.hyperion.common.PipelineObject]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a> → <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpEmrCluster]"></a>
+      <a id="ref:AdpRef[AdpEmrCluster]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ref</span><span class="result">: <a href="../aws/AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="../aws/AdpEmrCluster.html" class="extype" name="com.krux.hyperion.aws.AdpEmrCluster">AdpEmrCluster</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpEmrCluster]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#region" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="region:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="region:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">region</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@region:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#releaseLabel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="releaseLabel:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="releaseLabel:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">releaseLabel</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@releaseLabel:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#resourceFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resourceFields:com.krux.hyperion.resource.ResourceFields"></a>
+      <a id="resourceFields:ResourceFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resourceFields</span><span class="result">: <a href="ResourceFields.html" class="extype" name="com.krux.hyperion.resource.ResourceFields">ResourceFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@resourceFields:com.krux.hyperion.resource.ResourceFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#resourceRole" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resourceRole:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="resourceRole:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resourceRole</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@resourceRole:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#role" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="role:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="role:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">role</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@role:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
+      <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">seq2Option</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="anySeq">anySeq: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seq2Option.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seq2Option.A">A</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#seqToOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seqToOption[A,B](anySeq:Seq[A])(transform:A=&gt;B):Option[Seq[B]]"></a>
+      <a id="seqToOption[A,B](Seq[A])((A)⇒B):Option[Seq[B]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">seqToOption</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="anySeq">anySeq: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.A">A</span>]</span>)</span><span class="params">(<span name="transform">transform: (<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.A">A</span>) ⇒ <span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.B">B</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@seqToOption[A,B](anySeq:Seq[A])(transform:A=&gt;B):Option[Seq[B]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serialize:com.krux.hyperion.aws.AdpEmrCluster"></a>
+      <a id="serialize:AdpEmrCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serialize</span><span class="result">: <a href="../aws/AdpEmrCluster.html" class="extype" name="com.krux.hyperion.aws.AdpEmrCluster">AdpEmrCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@serialize:com.krux.hyperion.aws.AdpEmrCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#slaveSecurityGroupId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="slaveSecurityGroupId:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="slaveSecurityGroupId:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">slaveSecurityGroupId</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@slaveSecurityGroupId:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#standardBootstrapAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="standardBootstrapAction:Seq[com.krux.hyperion.adt.HString]"></a>
+      <a id="standardBootstrapAction:Seq[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">standardBootstrapAction</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@standardBootstrapAction:Seq[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#subnetId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="subnetId:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="subnetId:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subnetId</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@subnetId:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#supportedProducts" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="supportedProducts:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="supportedProducts:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">supportedProducts</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@supportedProducts:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#taskInstanceBidPrice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="taskInstanceBidPrice:Option[com.krux.hyperion.adt.HDouble]"></a>
+      <a id="taskInstanceBidPrice:Option[HDouble]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">taskInstanceBidPrice</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDouble.html" class="extype" name="com.krux.hyperion.adt.HDouble">HDouble</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@taskInstanceBidPrice:Option[com.krux.hyperion.adt.HDouble]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#taskInstanceCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="taskInstanceCount:com.krux.hyperion.adt.HInt"></a>
+      <a id="taskInstanceCount:HInt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">taskInstanceCount</span><span class="result">: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@taskInstanceCount:com.krux.hyperion.adt.HInt" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#taskInstanceType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="taskInstanceType:Option[com.krux.hyperion.adt.HString]"></a>
+      <a id="taskInstanceType:Option[HString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">taskInstanceType</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@taskInstanceType:Option[com.krux.hyperion.adt.HString]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#terminateAfter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="terminateAfter(after:com.krux.hyperion.adt.HDuration):ResourceObject.this.Self"></a>
+      <a id="terminateAfter(HDuration):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">terminateAfter</span><span class="params">(<span name="after">after: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@terminateAfter(after:com.krux.hyperion.adt.HDuration):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#terminateAfter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="terminateAfter:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="terminateAfter:Option[HDuration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">terminateAfter</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@terminateAfter:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#uniquePipelineId2String" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String"></a>
+      <a id="uniquePipelineId2String(PipelineObjectId):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniquePipelineId2String</span><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="updateBaseFields(BaseFields):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#updateEmrClusterFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateEmrClusterFields(fields:com.krux.hyperion.resource.EmrClusterFields):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="updateEmrClusterFields(EmrClusterFields):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateEmrClusterFields</span><span class="params">(<span name="fields">fields: <a href="EmrClusterFields.html" class="extype" name="com.krux.hyperion.resource.EmrClusterFields">EmrClusterFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@updateEmrClusterFields(fields:com.krux.hyperion.resource.EmrClusterFields):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.MapReduceCluster#updateResourceFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateResourceFields(fields:com.krux.hyperion.resource.ResourceFields):com.krux.hyperion.resource.MapReduceCluster"></a>
+      <a id="updateResourceFields(ResourceFields):MapReduceCluster"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateResourceFields</span><span class="params">(<span name="fields">fields: <a href="ResourceFields.html" class="extype" name="com.krux.hyperion.resource.ResourceFields">ResourceFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@updateResourceFields(fields:com.krux.hyperion.resource.ResourceFields):com.krux.hyperion.resource.MapReduceCluster" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.resource.MapReduceCluster">MapReduceCluster</a> → <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#useOnDemandOnLastAttempt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="useOnDemandOnLastAttempt:Option[com.krux.hyperion.adt.HBoolean]"></a>
+      <a id="useOnDemandOnLastAttempt:Option[HBoolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">useOnDemandOnLastAttempt</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@useOnDemandOnLastAttempt:Option[com.krux.hyperion.adt.HBoolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#visibleToAllUsers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visibleToAllUsers:Option[com.krux.hyperion.adt.HBoolean]"></a>
+      <a id="visibleToAllUsers:Option[HBoolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visibleToAllUsers</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@visibleToAllUsers:Option[com.krux.hyperion.adt.HBoolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withActionOnResourceFailure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withActionOnResourceFailure(action:com.krux.hyperion.resource.ActionOnResourceFailure):ResourceObject.this.Self"></a>
+      <a id="withActionOnResourceFailure(ActionOnResourceFailure):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withActionOnResourceFailure</span><span class="params">(<span name="action">action: <a href="ActionOnResourceFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnResourceFailure">ActionOnResourceFailure</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withActionOnResourceFailure(action:com.krux.hyperion.resource.ActionOnResourceFailure):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withActionOnTaskFailure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withActionOnTaskFailure(action:com.krux.hyperion.resource.ActionOnTaskFailure):ResourceObject.this.Self"></a>
+      <a id="withActionOnTaskFailure(ActionOnTaskFailure):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withActionOnTaskFailure</span><span class="params">(<span name="action">action: <a href="ActionOnTaskFailure.html" class="extype" name="com.krux.hyperion.resource.ActionOnTaskFailure">ActionOnTaskFailure</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withActionOnTaskFailure(action:com.krux.hyperion.resource.ActionOnTaskFailure):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withAdditionalMasterSecurityGroupIds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAdditionalMasterSecurityGroupIds(groupIds:com.krux.hyperion.adt.HString*):EmrCluster.this.Self"></a>
+      <a id="withAdditionalMasterSecurityGroupIds(HString*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAdditionalMasterSecurityGroupIds</span><span class="params">(<span name="groupIds">groupIds: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withAdditionalMasterSecurityGroupIds(groupIds:com.krux.hyperion.adt.HString*):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withAdditionalSlaveSecurityGroupIds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAdditionalSlaveSecurityGroupIds(groupIds:com.krux.hyperion.adt.HString*):EmrCluster.this.Self"></a>
+      <a id="withAdditionalSlaveSecurityGroupIds(HString*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAdditionalSlaveSecurityGroupIds</span><span class="params">(<span name="groupIds">groupIds: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withAdditionalSlaveSecurityGroupIds(groupIds:com.krux.hyperion.adt.HString*):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withAmiVersion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAmiVersion(version:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withAmiVersion(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAmiVersion</span><span class="params">(<span name="version">version: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withAmiVersion(version:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withApplications" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withApplications(apps:com.krux.hyperion.adt.HString*):EmrCluster.this.Self"></a>
+      <a id="withApplications(HString*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withApplications</span><span class="params">(<span name="apps">apps: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withApplications(apps:com.krux.hyperion.adt.HString*):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withAvailabilityZone" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withAvailabilityZone(az:com.krux.hyperion.adt.HString):ResourceObject.this.Self"></a>
+      <a id="withAvailabilityZone(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAvailabilityZone</span><span class="params">(<span name="az">az: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withAvailabilityZone(az:com.krux.hyperion.adt.HString):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withBootstrapAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withBootstrapAction(actions:com.krux.hyperion.adt.HString*):EmrCluster.this.Self"></a>
+      <a id="withBootstrapAction(HString*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withBootstrapAction</span><span class="params">(<span name="actions">actions: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withBootstrapAction(actions:com.krux.hyperion.adt.HString*):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withConfiguration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withConfiguration(conf:com.krux.hyperion.resource.EmrConfiguration*):EmrCluster.this.Self"></a>
+      <a id="withConfiguration(EmrConfiguration*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withConfiguration</span><span class="params">(<span name="conf">conf: <a href="EmrConfiguration.html" class="extype" name="com.krux.hyperion.resource.EmrConfiguration">EmrConfiguration</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withConfiguration(conf:com.krux.hyperion.resource.EmrConfiguration*):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withCoreInstanceBidPrice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withCoreInstanceBidPrice(price:com.krux.hyperion.adt.HDouble):EmrCluster.this.Self"></a>
+      <a id="withCoreInstanceBidPrice(HDouble):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withCoreInstanceBidPrice</span><span class="params">(<span name="price">price: <a href="../adt/HDouble.html" class="extype" name="com.krux.hyperion.adt.HDouble">HDouble</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withCoreInstanceBidPrice(price:com.krux.hyperion.adt.HDouble):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withCoreInstanceCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withCoreInstanceCount(count:com.krux.hyperion.adt.HInt):EmrCluster.this.Self"></a>
+      <a id="withCoreInstanceCount(HInt):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withCoreInstanceCount</span><span class="params">(<span name="count">count: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withCoreInstanceCount(count:com.krux.hyperion.adt.HInt):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withCoreInstanceType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withCoreInstanceType(instanceType:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withCoreInstanceType(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withCoreInstanceType</span><span class="params">(<span name="instanceType">instanceType: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withCoreInstanceType(instanceType:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withDebuggingEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withDebuggingEnabled(enabled:com.krux.hyperion.adt.HBoolean):EmrCluster.this.Self"></a>
+      <a id="withDebuggingEnabled(HBoolean):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDebuggingEnabled</span><span class="params">(<span name="enabled">enabled: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withDebuggingEnabled(enabled:com.krux.hyperion.adt.HBoolean):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withHadoopSchedulerType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withHadoopSchedulerType(scheduleType:com.krux.hyperion.resource.SchedulerType):EmrCluster.this.Self"></a>
+      <a id="withHadoopSchedulerType(SchedulerType):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withHadoopSchedulerType</span><span class="params">(<span name="scheduleType">scheduleType: <a href="SchedulerType.html" class="extype" name="com.krux.hyperion.resource.SchedulerType">SchedulerType</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withHadoopSchedulerType(scheduleType:com.krux.hyperion.resource.SchedulerType):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withHttpProxy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withHttpProxy(proxy:com.krux.hyperion.common.HttpProxy):ResourceObject.this.Self"></a>
+      <a id="withHttpProxy(HttpProxy):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withHttpProxy</span><span class="params">(<span name="proxy">proxy: <a href="../common/HttpProxy.html" class="extype" name="com.krux.hyperion.common.HttpProxy">HttpProxy</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withHttpProxy(proxy:com.krux.hyperion.common.HttpProxy):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withInitTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withInitTimeout(timeout:com.krux.hyperion.adt.HDuration):ResourceObject.this.Self"></a>
+      <a id="withInitTimeout(HDuration):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withInitTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withInitTimeout(timeout:com.krux.hyperion.adt.HDuration):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withKeyPair" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withKeyPair(theKeyPair:com.krux.hyperion.adt.HString):ResourceObject.this.Self"></a>
+      <a id="withKeyPair(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withKeyPair</span><span class="params">(<span name="theKeyPair">theKeyPair: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withKeyPair(theKeyPair:com.krux.hyperion.adt.HString):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withMasterInstanceBidPrice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMasterInstanceBidPrice(price:com.krux.hyperion.adt.HDouble):EmrCluster.this.Self"></a>
+      <a id="withMasterInstanceBidPrice(HDouble):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMasterInstanceBidPrice</span><span class="params">(<span name="price">price: <a href="../adt/HDouble.html" class="extype" name="com.krux.hyperion.adt.HDouble">HDouble</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withMasterInstanceBidPrice(price:com.krux.hyperion.adt.HDouble):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withMasterInstanceType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMasterInstanceType(instanceType:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withMasterInstanceType(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMasterInstanceType</span><span class="params">(<span name="instanceType">instanceType: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withMasterInstanceType(instanceType:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withMasterSecurityGroupId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMasterSecurityGroupId(groupId:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withMasterSecurityGroupId(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMasterSecurityGroupId</span><span class="params">(<span name="groupId">groupId: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withMasterSecurityGroupId(groupId:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMaximumRetries(retries:com.krux.hyperion.adt.HInt):ResourceObject.this.Self"></a>
+      <a id="withMaximumRetries(HInt):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withMaximumRetries(retries:com.krux.hyperion.adt.HInt):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withRegion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withRegion(r:com.krux.hyperion.adt.HString):ResourceObject.this.Self"></a>
+      <a id="withRegion(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withRegion</span><span class="params">(<span name="r">r: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withRegion(r:com.krux.hyperion.adt.HString):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withReleaseLabel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withReleaseLabel(label:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withReleaseLabel(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withReleaseLabel</span><span class="params">(<span name="label">label: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withReleaseLabel(label:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withResourceRole" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withResourceRole(r:com.krux.hyperion.adt.HString):ResourceObject.this.Self"></a>
+      <a id="withResourceRole(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withResourceRole</span><span class="params">(<span name="r">r: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withResourceRole(r:com.krux.hyperion.adt.HString):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withRole" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withRole(r:com.krux.hyperion.adt.HString):ResourceObject.this.Self"></a>
+      <a id="withRole(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withRole</span><span class="params">(<span name="r">r: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withRole(r:com.krux.hyperion.adt.HString):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withSlaveSecurityGroupId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withSlaveSecurityGroupId(groupId:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withSlaveSecurityGroupId(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSlaveSecurityGroupId</span><span class="params">(<span name="groupId">groupId: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withSlaveSecurityGroupId(groupId:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withStandardBootstrapAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withStandardBootstrapAction(actions:com.krux.hyperion.adt.HString*):EmrCluster.this.Self"></a>
+      <a id="withStandardBootstrapAction(HString*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withStandardBootstrapAction</span><span class="params">(<span name="actions">actions: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withStandardBootstrapAction(actions:com.krux.hyperion.adt.HString*):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withSubnetId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withSubnetId(subnet:com.krux.hyperion.adt.HString):ResourceObject.this.Self"></a>
+      <a id="withSubnetId(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSubnetId</span><span class="params">(<span name="subnet">subnet: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withSubnetId(subnet:com.krux.hyperion.adt.HString):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withSupportedProducts" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withSupportedProducts(products:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withSupportedProducts(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withSupportedProducts</span><span class="params">(<span name="products">products: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withSupportedProducts(products:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withTaskInstanceBidPrice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withTaskInstanceBidPrice(price:com.krux.hyperion.adt.HDouble):EmrCluster.this.Self"></a>
+      <a id="withTaskInstanceBidPrice(HDouble):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withTaskInstanceBidPrice</span><span class="params">(<span name="price">price: <a href="../adt/HDouble.html" class="extype" name="com.krux.hyperion.adt.HDouble">HDouble</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withTaskInstanceBidPrice(price:com.krux.hyperion.adt.HDouble):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withTaskInstanceCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withTaskInstanceCount(count:com.krux.hyperion.adt.HInt):EmrCluster.this.Self"></a>
+      <a id="withTaskInstanceCount(HInt):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withTaskInstanceCount</span><span class="params">(<span name="count">count: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withTaskInstanceCount(count:com.krux.hyperion.adt.HInt):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withTaskInstanceType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withTaskInstanceType(instanceType:com.krux.hyperion.adt.HString):EmrCluster.this.Self"></a>
+      <a id="withTaskInstanceType(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withTaskInstanceType</span><span class="params">(<span name="instanceType">instanceType: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withTaskInstanceType(instanceType:com.krux.hyperion.adt.HString):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.ResourceObject#withUseOnDemandOnLastAttempt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withUseOnDemandOnLastAttempt(use:com.krux.hyperion.adt.HBoolean):ResourceObject.this.Self"></a>
+      <a id="withUseOnDemandOnLastAttempt(HBoolean):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withUseOnDemandOnLastAttempt</span><span class="params">(<span name="use">use: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withUseOnDemandOnLastAttempt(use:com.krux.hyperion.adt.HBoolean):ResourceObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.resource.EmrCluster#withVisibleToAllUsers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withVisibleToAllUsers(visible:com.krux.hyperion.adt.HBoolean):EmrCluster.this.Self"></a>
+      <a id="withVisibleToAllUsers(HBoolean):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withVisibleToAllUsers</span><span class="params">(<span name="visible">visible: <a href="../adt/HBoolean.html" class="extype" name="com.krux.hyperion.adt.HBoolean">HBoolean</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.resource.MapReduceCluster" class="extmbr" name="com.krux.hyperion.resource.MapReduceCluster.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.resource.MapReduceCluster@withVisibleToAllUsers(visible:com.krux.hyperion.adt.HBoolean):EmrCluster.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.resource.EmrCluster">
+              <h3>Inherited from <a href="EmrCluster.html" class="extype" name="com.krux.hyperion.resource.EmrCluster">EmrCluster</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.resource.ResourceObject">
+              <h3>Inherited from <a href="ResourceObject.html" class="extype" name="com.krux.hyperion.resource.ResourceObject">ResourceObject</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
+              <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
+            </div><div class="parent" name="scala.math.Ordered">
+              <h3>Inherited from <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</h3>
+            </div><div class="parent" name="java.lang.Comparable">
+              <h3>Inherited from <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

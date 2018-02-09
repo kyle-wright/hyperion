@@ -1,0 +1,1080 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>S3KeyExistsPrecondition - com.krux.hyperion.precondition.S3KeyExistsPrecondition</title>
+          <meta name="description" content="S3KeyExistsPrecondition - com.krux.hyperion.precondition.S3KeyExistsPrecondition" />
+          <meta name="keywords" content="S3KeyExistsPrecondition com.krux.hyperion.precondition.S3KeyExistsPrecondition" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.krux.hyperion.precondition.S3KeyExistsPrecondition';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="S3KeyExistsPrecondition$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.precondition">precondition</a></p>
+        <h1><a href="S3KeyExistsPrecondition$.html" title="See companion object">S3KeyExistsPrecondition</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="S3KeyExistsPrecondition$.html" title="See companion object">object S3KeyExistsPrecondition</a>
+            | <a href="package.html" class="extype" name="com.krux.hyperion.precondition">package precondition</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">S3KeyExistsPrecondition</span><span class="result"> extends <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Checks whether a key exists in an Amazon S3 data node.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/precondition/S3KeyExistsPrecondition.scala" target="_blank">S3KeyExistsPrecondition.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a>, <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a>, <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>, <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition"><span>S3KeyExistsPrecondition</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.precondition.Precondition"><span>Precondition</span></li><li class="in" name="com.krux.hyperion.common.NamedPipelineObject"><span>NamedPipelineObject</span></li><li class="in" name="com.krux.hyperion.common.PipelineObject"><span>PipelineObject</span></li><li class="in" name="scala.math.Ordered"><span>Ordered</span></li><li class="in" name="java.lang.Comparable"><span>Comparable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition"></a>
+      <a id="Self:Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Self</span><span class="result"> = <a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a> → <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.math.Ordered#&lt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;(that:A):Boolean"></a>
+      <a id="&lt;(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less" class="name">&lt;</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@&lt;(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#&lt;=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;=(that:A):Boolean"></a>
+      <a id="&lt;=(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $less$eq" class="name">&lt;=</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@&lt;=(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.math.Ordered#&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&gt;(that:A):Boolean"></a>
+      <a id="&gt;(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater" class="name">&gt;</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@&gt;(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#&gt;=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&gt;=(that:A):Boolean"></a>
+      <a id="&gt;=(PipelineObject):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$eq" class="name">&gt;=</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@&gt;=(that:A):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition#baseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="baseFields:com.krux.hyperion.common.BaseFields"></a>
+      <a id="baseFields:BaseFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baseFields</span><span class="result">: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@baseFields:com.krux.hyperion.common.BaseFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#compare" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compare(that:com.krux.hyperion.common.PipelineObject):Int"></a>
+      <a id="compare(PipelineObject):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compare</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@compare(that:com.krux.hyperion.common.PipelineObject):Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a> → Ordered</dd></dl></div>
+    </li><li name="scala.math.Ordered#compareTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareTo(that:A):Int"></a>
+      <a id="compareTo(PipelineObject):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareTo</span><span class="params">(<span name="that">that: <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@compareTo(that:A):Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Ordered → Comparable</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#groupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="groupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="groupedBy(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">groupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@groupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Postfix the name field
+</p><div class="fullcomment"><div class="comment cmt"><p>Postfix the name field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="id:com.krux.hyperion.common.PipelineObjectId"></a>
+      <a id="id:PipelineObjectId"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">id</span><span class="result">: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@id:com.krux.hyperion.common.PipelineObjectId" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idGroupedBy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idGroupedBy(group:String):NamedPipelineObject.this.Self"></a>
+      <a id="idGroupedBy(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idGroupedBy</span><span class="params">(<span name="group">group: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@idGroupedBy(group:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Have a grouping postfix in the id field
+</p><div class="fullcomment"><div class="comment cmt"><p>Have a grouping postfix in the id field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unleass you have
+a good reason</p></span></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#idNamed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="idNamed(namePrefix:String):NamedPipelineObject.this.Self"></a>
+      <a id="idNamed(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">idNamed</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@idNamed(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Id field will be prefixed with name
+</p><div class="fullcomment"><div class="comment cmt"><p>Id field will be prefixed with name
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd><dt>Note</dt><dd><span class="cmt"><p>Id naming is more restrictive, it is recommended to not changing the id unless you have
+a good reason</p></span></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#maximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maximumRetries:Option[com.krux.hyperion.adt.HInt]"></a>
+      <a id="maximumRetries:Option[HInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maximumRetries</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@maximumRetries:Option[com.krux.hyperion.adt.HInt]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:Option[String]"></a>
+      <a id="name:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@name:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Name of the pipeline object, if not set, it will defaults to </p><div class="fullcomment"><div class="comment cmt"><p>Name of the pipeline object, if not set, it will defaults to </p><pre><span class="std">Option</span>(id)</pre></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.NamedPipelineObject#named" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="named(namePrefix:String):NamedPipelineObject.this.Self"></a>
+      <a id="named(String):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">named</span><span class="params">(<span name="namePrefix">namePrefix: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@named(namePrefix:String):NamedPipelineObject.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Give the object a name prefix
+</p><div class="fullcomment"><div class="comment cmt"><p>Give the object a name prefix
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#objects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objects:Iterable[com.krux.hyperion.common.PipelineObject]"></a>
+      <a id="objects:Iterable[PipelineObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objects</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@objects:Iterable[com.krux.hyperion.common.PipelineObject]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail(actions:com.krux.hyperion.action.Action*):Precondition.this.Self"></a>
+      <a id="onFail(Action*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="params">(<span name="actions">actions: <a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@onFail(actions:com.krux.hyperion.action.Action*):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onFail:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onFail</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@onFail:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction(actions:com.krux.hyperion.action.Action*):Precondition.this.Self"></a>
+      <a id="onLateAction(Action*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="params">(<span name="actions">actions: <a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@onLateAction(actions:com.krux.hyperion.action.Action*):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onLateAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onLateAction:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onLateAction:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onLateAction</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@onLateAction:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess(actions:com.krux.hyperion.action.Action*):Precondition.this.Self"></a>
+      <a id="onSuccess(Action*):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="params">(<span name="actions">actions: <a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>*</span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@onSuccess(actions:com.krux.hyperion.action.Action*):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess:Seq[com.krux.hyperion.action.Action]"></a>
+      <a id="onSuccess:Seq[Action]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSuccess</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../action/Action.html" class="extype" name="com.krux.hyperion.action.Action">Action</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@onSuccess:Seq[com.krux.hyperion.action.Action]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition#preconditionFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preconditionFields:com.krux.hyperion.precondition.PreconditionFields"></a>
+      <a id="preconditionFields:PreconditionFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preconditionFields</span><span class="result">: <a href="PreconditionFields.html" class="extype" name="com.krux.hyperion.precondition.PreconditionFields">PreconditionFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@preconditionFields:com.krux.hyperion.precondition.PreconditionFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a> → <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#preconditionTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preconditionTimeout:Option[com.krux.hyperion.adt.HDuration]"></a>
+      <a id="preconditionTimeout:Option[HDuration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preconditionTimeout</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@preconditionTimeout:Option[com.krux.hyperion.adt.HDuration]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The precondition will be retried until the retryTimeout with a gap of retryDelay between attempts.</p><div class="fullcomment"><div class="comment cmt"><p>The precondition will be retried until the retryTimeout with a gap of retryDelay between attempts.
+Time period; for example, &quot;1 hour&quot;.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpPrecondition]"></a>
+      <a id="ref:AdpRef[AdpPrecondition]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ref</span><span class="result">: <a href="../aws/AdpRef.html" class="extype" name="com.krux.hyperion.aws.AdpRef">AdpRef</a>[<a href="../aws/AdpPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpPrecondition">AdpPrecondition</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@ref:com.krux.hyperion.aws.AdpRef[com.krux.hyperion.aws.AdpPrecondition]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#role" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="role:com.krux.hyperion.adt.HString"></a>
+      <a id="role:HString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">role</span><span class="result">: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@role:com.krux.hyperion.adt.HString" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The IAM role to use for this precondition.</p><div class="fullcomment"><div class="comment cmt"><p>The IAM role to use for this precondition.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition#s3Key" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="s3Key:com.krux.hyperion.adt.HS3Uri"></a>
+      <a id="s3Key:HS3Uri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">s3Key</span><span class="result">: <a href="../adt/HS3Uri.html" class="extype" name="com.krux.hyperion.adt.HS3Uri">HS3Uri</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@s3Key:com.krux.hyperion.adt.HS3Uri" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Amazon S3 key to check for existence.</p>
+    </li><li name="com.krux.hyperion.common.PipelineObject#seq2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]"></a>
+      <a id="seq2Option[A](Seq[A]):Option[Seq[A]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">seq2Option</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="anySeq">anySeq: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seq2Option.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seq2Option.A">A</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@seq2Option[A](anySeq:Seq[A]):Option[Seq[A]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#seqToOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seqToOption[A,B](anySeq:Seq[A])(transform:A=&gt;B):Option[Seq[B]]"></a>
+      <a id="seqToOption[A,B](Seq[A])((A)⇒B):Option[Seq[B]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">seqToOption</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="anySeq">anySeq: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.A">A</span>]</span>)</span><span class="params">(<span name="transform">transform: (<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.A">A</span>) ⇒ <span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="com.krux.hyperion.common.PipelineObject.seqToOption.B">B</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@seqToOption[A,B](anySeq:Seq[A])(transform:A=&gt;B):Option[Seq[B]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serialize:com.krux.hyperion.aws.AdpS3KeyExistsPrecondition"></a>
+      <a id="serialize:AdpS3KeyExistsPrecondition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serialize</span><span class="result">: <a href="../aws/AdpS3KeyExistsPrecondition.html" class="extype" name="com.krux.hyperion.aws.AdpS3KeyExistsPrecondition">AdpS3KeyExistsPrecondition</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@serialize:com.krux.hyperion.aws.AdpS3KeyExistsPrecondition" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a> → <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a> → <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.common.PipelineObject#uniquePipelineId2String" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String"></a>
+      <a id="uniquePipelineId2String(PipelineObjectId):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniquePipelineId2String</span><span class="params">(<span name="id">id: <a href="../common/PipelineObjectId.html" class="extype" name="com.krux.hyperion.common.PipelineObjectId">PipelineObjectId</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@uniquePipelineId2String(id:com.krux.hyperion.common.PipelineObjectId):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition#updateBaseFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.precondition.S3KeyExistsPrecondition"></a>
+      <a id="updateBaseFields(BaseFields):S3KeyExistsPrecondition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateBaseFields</span><span class="params">(<span name="fields">fields: <a href="../common/BaseFields.html" class="extype" name="com.krux.hyperion.common.BaseFields">BaseFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@updateBaseFields(fields:com.krux.hyperion.common.BaseFields):com.krux.hyperion.precondition.S3KeyExistsPrecondition" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a> → <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.S3KeyExistsPrecondition#updatePreconditionFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updatePreconditionFields(fields:com.krux.hyperion.precondition.PreconditionFields):com.krux.hyperion.precondition.S3KeyExistsPrecondition"></a>
+      <a id="updatePreconditionFields(PreconditionFields):S3KeyExistsPrecondition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updatePreconditionFields</span><span class="params">(<span name="fields">fields: <a href="PreconditionFields.html" class="extype" name="com.krux.hyperion.precondition.PreconditionFields">PreconditionFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@updatePreconditionFields(fields:com.krux.hyperion.precondition.PreconditionFields):com.krux.hyperion.precondition.S3KeyExistsPrecondition" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition">S3KeyExistsPrecondition</a> → <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#withMaximumRetries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMaximumRetries(retries:com.krux.hyperion.adt.HInt):Precondition.this.Self"></a>
+      <a id="withMaximumRetries(HInt):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMaximumRetries</span><span class="params">(<span name="retries">retries: <a href="../adt/HInt.html" class="extype" name="com.krux.hyperion.adt.HInt">HInt</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@withMaximumRetries(retries:com.krux.hyperion.adt.HInt):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#withPreconditionTimeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withPreconditionTimeout(timeout:com.krux.hyperion.adt.HDuration):Precondition.this.Self"></a>
+      <a id="withPreconditionTimeout(HDuration):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withPreconditionTimeout</span><span class="params">(<span name="timeout">timeout: <a href="../adt/HDuration.html" class="extype" name="com.krux.hyperion.adt.HDuration">HDuration</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@withPreconditionTimeout(timeout:com.krux.hyperion.adt.HDuration):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.precondition.Precondition#withRole" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withRole(role:com.krux.hyperion.adt.HString):Precondition.this.Self"></a>
+      <a id="withRole(HString):Self"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withRole</span><span class="params">(<span name="role">role: <a href="../adt/HString.html" class="extype" name="com.krux.hyperion.adt.HString">HString</a></span>)</span><span class="result">: <a href="#Self=com.krux.hyperion.precondition.S3KeyExistsPrecondition" class="extmbr" name="com.krux.hyperion.precondition.S3KeyExistsPrecondition.Self">Self</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.precondition.S3KeyExistsPrecondition@withRole(role:com.krux.hyperion.adt.HString):Precondition.this.Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.precondition.Precondition">
+              <h3>Inherited from <a href="Precondition.html" class="extype" name="com.krux.hyperion.precondition.Precondition">Precondition</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.NamedPipelineObject">
+              <h3>Inherited from <a href="../common/NamedPipelineObject.html" class="extype" name="com.krux.hyperion.common.NamedPipelineObject">NamedPipelineObject</a></h3>
+            </div><div class="parent" name="com.krux.hyperion.common.PipelineObject">
+              <h3>Inherited from <a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a></h3>
+            </div><div class="parent" name="scala.math.Ordered">
+              <h3>Inherited from <span class="extype" name="scala.math.Ordered">Ordered</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</h3>
+            </div><div class="parent" name="java.lang.Comparable">
+              <h3>Inherited from <span class="extype" name="java.lang.Comparable">Comparable</span>[<a href="../common/PipelineObject.html" class="extype" name="com.krux.hyperion.common.PipelineObject">PipelineObject</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

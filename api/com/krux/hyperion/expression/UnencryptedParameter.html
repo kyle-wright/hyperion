@@ -1,0 +1,794 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>UnencryptedParameter - com.krux.hyperion.expression.UnencryptedParameter</title>
+          <meta name="description" content="UnencryptedParameter - com.krux.hyperion.expression.UnencryptedParameter" />
+          <meta name="keywords" content="UnencryptedParameter com.krux.hyperion.expression.UnencryptedParameter" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.krux.hyperion.expression.UnencryptedParameter';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.krux">krux</a>.<a href="../package.html" class="extype" name="com.krux.hyperion">hyperion</a>.<a href="package.html" class="extype" name="com.krux.hyperion.expression">expression</a></p>
+        <h1>UnencryptedParameter</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.krux.hyperion.expression">package expression</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnencryptedParameter</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="parameterFields">parameterFields: <a href="ParameterFields.html" class="extype" name="com.krux.hyperion.expression.ParameterFields">ParameterFields</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$8">evidence$8: <a href="GenericParameter.html" class="extype" name="com.krux.hyperion.expression.GenericParameter">GenericParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>)</span><span class="result"> extends <a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>] with <a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>, <a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>UnencryptedParameter is subtype of Parameter and belongs to the type class GenericParameter
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/krux/hyperion/tree/master//core/src/main/scala/com/krux/hyperion/expression/Parameter.scala" target="_blank">Parameter.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>], <a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>, <a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.krux.hyperion.expression.UnencryptedParameter"><span>UnencryptedParameter</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.krux.hyperion.expression.Parameter"><span>Parameter</span></li><li class="in" name="com.krux.hyperion.expression.ParameterBuilder"><span>ParameterBuilder</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="com.krux.hyperion.expression.UnencryptedParameter#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(parameterFields:com.krux.hyperion.expression.ParameterFields)(implicitevidence$8:com.krux.hyperion.expression.GenericParameter[T]):com.krux.hyperion.expression.UnencryptedParameter[T]"></a>
+      <a id="&lt;init&gt;:UnencryptedParameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnencryptedParameter</span><span class="params">(<span name="parameterFields">parameterFields: <a href="ParameterFields.html" class="extype" name="com.krux.hyperion.expression.ParameterFields">ParameterFields</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="GenericParameter.html" class="extype" name="com.krux.hyperion.expression.GenericParameter">GenericParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@&lt;init&gt;(parameterFields:com.krux.hyperion.expression.ParameterFields)(implicitevidence$8:com.krux.hyperion.expression.GenericParameter[T]):com.krux.hyperion.expression.UnencryptedParameter[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#description" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="description:Option[String]"></a>
+      <a id="description:Option[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">description</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@description:Option[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.UnencryptedParameter#encrypted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="encrypted:com.krux.hyperion.expression.EncryptedParameter[T]"></a>
+      <a id="encrypted:EncryptedParameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">encrypted</span><span class="result">: <a href="EncryptedParameter.html" class="extype" name="com.krux.hyperion.expression.EncryptedParameter">EncryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@encrypted:com.krux.hyperion.expression.EncryptedParameter[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.krux.hyperion.expression.Parameter#env" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="env:com.krux.hyperion.expression.GenericParameter[T]"></a>
+      <a id="env:GenericParameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">env</span><span class="result">: <a href="GenericParameter.html" class="extype" name="com.krux.hyperion.expression.GenericParameter">GenericParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@env:com.krux.hyperion.expression.GenericParameter[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#evaluate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="evaluate():T"></a>
+      <a id="evaluate():T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">evaluate</span><span class="params">()</span><span class="result">: <span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@evaluate():T" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#id" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="id:String"></a>
+      <a id="id:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">id</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@id:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#isEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isEmpty:Boolean"></a>
+      <a id="isEmpty:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@isEmpty:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.UnencryptedParameter#isEncrypted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isEncrypted:Boolean"></a>
+      <a id="isEncrypted:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEncrypted</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@isEncrypted:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a> → <a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@name:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.UnencryptedParameter#parameterFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parameterFields:com.krux.hyperion.expression.ParameterFields"></a>
+      <a id="parameterFields:ParameterFields"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parameterFields</span><span class="result">: <a href="ParameterFields.html" class="extype" name="com.krux.hyperion.expression.ParameterFields">ParameterFields</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@parameterFields:com.krux.hyperion.expression.ParameterFields" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a> → <a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.UnencryptedParameter#parseString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseString:String=&gt;T"></a>
+      <a id="parseString:(String)⇒T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseString</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@parseString:String=&gt;T" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This needs to be implemented as a function (instead of a method) as we need to store it with
+the class at the time the implicit parseString for the type is availble (when the parameter
+instance is created).</p><div class="fullcomment"><div class="comment cmt"><p>This needs to be implemented as a function (instead of a method) as we need to store it with
+the class at the time the implicit parseString for the type is availble (when the parameter
+instance is created). Since the calling of this function is mainly used when type is not
+available such as in </p><pre><span class="std">List</span>[Parameter[_]]</pre><p>.</p><p>List[Parameter[_]]
+}}}
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a> → <a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#ref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ref:Parameter.this.env.Exp"></a>
+      <a id="ref:Exp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ref</span><span class="result">: <a href="GenericParameter.html#Exp&lt;:com.krux.hyperion.expression.TypedExpression" class="extmbr" name="com.krux.hyperion.expression.GenericParameter.Exp">Exp</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@ref:Parameter.this.env.Exp" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#serialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="serialize:Option[com.krux.hyperion.aws.AdpParameter]"></a>
+      <a id="serialize:Option[AdpParameter]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">serialize</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../aws/AdpParameter.html" class="extype" name="com.krux.hyperion.aws.AdpParameter">AdpParameter</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@serialize:Option[com.krux.hyperion.aws.AdpParameter]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#type" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="type:com.krux.hyperion.expression.ParameterType.Value"></a>
+      <a id="type:ParameterType.Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">type</span><span class="result">: <a href="ParameterType$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="com.krux.hyperion.expression.ParameterType.Value">ParameterType.Value</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@type:com.krux.hyperion.expression.ParameterType.Value" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.UnencryptedParameter#updateParameterFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateParameterFields(fields:com.krux.hyperion.expression.ParameterFields):com.krux.hyperion.expression.UnencryptedParameter[T]"></a>
+      <a id="updateParameterFields(ParameterFields):UnencryptedParameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateParameterFields</span><span class="params">(<span name="fields">fields: <a href="ParameterFields.html" class="extype" name="com.krux.hyperion.expression.ParameterFields">ParameterFields</a></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@updateParameterFields(fields:com.krux.hyperion.expression.ParameterFields):com.krux.hyperion.expression.UnencryptedParameter[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a> → <a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.Parameter#value" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="value:Option[T]"></a>
+      <a id="value:Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@value:Option[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.ParameterBuilder#withDescription" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withDescription(desc:String):com.krux.hyperion.expression.Parameter[T]"></a>
+      <a id="withDescription(String):Parameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withDescription</span><span class="params">(<span name="desc">desc: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@withDescription(desc:String):com.krux.hyperion.expression.Parameter[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.ParameterBuilder#withValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withValue(newValue:T):Self"></a>
+      <a id="withValue(T):UnencryptedParameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withValue</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@withValue(newValue:T):Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a></dd></dl></div>
+    </li><li name="com.krux.hyperion.expression.ParameterBuilder#withValueFromString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withValueFromString(stringValue:String):Self"></a>
+      <a id="withValueFromString(String):UnencryptedParameter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withValueFromString</span><span class="params">(<span name="stringValue">stringValue: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.krux.hyperion.expression.UnencryptedParameter@withValueFromString(stringValue:String):Self" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.krux.hyperion.expression.Parameter">
+              <h3>Inherited from <a href="Parameter.html" class="extype" name="com.krux.hyperion.expression.Parameter">Parameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]</h3>
+            </div><div class="parent" name="com.krux.hyperion.expression.ParameterBuilder">
+              <h3>Inherited from <a href="ParameterBuilder.html" class="extype" name="com.krux.hyperion.expression.ParameterBuilder">ParameterBuilder</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>, <a href="" class="extype" name="com.krux.hyperion.expression.UnencryptedParameter">UnencryptedParameter</a>[<span class="extype" name="com.krux.hyperion.expression.UnencryptedParameter.T">T</span>]]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
